@@ -162,8 +162,6 @@ export default async function Home() {
 
 </p>
 
-  </p>
-
 </section>
 
         {(!cats || cats.length === 0) && <p className="notice">Aucun chat publié pour le moment.</p>}
