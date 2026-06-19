@@ -13,9 +13,19 @@ export default async function Home() {
 
 </header>
       <main className="container">
-        <section className="hero">
+       <section className="hero">
 
-  <h1>Bienvenue chez Les Chats de Feelin’ Good</h1>
+  <img
+
+    src="/IMG_3129.jpeg"
+
+    alt="Logo Les Chats de Feelin’ Good"
+
+    style={{ width: "250px", marginBottom: "20px" }}
+
+  />
+
+  <h1>🐾 Bienvenue chez Les Chats de Feelin’ Good</h1>
 
   <p className="lead">
 
