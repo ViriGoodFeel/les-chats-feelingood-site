@@ -25,7 +25,7 @@ export default async function Home() {
 
   <p>
 
-    Chaque adoption permet à un chat d’avoir enfin une famille où il sera aimé, protégé et considéré comme une priorité pour la vie.
+    Chaque adoption permet à un chat de rejoindre un foyer stable où il sera aimé, protégé et considéré comme un membre de la famille.
 
   </p>
 
@@ -161,6 +161,28 @@ export default async function Home() {
     Notre association est basée à Le Lédat, près de Villeneuve-sur-Lot dans le Lot-et-Garonne, mais nous étudions également des demandes d’adoption partout en France, toujours dans le respect du bien-être et de l’intérêt du chat.
 
 </p>
+
+</section>
+
+        <section className="hero">
+
+  <h2>📌 Informations légales</h2>
+
+  <p>Association de protection et de bien-être félin – Loi 1901</p>
+
+  <p>Présidente fondatrice : Viridiana Longuépée</p>
+
+  <p>RNA : W473005738</p>
+
+  <p>SIREN : 892 364 779</p>
+
+  <p>📍 47300 Le Lédat – France</p>
+
+  <p>✉️ leschatsdefeelingood@outlook.fr</p>
+
+  <p>📞 07 63 76 03 18</p>
+
+  <p>Association créée le 21 septembre 2020</p>
 
 </section>
 
