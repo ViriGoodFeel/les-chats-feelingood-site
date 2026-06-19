@@ -131,15 +131,15 @@ export default async function Home() {
 
   <a
 
-    className="btn"
+  className="btn"
 
-    href="mailto:leschatsdefeelingood@outlook.fr?subject=Je souhaite devenir famille d’accueil"
+  href="mailto:leschatsdefeelingood@outlook.fr?subject=Je souhaite devenir famille d’accueil&body=Bonjour,%0D%0A%0D%0AJe souhaite me renseigner pour devenir famille d’accueil pour votre association.%0D%0A%0D%0ANom :%0D%0ATéléphone :%0D%0AVille :%0D%0A%0D%0AJe peux accueillir :%0D%0A- Chaton%0D%0A- Chat adulte%0D%0A- Chat nécessitant des soins%0D%0A%0D%0AInformations complémentaires :"
 
-  >
+>
 
-    🏡 Je souhaite devenir famille d’accueil
+  🏡 Je souhaite devenir famille d’accueil
 
-  </a>
+</a>
 
 </section>
 
