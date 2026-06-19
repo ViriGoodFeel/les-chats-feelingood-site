@@ -21,7 +21,7 @@ export default async function Home() {
 
     alt="Logo Les Chats de Feelin’ Good"
 
-    style={{ width: "250px", marginBottom: "20px" }}
+    style={{ width: "340px", marginBottom: "25px" }}
 
   />
 
