@@ -158,7 +158,7 @@ export default async function Home() {
 
   <p>
 
-    Notre association est basée à Le Lédat, près de Villeneuve-sur-Lot dans le Lot-et-Garonne, mais nous étudions également des adoptions partout en France selon les projets et le bien-être du chat.
+    Notre association est basée à Le Lédat, près de Villeneuve-sur-Lot dans le Lot-et-Garonne, mais nous étudions également des demandes d’adoption partout en France, toujours dans le respect du bien-être et de l’intérêt du chat.
 
 </p>
 
