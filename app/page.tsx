@@ -31,7 +31,49 @@ export default async function Home() {
           {(cats as Cat[] | null)?.map((cat) => (
             <article className="card" key={cat.id}>
               {cat.photos?.[0] ? <img className="cat-photo" src={cat.photos[0]} alt={`Photo de ${cat.name}`} /> : <div className="cat-photo" />}
-              <div className="card-body stack"><span className="badge green">Disponible</span><h2>{cat.name}</h2><p>{cat.age} · {cat.sex}</p><p>{cat.personality}</p><Link className="btn" href={publicCatPath(cat.slug)}>Voir sa fiche</Link></div>
+              <div className="card-body stack">
+
+  <span className="badge green">Disponible</span>
+
+  <h2>{cat.name}</h2>
+
+  <p>{cat.age} · {cat.sex}</p>
+
+  <p>{cat.personality}</p>
+
+  <p>Intéressé(e) par {cat.name} ? Contactez-nous directement.</p>
+
+  <Link className="btn" href={publicCatPath(cat.slug)}>
+
+    Voir sa fiche
+
+  </Link>
+
+  <a className="btn secondary" href="tel:+33763760318">
+
+    📞 Appeler
+
+  </a>
+
+  <a className="btn secondary" href="sms:+33763760318">
+
+    💬 SMS
+
+  </a>
+
+  <a
+
+    className="btn secondary"
+
+    href="mailto:leschatsdefeelingood@outlook.fr?subject=Demande adoption"
+
+  >
+
+    ✉️ Email
+
+  </a>
+
+</div>
             </article>
           ))}
         </section>
