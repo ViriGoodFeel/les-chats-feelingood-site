@@ -140,6 +140,29 @@ export default async function Home() {
 </a>
 
 </section>
+        <section className="hero">
+
+  <h2>📍 Notre association</h2>
+
+  <p>
+
+    Les Chats de Feelin’ Good est une association de protection féline basée au Lédat, dans le Lot-et-Garonne (47).
+
+  </p>
+
+  <p>
+
+    Nous prenons en charge des chats abandonnés, malades, blessés ou en détresse afin de leur offrir des soins, une sécurité et une nouvelle chance.
+
+  </p>
+
+  <p>
+
+    Nous intervenons principalement autour de Villeneuve-sur-Lot et dans tout le Lot-et-Garonne.
+
+  </p>
+
+</section>
 
         {(!cats || cats.length === 0) && <p className="notice">Aucun chat publié pour le moment.</p>}
       </main>
