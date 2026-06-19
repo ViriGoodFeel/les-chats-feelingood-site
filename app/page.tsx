@@ -10,7 +10,23 @@ export default async function Home() {
     <>
       <header className="container topbar"><Link className="brand" href="/">Les Chats Feelingood</Link><nav className="nav"><Link className="btn secondary" href="/connexion">Administration</Link></nav></header>
       <main className="container">
-        <section className="hero"><h1>Chats à l'adoption</h1><p className="lead">Découvrez les chats actuellement prêts à rejoindre une famille aimante. Chaque fiche est publiée automatiquement depuis l'administration privée.</p></section>
+        <section className="hero">
+
+  <h1>🐾 Bienvenue chez Les Chats de Feelin’ Good</h1>
+
+  <p className="lead">
+
+    Nous sauvons et soignons des chats abandonnés, malades ou en détresse afin de leur offrir une vie meilleure en leur trouvant une famille aimante et durable.
+
+  </p>
+
+  <p>
+
+    Chaque adoption permet à un chat d’avoir enfin une famille où il sera aimé, protégé et considéré comme une priorité pour la vie.
+
+  </p>
+
+</section>
         <section className="grid">
           {(cats as Cat[] | null)?.map((cat) => (
             <article className="card" key={cat.id}>
