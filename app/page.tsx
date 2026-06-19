@@ -9,13 +9,7 @@ export default async function Home() {
   return (
     <><header className="container topbar">
 
-  <Link className="brand" href="/">🐾 Feelin’ Good</Link>
-
-  <nav className="nav">
-
-    <Link className="btn secondary" href="/connexion">Administration</Link>
-
-  </nav>
+  <Link className="brand" href="/">🐾 Les Chats de Feelin’ Good</Link>
 
 </header>
       <main className="container">
