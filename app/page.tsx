@@ -26,6 +26,19 @@ export default async function Home() {
 
   </p>
 
+</section> 
+        <section className="hero">
+
+  <h2>Pourquoi adopter chez nous ?</h2>
+
+  <p>✔ Chats sauvés et soignés avec attention</p>
+
+  <p>✔ Adoption réfléchie pour une famille stable et durable</p>
+
+  <p>✔ Conseils et accompagnement pour l’adoptant</p>
+
+  <p>✔ Chaque adoption permet d’offrir une nouvelle chance à d’autres chats en détresse</p>
+
 </section>
         <section className="grid">
           {(cats as Cat[] | null)?.map((cat) => (
