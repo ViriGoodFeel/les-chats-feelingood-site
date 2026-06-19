@@ -15,7 +15,7 @@ export default async function Home() {
       <main className="container">
         <section className="hero">
 
-  <h1>🐾 Bienvenue chez Les Chats de Feelin’ Good</h1>
+  <h1>Bienvenue chez Les Chats de Feelin’ Good</h1>
 
   <p className="lead">
 
@@ -152,7 +152,7 @@ export default async function Home() {
 
   <p>
 
-    Nous prenons en charge des chats abandonnés, malades, blessés ou en détresse afin de leur offrir des soins, une sécurité et une nouvelle chance.
+    Forte de plus de 20 années d’expérience auprès des chats, notre association prend en charge des animaux abandonnés, malades, blessés ou en détresse afin de leur offrir des soins, une sécurité et une nouvelle chance.
 
   </p>
 
