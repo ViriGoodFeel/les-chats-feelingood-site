@@ -55,9 +55,9 @@ export default async function Home() {
 
   <p>{cat.age} · {cat.sex}</p>
 
-  <p>🐱 {cat.name} est {cat.personality.toLowerCase()} et attend une famille aimante.</p>
+  <p>🐱 {cat.name} attend une famille qui saura lui offrir amour, sécurité et stabilité.</p>
 
-  <p>Intéressé(e) par {cat.name} ? Contactez-nous directement.</p>
+  <p>Une rencontre avec {cat.name} peut changer une vie. Contactez-nous.</p>
 
   <Link className="btn" href={publicCatPath(cat.slug)}>
 
