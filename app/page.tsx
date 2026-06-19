@@ -127,8 +127,6 @@ export default async function Home() {
 
 </p>
 
-  </p>
-
   <a
 
   className="btn"
