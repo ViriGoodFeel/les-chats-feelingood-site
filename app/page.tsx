@@ -8,7 +8,7 @@ export default async function Home() {
 
   return (
     <>
-      <header className="container topbar"><Link className="brand" href="/">Les Chats Feelingood</Link><nav className="nav"><Link className="btn secondary" href="/connexion">Administration</Link></nav></header>
+      <header className="container topbar"><Link className="brand" href="/">Les Chats de Feelin' Good</Link><nav className="nav"><Link className="btn secondary" href="/connexion">Administration</Link></nav></header>
       <main className="container">
         <section className="hero">
 
