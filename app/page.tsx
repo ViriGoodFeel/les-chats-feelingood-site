@@ -55,7 +55,7 @@ export default async function Home() {
 
   <p>{cat.age} · {cat.sex}</p>
 
-  <p>{cat.personality}</p>
+  <p>🐱 {cat.name} est {cat.personality.toLowerCase()} et attend une famille aimante.</p>
 
   <p>Intéressé(e) par {cat.name} ? Contactez-nous directement.</p>
 
