@@ -25,7 +25,7 @@ export default async function Home() {
 
   />
 
-  <h1>🐾 Bienvenue chez Les Chats de Feelin’ Good</h1>
+  <h1>Bienvenue chez Les Chats de Feelin’ Good</h1>
 
   <p className="lead">
 
