@@ -107,27 +107,27 @@ export default async function Home() {
 
 <section className="hero">
 
-  <h2>🏡 Devenir famille d’accueil</h2>
+<h2>🏡 Devenir famille d’accueil</h2>
 
-  <p>
+<p>
 
-    Vous aimez les chats et souhaitez nous aider concrètement ?
-
-  </p>
-
-  <p>
-
-    En devenant famille d’accueil vous offrez temporairement un foyer sécurisé à un chat en attendant qu’il trouve sa famille définitive.
-
-  </p>
-
-  <p>
-
-    Chaque famille d’accueil nous aide concrètement à sauver des chats qui, sans solution, resteraient en danger.
+  Vous aimez les chats et souhaitez nous aider ?
 
 </p>
 
-  <a
+<p>
+
+  Nos chats sont nombreux et certains ont besoin d’un environnement plus calme, d’une attention individuelle ou de soins particuliers qu’une structure comme la nôtre ne peut pas toujours offrir.
+
+</p>
+
+<p>
+
+  En devenant famille d’accueil, vous permettez à chaque chat d’avoir un accompagnement plus adapté tout en nous donnant la possibilité de prendre en charge d’autres chats en détresse.
+
+</p>
+
+<a
 
   className="btn"
 
