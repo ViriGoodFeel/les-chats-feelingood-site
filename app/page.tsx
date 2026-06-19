@@ -117,13 +117,15 @@ export default async function Home() {
 
   <p>
 
-    En devenant famille d’accueil, vous offrez temporairement un foyer sécurisé à un chat en attendant qu’il trouve sa famille définitive.
+    En devenant famille d’accueil vous offrez temporairement un foyer sécurisé à un chat en attendant qu’il trouve sa famille définitive.
 
   </p>
 
   <p>
 
-    Chaque famille d’accueil nous permet de sauver encore plus de chats abandonnés, malades ou en détresse.
+    Chaque famille d’accueil nous aide concrètement à sauver des chats qui, sans solution, resteraient en danger.
+
+</p>
 
   </p>
 
