@@ -92,7 +92,18 @@ export default async function Home() {
 </div>
             </article>
           ))}
+                </section>
+
+        <section className="hero">
+
+          <p>❤️ Nos chats sont stérilisés, identifiés, vaccinés, soignés et suivis avec la plus grande attention.</p>
+
+          <p>🏡 Nous recherchons des familles sérieuses, responsables et bienveillantes pour chaque adoption.</p>
+
+          <p>📞 Nous restons disponibles pour vous accompagner avant, pendant et après l’adoption.</p>
+
         </section>
+
         {(!cats || cats.length === 0) && <p className="notice">Aucun chat publié pour le moment.</p>}
       </main>
     </>
