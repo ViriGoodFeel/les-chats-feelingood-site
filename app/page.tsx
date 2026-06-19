@@ -103,6 +103,43 @@ export default async function Home() {
           <p>📞 Nous restons disponibles pour vous accompagner avant, pendant et après l’adoption.</p>
 
         </section>
+        
+
+<section className="hero">
+
+  <h2>🏡 Devenir famille d’accueil</h2>
+
+  <p>
+
+    Vous aimez les chats et souhaitez nous aider concrètement ?
+
+  </p>
+
+  <p>
+
+    En devenant famille d’accueil, vous offrez temporairement un foyer sécurisé à un chat en attendant qu’il trouve sa famille définitive.
+
+  </p>
+
+  <p>
+
+    Chaque famille d’accueil nous permet de sauver encore plus de chats abandonnés, malades ou en détresse.
+
+  </p>
+
+  <a
+
+    className="btn"
+
+    href="mailto:leschatsdefeelingood@outlook.fr?subject=Je souhaite devenir famille d’accueil"
+
+  >
+
+    🏡 Je souhaite devenir famille d’accueil
+
+  </a>
+
+</section>
 
         {(!cats || cats.length === 0) && <p className="notice">Aucun chat publié pour le moment.</p>}
       </main>
