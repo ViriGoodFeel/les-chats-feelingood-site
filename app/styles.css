@@ -73,8 +73,18 @@
 
 .btn.green{background:var(--green)}
 
-.btn.red{background:var(--red)}
+.btn.red{
 
+  background:#c53d3d;
+
+  box-shadow:0 4px 14px rgba(197,61,61,.25);
+
+}
+.btn.red:hover{
+
+  background:#a92f2f;
+
+}
 .grid{
 
   display:grid;
@@ -300,7 +310,7 @@
 
   overflow:hidden;
 
-  transform:scale(1.02);
+  
 
 }
 .hero-banner::before{
@@ -311,7 +321,7 @@
 
   inset:0;
 
-  backgroundbackground:linear-gradient(
+  background:linear-gradient(
 
   rgba(20,15,10,.15),
 
@@ -380,7 +390,7 @@ margin-bottom:10px;
 
   justify-content:center;
 
-  gap:16px;
+  gap:22px;
 
   flex-wrap:wrap;
 
