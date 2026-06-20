@@ -326,13 +326,17 @@
 
   z-index:2;
 
-  text-align:center;
-
   color:white;
 
-  max-width:900px;
+  max-width:500px;
 
   padding:20px;
+
+  margin-right:auto;
+
+  margin-left:60px;
+
+  text-align:left;
 
 }
 
