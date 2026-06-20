@@ -7,7 +7,7 @@ export default async function Home() {
   const cats = await publicCats();
 
   return (
-   
+   <>
 <header className="top-banner">
 
   <div className="container nav-premium">
@@ -245,7 +245,7 @@ export default async function Home() {
 
         {(!cats || cats.length === 0) && <p className="notice">Aucun chat publié pour le moment.</p>}
       </main>
-
+</>
   );
 
 }
