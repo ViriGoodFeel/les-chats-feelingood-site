@@ -286,7 +286,7 @@
 
   display:flex;
 
-  align-items:center;
+  align-items:flex-end;
 
   justify-content:center;
 
@@ -328,15 +328,11 @@
 
   color:white;
 
-  max-width:500px;
+  max-width:900px;
 
-  padding:20px;
+  padding-bottom:40px;
 
-  margin-right:auto;
-
-  margin-left:60px;
-
-  text-align:left;
+  text-align:center;
 
 }
 
