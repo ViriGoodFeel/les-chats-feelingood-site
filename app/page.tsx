@@ -46,18 +46,19 @@ export default async function Home() {
 
       <a
 
-        className="don-btn"
+  className="don-btn"
 
-        href="https://www.helloasso.com/"
+  href="https://www.helloasso.com/"
 
-        target="_blank"
+  target="_blank"
 
-      >
+  rel="noopener noreferrer"
 
-        ❤️ Faire un don
+>
 
-      </a>
+  ❤️ Faire un don
 
+</a>
     </nav>
 
   </div>
