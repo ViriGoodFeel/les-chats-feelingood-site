@@ -65,9 +65,9 @@ export default async function Home() {
 
 </header>
 
-<section className="hero-banner">
+<section className="hero-banner"></section>
 
-  <div className="hero-overlay">
+<section className="hero-overlay">
 
     <h1>Offrir une seconde chance à chaque chat</h1>
 
@@ -94,8 +94,6 @@ export default async function Home() {
       </a>
 
     </div>
-
-  </div>
 
 </section>
 
