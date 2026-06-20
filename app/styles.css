@@ -59,12 +59,16 @@
 
 .btn.secondary{
 
-  background:#fff;
+  background:#4f8b57;
 
-  color:var(--ink);
+  color:white;
 
-  border:1px solid var(--line)
+  border:none;
 
+  }
+.btn.secondary:hover{
+
+  background:#356b42;
 }
 
 .btn.green{background:var(--green)}
