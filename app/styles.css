@@ -282,26 +282,19 @@
 
 .hero-banner{
 
-  min-height:520px;
-
-  display:flex;
-
-  align-items:flex-end;
-
-  justify-content:center;
+  min-height:420px;
 
   position:relative;
 
-  background-image:url("/C5C1574B-22FA-4A3D-A016-541A645A6209.png");
+  background-image:url("/IMG_3129.jpeg");
 
   background-size:cover;
 
   background-position:center;
 
-  margin-bottom:40px;
+  margin-bottom:0;
 
 }
-
 .hero-banner::before{
 
   content:"";
@@ -322,25 +315,25 @@
 
 .hero-overlay{
 
-  position:absolute;
+  background:white;
 
-  bottom:15px;
+  max-width:900px;
 
-  left:50%;
+  margin:-60px auto 40px auto;
 
-  transform:translateX(-50%);
+  position:relative;
 
-  z-index:2;
+  z-index:10;
 
-  color:white;
+  border-radius:30px;
 
-  width:100%;
-
-  max-width:800px;
+  padding:40px;
 
   text-align:center;
 
-  padding:0 20px;
+  color:#2c2118;
+
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
 
 }
 
