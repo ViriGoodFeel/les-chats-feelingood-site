@@ -304,17 +304,16 @@
 
   background-image:url("/90E4088C-EFF0-4BE8-92D6-7B457A18EA4A.png");
 
-  background-size:cover;
+  background-size:contain;
 
-  background-position:center top;
+  background-repeat:no-repeat;
 
-  margin-bottom:0;
+  background-position:center;
 
-  overflow:hidden;
-
-  
+  background-color:#f5eee6;
 
 }
+
 .hero-banner::before{
 
   content:"";
