@@ -7,53 +7,100 @@ export default async function Home() {
   const cats = await publicCats();
 
   return (
-    <><header className="container topbar">
+   
+<header className="top-banner">
 
-  <Link className="brand" href="/">🐾 Les Chats de Feelin’ Good 🐾</Link>
+  <div className="container nav-premium">
+
+    <div className="logo-zone">
+
+      <img
+
+        src="/IMG_3129.jpeg"
+
+        alt="Logo Les Chats de Feelin’ Good"
+
+        className="logo-small"
+
+      />
+
+      <div>
+
+        <h2>Les Chats de Feelin’ Good</h2>
+
+        <span>Association de protection féline</span>
+
+      </div>
+
+    </div>
+
+    <nav className="main-nav">
+
+      <a href="#adoption">Nos chats</a>
+
+      <a href="#famille">Famille d’accueil</a>
+
+      <a href="#soutien">Nous soutenir</a>
+
+      <a href="#contact">Contact</a>
+
+      <a
+
+        className="don-btn"
+
+        href="https://www.helloasso.com/"
+
+        target="_blank"
+
+      >
+
+        ❤️ Faire un don
+
+      </a>
+
+    </nav>
+
+  </div>
 
 </header>
-      <main className="container">
-       <section className="hero">
 
-  <img
+<section className="hero-banner">
 
-    src="/IMG_3129.jpeg"
+  <div className="hero-overlay">
 
-    alt="Logo Les Chats de Feelin’ Good"
+    <h1>Offrir une seconde chance à chaque chat</h1>
 
-    style={{ width: "340px", marginBottom: "25px" }}
+    <p>
 
-  />
+      Nous sauvons, soignons et accompagnons des chats abandonnés,
 
-  <h1>Bienvenue chez Les Chats de Feelin’ Good</h1>
+      malades ou victimes de maltraitance.
 
-  <p className="lead">
+    </p>
 
-    Nous sauvons et soignons des chats abandonnés, malades ou en détresse afin de leur offrir une vie meilleure en leur trouvant une famille aimante et durable.
+    <div className="hero-buttons">
 
-  </p>
+      <a href="#adoption" className="btn">
 
-  <p>
+        🐾 Voir nos chats
 
-    Chaque adoption permet à un chat de rejoindre un foyer stable où il sera aimé, protégé et considéré comme un membre de la famille.
+      </a>
 
-  </p>
+      <a href="#famille" className="btn secondary">
 
-</section> 
-        <section className="hero">
+        🏡 Devenir famille d’accueil
 
-  <h2>Pourquoi adopter chez nous ?</h2>
+      </a>
 
-  <p>✔ Chats sauvés et soignés avec attention</p>
+    </div>
 
-  <p>✔ Adoption réfléchie pour une famille stable et durable</p>
-
-  <p>✔ Conseils et accompagnement pour l’adoptant</p>
-
-  <p>✔ Chaque adoption permet d’offrir une nouvelle chance à d’autres chats en détresse</p>
+  </div>
 
 </section>
-        <section className="grid">
+
+<main className="container">
+
+<section id="adoption" className="grid">
           {(cats as Cat[] | null)?.map((cat) => (
             <article className="card" key={cat.id}>
               {cat.photos?.[0] ? <img className="cat-photo" src={cat.photos[0]} alt={`Photo de ${cat.name}`} /> : <div className="cat-photo" />}
@@ -115,7 +162,7 @@ export default async function Home() {
         </section>
         
 
-<section className="hero">
+<section id="famille" className="hero">
 
 <h2>🏡 Devenir famille d’accueil</h2>
 
@@ -174,7 +221,7 @@ export default async function Home() {
 
 </section>
 
-        <section className="hero">
+       <section id="contact" className="hero">
 
   <h2>📌 Informations légales</h2>
 
@@ -198,6 +245,7 @@ export default async function Home() {
 
         {(!cats || cats.length === 0) && <p className="notice">Aucun chat publié pour le moment.</p>}
       </main>
-    </>
+
   );
+
 }
