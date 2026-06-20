@@ -317,9 +317,9 @@
 
   background:white;
 
-  max-width:900px;
+  max-width:700px;
 
-  margin:-60px auto 40px auto;
+  margin:-40px auto 40px auto;
 
   position:relative;
 
@@ -327,7 +327,7 @@
 
   border-radius:30px;
 
-  padding:40px;
+  padding:28px;
 
   text-align:center;
 
@@ -339,7 +339,7 @@
 
 .hero-overlay h1{
 
-  font-size:clamp(24px,3vw,40px);
+  font-size:clamp(18px,2vw,32px);
 
   line-height:1.1;
 
@@ -353,7 +353,7 @@ margin-bottom:10px;
 
 .hero-overlay p{
 
-  font-size:22px;
+  font-size:16px;
 
   margin-bottom:30px;
 
