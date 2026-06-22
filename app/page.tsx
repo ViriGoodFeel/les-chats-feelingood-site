@@ -67,8 +67,9 @@ export default async function Home() {
 
 <section className="hero-banner"></section>
 
-<section className="hero-overlay">
+<main className="container">
 
+<section className="hero-overlay">
     <h1>Offrir une seconde chance à chaque chat</h1>
 
     <p>
@@ -110,8 +111,6 @@ export default async function Home() {
 </div>
 
 </section>
-
-<main className="container">
 
 <section id="adoption" className="grid">
           {(cats as Cat[] | null)?.map((cat) => (
