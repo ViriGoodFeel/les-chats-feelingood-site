@@ -35,9 +35,9 @@ export default async function Home() {
 
       <section className="hero-banner" aria-label="Les Chats de Feelin’ Good">
         <div className="hero-overlay">
-          <span className="eyebrow">Les Chats de Feelin’ Good · Lot-et-Garonne</span>
-          <h1>Une famille peut changer toute une vie.</h1>
-          <p>Nous sauvons, soignons et accompagnons des chats abandonnés, maltraités, accidentés ou ayant besoin de soins particuliers.</p>
+          <span className="eyebrow">Bienvenue chez Les Chats de Feelin’ Good · Lot-et-Garonne</span>
+          <h1>Et si votre prochain compagnon vous attendait ici ?</h1>
+          <p>Chaque chat mérite une famille, de la douceur et une vraie seconde chance. Nous les sauvons, les soignons et les accompagnons jusqu’à leur nouvelle vie.</p>
           <div className="hero-buttons">
             <a href="#adoption" className="btn">Découvrir les chats</a>
             <a href="#famille" className="btn secondary">Devenir famille d’accueil</a>
@@ -49,8 +49,8 @@ export default async function Home() {
       <main className="container">
         <section className="intro-section">
           <span className="eyebrow">Adoption</span>
-          <h2>Peut-être que votre compagnon est ici.</h2>
-          <p>Chaque chat a son histoire, son caractère et ses besoins. Prenez le temps de découvrir ceux qui cherchent aujourd’hui leur famille.</p>
+          <h2>Un regard, une personnalité, une histoire… et peut-être un coup de cœur.</h2>
+          <p>Prenez le temps de faire connaissance avec ceux qui attendent aujourd’hui une famille. Nous vous aidons à trouver le compagnon qui correspond vraiment à votre vie.</p>
         </section>
 
         <section id="adoption" className="grid adoption-grid">
@@ -68,7 +68,7 @@ export default async function Home() {
                   <p className="cat-meta">{cat.age} · {cat.sex}</p>
                 </div>
                 <p className="cat-teaser">{cat.personality}</p>
-                <Link className="btn full-btn" href={publicCatPath(cat.slug)}>Découvrir son histoire</Link>
+                <Link className="btn full-btn" href={publicCatPath(cat.slug)}>Faire connaissance</Link>
               </div>
             </article>
           ))}
@@ -88,8 +88,8 @@ export default async function Home() {
         <section className="how-section">
           <div className="section-heading">
             <span className="eyebrow">Comment ça marche ?</span>
-            <h2>Adopter, c’est aussi être accompagné.</h2>
-            <p>Vous n’avez pas besoin de tout savoir sur les chats. Nous prenons le temps d’échanger avec vous et de vous guider.</p>
+            <h2>Adopter, c’est une rencontre. Nous sommes là pour vous accompagner.</h2>
+            <p>Vous n’avez pas besoin d’être expert des chats. Nous prenons le temps de vous écouter, de vous conseiller et de vous accompagner.</p>
           </div>
           <div className="steps-grid">
             <article className="step-card">
@@ -126,7 +126,7 @@ export default async function Home() {
 
         <section id="soutien" className="support-section">
           <div>
-            <span className="eyebrow">Chaque geste compte</span>
+            <span className="eyebrow">Un petit geste, une grande aide</span>
             <h2>Vous pouvez aussi aider sans adopter.</h2>
             <p>Les soins vétérinaires, l’alimentation et les traitements représentent une part importante de notre quotidien. Votre soutien nous permet de continuer à prendre en charge les chats qui en ont besoin.</p>
           </div>
