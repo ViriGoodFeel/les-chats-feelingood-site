@@ -169,7 +169,9 @@ export default async function Home() {
           ))}
                 </section>
 
-        <section className="hero">
+        <section id="soutien" className="hero">
+
+          <h2>Nous soutenir</h2>
 
           <p>❤️ Nos chats sont stérilisés, identifiés, vaccinés, soignés et suivis avec la plus grande attention.</p>
 
