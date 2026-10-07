@@ -19,7 +19,7 @@ export default async function CatPage({ params }: { params: Promise<{ slug: stri
       <main className="container">
         <section className="hero cat-detail">
           <div className="detail-grid">
-            <section className="gallery">
+            <section className="gallery gallery-premium">
               {cat.photos?.[0] ? (
                 <img className="gallery-main" src={cat.photos[0]} alt={`Photo de ${cat.name}`} />
               ) : (
@@ -34,7 +34,7 @@ export default async function CatPage({ params }: { params: Promise<{ slug: stri
               )}
             </section>
 
-            <section className="stack">
+            <section className="stack detail-content">
               <span className={`badge ${cat.status === "adopte" ? "gray" : "green"}`}>
                 {cat.status === "adopte" ? "Déjà adopté" : "Disponible à l’adoption"}
               </span>
@@ -45,10 +45,19 @@ export default async function CatPage({ params }: { params: Promise<{ slug: stri
                 <p className="lead">{cat.age} · {cat.sex}</p>
               </div>
 
-              <div className="facts">
-                <div className="fact"><strong>Stérilisé</strong><br />{cat.sterilized ? "Oui" : "Non"}</div>
-                <div className="fact"><strong>Vacciné</strong><br />{cat.vaccinated ? "Oui" : "Non"}</div>
-                <div className="fact"><strong>Frais d’adoption</strong><br />{cat.adoption_fee}</div>
+              <div className="facts detail-facts">
+                <div className="fact">
+                  <strong>Stérilisé</strong>
+                  <span>{cat.sterilized ? "Oui" : "Non"}</span>
+                </div>
+                <div className="fact">
+                  <strong>Vacciné</strong>
+                  <span>{cat.vaccinated ? "Oui" : "Non"}</span>
+                </div>
+                <div className="fact">
+                  <strong>Frais d’adoption</strong>
+                  <span>{cat.adoption_fee}</span>
+                </div>
               </div>
 
               <div>
@@ -61,14 +70,14 @@ export default async function CatPage({ params }: { params: Promise<{ slug: stri
                 <p>{cat.rescue_story}</p>
               </div>
 
-              <div>
+              <div className="health-block">
                 <h2>Sa santé et ses besoins</h2>
                 <p>{cat.health_condition}</p>
                 <p>{cat.special_needs || "Aucun besoin particulier connu."}</p>
               </div>
 
               {cat.status !== "adopte" && (
-                <div className="adoption-cta">
+                <div className="adoption-cta premium-cta">
                   <h2>Vous pensez pouvoir être sa famille ?</h2>
                   <p>Racontez-nous simplement votre projet. Nous prendrons le temps d’échanger avec vous pour voir si cette adoption peut être une belle rencontre.</p>
                   <Link className="btn full-btn" href={`/contact?chat=${encodeURIComponent(cat.name)}`}>
