@@ -24,7 +24,7 @@ export default async function Home() {
           </Link>
 
           <nav className="main-nav" aria-label="Navigation principale">
-            <a href="#adoption">Adopter</a>
+            <a href="/adoption">Adopter</a>
             <a href="#famille">Famille d’accueil</a>
             <a href="#soutien">Nous soutenir</a>
             <a href="#contact">Contact</a>
