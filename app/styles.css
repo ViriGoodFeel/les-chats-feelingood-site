@@ -52,3 +52,31 @@ input,select,textarea{font:inherit;border:1px solid #d1d7cc;border-radius:14px;p
 @media(max-width:460px){.container{width:min(100% - 22px,1120px)}.facts{grid-template-columns:1fr}.hero-banner{min-height:470px}}
 .adoption-cta{background:var(--soft);border-radius:22px;padding:24px;margin-top:4px}.adoption-cta h2{margin-top:0}.adoption-cta p{color:var(--muted)}.contact-form{max-width:760px;margin-top:26px}.contact-form h2{font-size:clamp(28px,4vw,40px);line-height:1.08;margin:0 0 8px}.muted{color:var(--muted)}
 .welcome-note{background:#e9eee5;border-radius:18px;padding:12px 16px;color:#5f6d60}.cat-card .btn{box-shadow:0 5px 14px rgba(82,107,87,.16)}
+
+.adoption-page{min-height:100vh;background:linear-gradient(to bottom,#fbf7ed,#eef1e8);color:var(--ink);padding-bottom:70px}
+.adoption-header{height:96px;padding:12px 28px;display:flex;align-items:center;justify-content:space-between;background:rgba(251,248,240,.92);border-bottom:1px solid #e5e2d7}
+.adoption-logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.adoption-logo img{width:62px;height:62px;object-fit:cover;border-radius:16px}
+.adoption-logo span{font-family:cursive;font-size:30px;color:#59604f}
+.adoption-menu{font-size:30px;text-decoration:none;color:#59604f}
+.adoption-hero{max-width:1180px;margin:0 auto;padding:62px 24px 42px;text-align:center}
+.adoption-title-shape{display:inline-flex;align-items:center;justify-content:center;min-width:min(650px,90vw);min-height:190px;padding:28px 70px;background:#5e654c;border-radius:48% 52% 46% 54% / 46% 44% 56% 54%;transform:rotate(-1deg);box-shadow:0 12px 30px rgba(67,80,55,.08)}
+.adoption-title-shape h1{margin:0;color:#fbf8ef;font-family:cursive;font-size:clamp(48px,6vw,78px);font-weight:500;line-height:.95;transform:rotate(1deg)}
+.adoption-hero>p{margin:30px 0 0;font-size:25px;color:#75675c}
+.adoption-filter-card{width:min(1120px,calc(100% - 48px));margin:0 auto 48px;background:rgba(255,254,250,.96);border-radius:38px;padding:42px 48px;box-shadow:0 15px 38px rgba(70,76,61,.08);display:grid;gap:28px}
+.adoption-filter-field{display:grid;gap:10px}
+.adoption-filter-field label{font-size:24px;color:#3f342c;font-weight:500}
+.adoption-filter-field select{height:76px;border:3px solid #d8cfbe;border-radius:42px;background:#fffdf9;color:#3f342c;padding:0 48px;font-size:23px}
+.adoption-filter-field select:disabled{opacity:1}
+.adoption-count{width:min(1120px,calc(100% - 48px));margin:0 auto 22px;font-size:20px;color:#716d64}
+.adoption-page>.grid{width:min(1120px,calc(100% - 48px));margin:0 auto}
+.adoption-page .cat-card{background:#fffdf9}
+.adoption-page .cat-photo{aspect-ratio:4/3}
+.adoption-page .badge.green{background:#5e654c;color:white}
+.adoption-page .cat-card .btn{background:#718b73}
+@media(max-width:700px){
+  .adoption-header{height:96px;padding:10px 18px}.adoption-logo img{width:52px;height:52px}.adoption-logo span{font-size:23px}.adoption-menu{font-size:28px}
+  .adoption-hero{padding:46px 18px 34px}.adoption-title-shape{min-width:100%;min-height:190px;padding:24px 34px}.adoption-title-shape h1{font-size:53px}.adoption-hero>p{font-size:20px;margin-top:27px}
+  .adoption-filter-card{width:calc(100% - 48px);padding:28px 26px;border-radius:32px;gap:22px}.adoption-filter-field label{font-size:21px}.adoption-filter-field select{height:70px;padding:0 26px;font-size:18px;border-width:2px}
+  .adoption-count,.adoption-page>.grid{width:calc(100% - 48px)}
+}
