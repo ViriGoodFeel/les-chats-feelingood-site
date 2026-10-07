@@ -134,13 +134,13 @@ export default async function Home() {
 
   </Link>
 
-  <a className="btn secondary" href="tel:+33763760318">
+  <a className="btn secondary" href="tel:+33605048325">
 
     📞 Appeler
 
   </a>
 
-  <a className="btn secondary" href="sms:+33763760318">
+  <a className="btn secondary" href="sms:+33605048325">
 
     💬 SMS
 
@@ -249,7 +249,7 @@ export default async function Home() {
 
   <p>✉️ leschatsdefeelingood@outlook.fr</p>
 
-  <p>📞 07 63 76 03 18</p>
+  <p>📞 06 05 04 83 25</p>
 
   <p>Association créée le 21 septembre 2020</p>
 
