@@ -197,16 +197,15 @@ input,select,textarea{font:inherit;border:1px solid #d1d7cc;border-radius:14px;p
 .detail-compatibility span{font-size:13px;font-weight:800;color:var(--muted)}
 .detail-compatibility strong{font-size:17px;color:var(--ink)}
 @media(max-width:800px){.detail-compatibilities{grid-template-columns:1fr 1fr}.detail-compatibility:last-child{grid-column:1/-1}.detail-main-photo{min-height:220px;max-height:none}.detail-photo-strip{grid-template-columns:1fr 1fr}}
-.detail-main-photo{object-fit:contain;width:100%;height:100%;background:transparent}
+.detail-main-photo{display:block;width:100%;height:auto;object-fit:contain;background:transparent;border-radius:30px}
 .detail-photo-strip{grid-template-columns:repeat(2,1fr)}
-.detail-photo-strip img{object-fit:contain;width:100%;height:100%;background:transparent}
-.detail-visual .detail-main-photo{aspect-ratio:auto}
-.detail-photo-frame{width:100%;aspect-ratio:4/3;background:#f3efe7;border-radius:30px;display:flex;align-items:center;justify-content:center;overflow:hidden}
-.detail-photo-thumb{aspect-ratio:4/3;background:#f3efe7;border-radius:22px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.detail-photo-strip img{display:block;width:100%;height:auto;object-fit:contain;background:transparent;border-radius:22px}
+.detail-photo-frame{width:100%;background:#f3efe7;border-radius:30px;overflow:hidden;line-height:0}
+.detail-photo-thumb{width:100%;background:#f3efe7;border-radius:22px;overflow:hidden;line-height:0}
 .detail-compatibilities{display:flex;align-items:center;margin:22px 0 26px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:15px 0}
 .detail-compatibility{flex:1;padding:0 15px;border-right:1px solid var(--line);display:flex;flex-direction:column;gap:4px}
 .detail-compatibility:first-child{padding-left:0}
 .detail-compatibility:last-child{border-right:0}
 .detail-compatibility span{font-size:11px;font-weight:900;color:var(--muted);letter-spacing:.1em;text-transform:uppercase}
 .detail-compatibility strong{font-size:15px;color:var(--ink)}
-@media(max-width:800px){.detail-compatibilities{display:grid;grid-template-columns:repeat(3,1fr)}.detail-compatibility{padding:0 8px}.detail-compatibility strong{font-size:14px}.detail-photo-frame{aspect-ratio:4/3}.detail-photo-thumb{aspect-ratio:4/3}}
+@media(max-width:800px){.detail-compatibilities{display:grid;grid-template-columns:repeat(3,1fr)}.detail-compatibility{padding:0 8px}.detail-compatibility strong{font-size:14px}}
