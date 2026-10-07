@@ -22,13 +22,13 @@ export default async function CatPage({ params }: { params: Promise<{ slug: stri
         <section className="detail-showcase">
           <div className="detail-visual">
             {cat.photos?.[0] ? (
-              <img className="detail-main-photo" src={cat.photos[0]} alt={`Photo de ${cat.name}`} />
+              <div className="detail-photo-frame"><img className="detail-main-photo" src={cat.photos[0]} alt={`Photo de ${cat.name}`} /></div>
             ) : (
               <div className="detail-main-photo cat-photo-empty">Photo à venir</div>
             )}
             <div className="detail-photo-strip">
               {cat.photos?.slice(1).map((photo) => (
-                <img key={photo} src={photo} srcSet={`${photo} 1x`} alt={`Photo de ${cat.name}`} />
+                <div className="detail-photo-thumb"><img key={photo} src={photo} srcSet={`${photo} 1x`} alt={`Photo de ${cat.name}`} /></div>
               ))}
             </div>
           </div>
