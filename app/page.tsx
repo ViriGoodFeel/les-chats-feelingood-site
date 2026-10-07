@@ -4,7 +4,13 @@ import type { Cat } from "@/lib/types";
 import { publicCatPath } from "@/lib/cats";
 
 export default async function Home() {
-  const cats = await publicCats();
+  let cats: Cat[] = [];
+  try {
+    cats = await publicCats();
+  } catch {
+    // Le site public doit rester accessible même si Supabase est momentanément indisponible.
+    cats = [];
+  }
 
   return (
    <>
