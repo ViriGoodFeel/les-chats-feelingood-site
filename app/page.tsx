@@ -134,35 +134,7 @@ export default async function Home() {
 
   <p>Une rencontre avec {cat.name} peut changer une vie. Contactez-nous.</p>
 
-  <Link className="btn" href={publicCatPath(cat.slug)}>
-
-    Voir sa fiche
-
-  </Link>
-
-  <a className="btn secondary" href="tel:+33605048325">
-
-    📞 Appeler
-
-  </a>
-
-  <a className="btn secondary" href="sms:+33605048325">
-
-    💬 SMS
-
-  </a>
-
-  <a
-
-    className="btn secondary"
-
-    href="mailto:leschatsdefeelingood@outlook.fr?subject=Demande adoption"
-
-  >
-
-    ✉️ Email
-
-  </a>
+  <Link className="btn" href={`/contact?chat=${encodeURIComponent(cat.name)}`}>♡ Je veux l’adopter</Link>
 
 </div>
             </article>
