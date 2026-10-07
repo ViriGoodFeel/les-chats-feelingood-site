@@ -439,3 +439,83 @@ margin-bottom:10px;
   flex-wrap:wrap;
 
 }
+
+
+/* ===== RESPONSIVE MOBILE : bannière héro ===== */
+@media (max-width: 800px){
+  .hero-banner{
+    display:block;
+    min-height:360px;
+    height:360px;
+    margin:18px 0 0;
+    border-radius:24px;
+    background-size:cover;
+    background-position:center center;
+  }
+
+  .hero-overlay{
+    margin:-45px 16px 30px;
+    padding:22px 18px;
+    border-radius:24px;
+  }
+
+  .hero-overlay h1{
+    font-size:28px;
+  }
+
+  .hero-overlay p{
+    font-size:15px;
+    margin-bottom:22px;
+  }
+
+  .hero-buttons{
+    gap:10px;
+    flex-direction:column;
+  }
+
+  .hero-buttons .btn{
+    width:100%;
+  }
+
+  .top-banner{
+    position:relative;
+    top:auto;
+    width:calc(100% - 24px);
+    margin:12px auto;
+    padding:12px 14px;
+    border-radius:20px;
+  }
+
+  .nav-premium{
+    gap:12px;
+  }
+
+  .logo-small{
+    width:52px;
+    height:52px;
+    border-radius:14px;
+  }
+
+  .logo-zone h2{
+    font-size:18px;
+  }
+
+  .logo-zone span{
+    font-size:12px;
+  }
+
+  .main-nav{
+    width:100%;
+    gap:8px;
+    font-size:14px;
+    justify-content:flex-start;
+  }
+
+  .main-nav a{
+    padding:7px 4px;
+  }
+
+  .don-btn{
+    padding:9px 12px !important;
+  }
+}
