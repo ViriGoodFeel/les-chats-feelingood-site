@@ -1,20 +1,20 @@
 :root {
-  --cream:#fff9f3;
-  --ink:#2c2118;
-  --muted:#75675b;
-  --brand:#df7049;
-  --brand-dark:#bd4f2c;
-  --green:#4f8b57;
-  --red:#b94a48;
+  --cream:#f7f6f1;
+  --ink:#34413c;
+  --muted:#68736e;
+  --brand:#78978b;
+  --brand-dark:#5f7f73;
+  --green:#7f9e91;
+  --red:#b77f7d;
   --card:#ffffff;
-  --line:#eadfd2;
-  --soft:#f5ece3;
+  --line:#dce4df;
+  --soft:#edf2ef;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{
   margin:0;
-  background:linear-gradient(to bottom,#fffaf5,#f3ebe2);
+  background:linear-gradient(to bottom,#fafaf7,#f0f3f0);
   color:var(--ink);
   line-height:1.6;
   font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
@@ -32,7 +32,7 @@ img{max-width:100%;height:auto}
   z-index:1000;
   width:calc(100% - 32px);
   margin:14px auto;
-  background:rgba(255,255,255,.84);
+  background:rgba(250,251,249,.88);
   backdrop-filter:blur(18px);
   border-radius:22px;
   box-shadow:0 8px 30px rgba(0,0,0,.08);
@@ -113,7 +113,7 @@ img{max-width:100%;height:auto}
 .btn.secondary{background:var(--green);color:white}
 .btn.secondary:hover{background:#356b42}
 .btn.red{background:var(--red)}
-.btn.light{background:#fff;color:var(--ink);border:1px solid var(--line)}
+.btn.light{background:#f8faf8;color:var(--ink);border:1px solid var(--line)}
 .full-btn{width:100%}
 
 .intro-section{padding:72px 0 30px;max-width:780px}
@@ -134,13 +134,13 @@ img{max-width:100%;height:auto}
 .card-body{padding:20px}
 .card-body p{margin:0;color:var(--muted)}
 .card-body h2{font-size:28px;line-height:1.1;margin:5px 0}
-.cat-photo{width:100%;aspect-ratio:4/3;object-fit:cover;background:#f1e6dc;display:block}
+.cat-photo{width:100%;aspect-ratio:4/3;object-fit:cover;background:#e9efec;display:block}
 .cat-photo-empty{display:grid;place-items:center;color:var(--muted)}
 .cat-meta{font-weight:700}
 .cat-teaser{min-height:54px}
 .badge{border-radius:999px;padding:6px 11px;font-size:12px;font-weight:900;display:inline-flex;width:max-content}
 .badge.green{background:#e3f3e8;color:#1e6c3c}
-.badge.gray{background:#eee;color:#555}
+.badge.gray{background:#eef0ef;color:#5e6763}
 .stack{display:grid;gap:14px}
 
 .empty-state,.how-section,.feature-section,.support-section,.about-section,.contact-section{
@@ -162,7 +162,7 @@ img{max-width:100%;height:auto}
 
 .feature-section{
   display:grid;grid-template-columns:1.4fr .6fr;gap:30px;align-items:center;
-  background:#fff;border-radius:30px;padding:38px;box-shadow:0 10px 30px rgba(0,0,0,.06);
+  background:#fbfcfa;border-radius:30px;padding:38px;box-shadow:0 10px 30px rgba(0,0,0,.06);
 }
 .feature-section h2,.support-section h2,.about-section h2,.contact-section h2{
   font-size:clamp(28px,4vw,42px);line-height:1.08;letter-spacing:-.025em;margin:0 0 12px;
@@ -173,10 +173,10 @@ img{max-width:100%;height:auto}
 
 .support-section{
   display:flex;justify-content:space-between;align-items:center;gap:28px;
-  background:#2f241d;color:white;border-radius:30px;padding:36px;
+  background:#3e514a;color:white;border-radius:30px;padding:36px;
 }
-.support-section .eyebrow{color:#f2b29a}
-.support-section p{color:#eadfd7;max-width:720px}
+.support-section .eyebrow{color:#c8d8d1}
+.support-section p{color:#e2ebe7;max-width:720px}
 
 .about-section{
   display:grid;grid-template-columns:1fr 1fr;gap:50px;padding:20px 0;
@@ -203,11 +203,11 @@ img{max-width:100%;height:auto}
 .panel{background:#fff;border:1px solid var(--line);border-radius:24px;padding:24px}
 .field{display:grid;gap:7px}
 label{font-weight:800}
-input,select,textarea{font:inherit;border:1px solid #d8cbbd;border-radius:14px;padding:13px;background:#fff;width:100%}
+input,select,textarea{font:inherit;border:1px solid #cfdad5;border-radius:14px;padding:13px;background:#fff;width:100%}
 textarea{min-height:120px}
-.notice{padding:14px 16px;border-radius:16px;background:#fff3cd;color:#664d03}
-.success{padding:14px 16px;border-radius:16px;background:#dff4e7;color:#195d32}
-.danger{padding:14px 16px;border-radius:16px;background:#f8d7da;color:#842029}
+.notice{padding:14px 16px;border-radius:16px;background:#f2eee0;color:#6d684f}
+.success{padding:14px 16px;border-radius:16px;background:#e5f0eb;color:#45695d}
+.danger{padding:14px 16px;border-radius:16px;background:#f2e0e0;color:#875858}
 .photo-preview{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:12px}
 .photo-preview img{aspect-ratio:1;object-fit:cover;border-radius:16px}
 .admin-layout{display:grid;grid-template-columns:260px 1fr;min-height:100vh}
