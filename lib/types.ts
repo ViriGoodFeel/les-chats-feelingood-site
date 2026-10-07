@@ -20,4 +20,7 @@ export type Cat = {
   published_at: string | null;
   adopted_at: string | null;
   photos: string[];
+  compatibility_cats?: string;
+  compatibility_dogs?: string;
+  compatibility_children?: string;
 };
