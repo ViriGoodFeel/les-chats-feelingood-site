@@ -215,3 +215,7 @@ input,select,textarea{font:inherit;border:1px solid #d1d7cc;border-radius:14px;p
 .detail-photo-frame .detail-main-photo{display:block!important;width:100%!important;height:auto!important;aspect-ratio:auto!important;object-fit:contain!important;border-radius:30px}
 .detail-photo-thumb{aspect-ratio:auto!important;height:auto!important;background:transparent!important;overflow:visible!important}
 .detail-photo-thumb img{display:block!important;width:100%!important;height:auto!important;aspect-ratio:auto!important;object-fit:contain!important;border-radius:22px}
+
+/* Angles arrondis des petites photos */
+.detail-photo-thumb,
+.detail-photo-thumb img{border-radius:22px!important}
