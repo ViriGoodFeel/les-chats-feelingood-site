@@ -187,3 +187,13 @@ input,select,textarea{font:inherit;border:1px solid #d1d7cc;border-radius:14px;p
   .detail-fact{min-height:88px}
   .detail-story p,.detail-health p,.detail-bottom-cta p{font-size:17px}
 }
+
+/* Photos et compatibilités */
+.detail-main-photo{object-fit:contain;height:auto;min-height:320px;max-height:620px;background:#eeeae1}
+.detail-photo-strip{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+.detail-photo-strip img{object-fit:contain;height:auto;max-height:260px;background:#eeeae1}
+.detail-compatibilities{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0 24px}
+.detail-compatibility{padding:16px;border:1px solid var(--line);border-radius:20px;background:#f5f3ec;display:flex;flex-direction:column;gap:6px}
+.detail-compatibility span{font-size:13px;font-weight:800;color:var(--muted)}
+.detail-compatibility strong{font-size:17px;color:var(--ink)}
+@media(max-width:800px){.detail-compatibilities{grid-template-columns:1fr 1fr}.detail-compatibility:last-child{grid-column:1/-1}.detail-main-photo{min-height:220px;max-height:none}.detail-photo-strip{grid-template-columns:1fr 1fr}}
