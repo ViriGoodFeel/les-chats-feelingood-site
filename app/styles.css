@@ -127,3 +127,63 @@ input,select,textarea{font:inherit;border:1px solid #d1d7cc;border-radius:14px;p
   .detail-content p{font-size:17.5px}
   .detail-facts .fact{min-height:84px}
 }
+
+/* Nouvelle fiche adoption - essai visuel */
+.detail-page{padding-bottom:70px}
+.detail-topbar{padding-top:24px}
+.detail-back{padding:8px 0 18px}
+.detail-back a{font-weight:800;text-decoration:none;color:var(--brand-dark)}
+.detail-showcase{display:grid;grid-template-columns:1.12fr .88fr;gap:42px;align-items:center;background:var(--card);border-radius:36px;padding:28px;box-shadow:0 18px 45px rgba(67,80,68,.08)}
+.detail-visual{display:grid;gap:14px}
+.detail-main-photo{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:30px;display:block;background:#e9e3d7}
+.detail-photo-strip{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.detail-photo-strip img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:22px;display:block}
+.detail-intro{padding:14px 8px}
+.detail-kicker{display:block;margin-top:22px;color:var(--brand-dark);font-size:13px;font-weight:900;letter-spacing:.14em;text-transform:uppercase}
+.detail-intro h1{font-size:clamp(58px,7vw,96px);line-height:.9;letter-spacing:-.05em;margin:10px 0 10px}
+.detail-age{font-size:24px;color:var(--muted);margin:0}
+.detail-age span{color:var(--brand)}
+.detail-promise{font-size:18px;line-height:1.65;color:#626961;margin:28px 0}
+.detail-facts{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:24px 0}
+.detail-fact{min-height:104px;padding:17px 14px;border:1px solid var(--line);border-radius:20px;background:#fff;display:flex;flex-direction:column;justify-content:center;gap:5px}
+.detail-fact span{font-size:13px;font-weight:800;color:var(--muted)}
+.detail-fact strong{font-size:19px;color:var(--ink)}
+.detail-main-cta{width:100%;min-height:54px;font-size:16px}
+.detail-story-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:28px 0}
+.detail-story{background:#fffdf9;border-radius:30px;padding:34px;box-shadow:0 10px 30px rgba(67,80,68,.05)}
+.detail-section-label{display:block;color:var(--brand-dark);font-size:12px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;margin-bottom:10px}
+.detail-story h2,.detail-health h2,.detail-bottom-cta h2{font-size:clamp(28px,3.5vw,42px);line-height:1.08;letter-spacing:-.03em;margin:0 0 16px}
+.detail-story p,.detail-health p,.detail-bottom-cta p{font-size:18px;line-height:1.72;color:#626961;margin:0}
+.detail-health{display:grid;grid-template-columns:.9fr 1.1fr;gap:44px;background:#edf1e9;border-radius:30px;padding:36px;margin:24px 0}
+.detail-health p+p{margin-top:18px}
+.detail-bottom-cta{display:flex;justify-content:space-between;align-items:center;gap:28px;background:#5b705e;color:#fff;border-radius:30px;padding:36px;margin-top:24px}
+.detail-bottom-cta .detail-section-label{color:#dce7d9}
+.detail-bottom-cta p{color:#edf2eb;max-width:680px}
+.detail-bottom-cta .btn{background:#f8f5ec;color:var(--ink);white-space:nowrap}
+@media(max-width:800px){
+  .detail-topbar{padding-top:14px}
+  .detail-showcase{grid-template-columns:1fr;gap:22px;border-radius:30px;padding:14px}
+  .detail-main-photo{aspect-ratio:1/1;border-radius:25px}
+  .detail-photo-strip{gap:10px}
+  .detail-photo-strip img{border-radius:18px}
+  .detail-intro{padding:8px 8px 14px}
+  .detail-kicker{margin-top:18px}
+  .detail-intro h1{font-size:58px}
+  .detail-promise{font-size:17px;margin:22px 0}
+  .detail-facts{grid-template-columns:1fr 1fr}
+  .detail-fact:last-child{grid-column:1/-1}
+  .detail-story-grid,.detail-health{grid-template-columns:1fr}
+  .detail-story{padding:28px}
+  .detail-health{padding:28px;gap:20px}
+  .detail-bottom-cta{display:grid;padding:28px;gap:20px}
+  .detail-bottom-cta .btn{width:100%;white-space:normal}
+}
+@media(max-width:460px){
+  .detail-page{padding-bottom:40px}
+  .detail-back{font-size:14px}
+  .detail-intro h1{font-size:54px}
+  .detail-age{font-size:21px}
+  .detail-facts{gap:8px}
+  .detail-fact{min-height:88px}
+  .detail-story p,.detail-health p,.detail-bottom-cta p{font-size:17px}
+}
