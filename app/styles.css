@@ -445,8 +445,8 @@ margin-bottom:10px;
 @media (max-width: 800px){
   .hero-banner{
     display:block;
-    min-height:280px;
-    height:280px;
+    min-height:240px;
+    height:240px;
     margin:18px 0 0;
     border-radius:24px;
     background-size:cover;
