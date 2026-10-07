@@ -27,7 +27,7 @@ export default async function CatPage({ params }: { params: Promise<{ slug: stri
               <div className="detail-main-photo cat-photo-empty">Photo à venir</div>
             )}
             <div className="detail-photo-strip">
-              {cat.photos?.slice(1, 3).map((photo) => (
+              {cat.photos?.slice(1).map((photo) => (
                 <img key={photo} src={photo} srcSet={`${photo} 1x`} alt={`Photo de ${cat.name}`} />
               ))}
             </div>
@@ -46,6 +46,12 @@ export default async function CatPage({ params }: { params: Promise<{ slug: stri
               <div className="detail-fact"><span>Stérilisé</span><strong>{cat.sterilized ? "Oui" : "Non"}</strong></div>
               <div className="detail-fact"><span>Vacciné</span><strong>{cat.vaccinated ? "Oui" : "Non"}</strong></div>
               <div className="detail-fact"><span>Frais d’adoption</span><strong>{cat.adoption_fee}</strong></div>
+            </div>
+
+            <div className="detail-compatibilities" aria-label="Compatibilités">
+              <div className="detail-compatibility"><span>Chats</span><strong>{cat.compatibility_cats || "À définir"}</strong></div>
+              <div className="detail-compatibility"><span>Chiens</span><strong>{cat.compatibility_dogs || "À définir"}</strong></div>
+              <div className="detail-compatibility"><span>Enfants</span><strong>{cat.compatibility_children || "À définir"}</strong></div>
             </div>
 
             {cat.status !== "adopte" && (
