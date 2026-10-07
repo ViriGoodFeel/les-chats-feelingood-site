@@ -209,3 +209,9 @@ input,select,textarea{font:inherit;border:1px solid #d1d7cc;border-radius:14px;p
 .detail-compatibility span{font-size:11px;font-weight:900;color:var(--muted);letter-spacing:.1em;text-transform:uppercase}
 .detail-compatibility strong{font-size:15px;color:var(--ink)}
 @media(max-width:800px){.detail-compatibilities{display:grid;grid-template-columns:repeat(3,1fr)}.detail-compatibility{padding:0 8px}.detail-compatibility strong{font-size:14px}}
+
+/* Correction finale : conserver intégralement le ratio réel des photos */
+.detail-photo-frame{aspect-ratio:auto!important;height:auto!important;background:transparent!important;overflow:visible!important}
+.detail-photo-frame .detail-main-photo{display:block!important;width:100%!important;height:auto!important;aspect-ratio:auto!important;object-fit:contain!important;border-radius:30px}
+.detail-photo-thumb{aspect-ratio:auto!important;height:auto!important;background:transparent!important;overflow:visible!important}
+.detail-photo-thumb img{display:block!important;width:100%!important;height:auto!important;aspect-ratio:auto!important;object-fit:contain!important;border-radius:22px}
