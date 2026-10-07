@@ -20,7 +20,7 @@ export type Cat = {
   published_at: string | null;
   adopted_at: string | null;
   photos: string[];
-  compatibility_cats?: string;
-  compatibility_dogs?: string;
-  compatibility_children?: string;
+  compatibility_cats?: "Compatible" | "Non compatible" | "Inconnu";
+  compatibility_dogs?: "Compatible" | "Non compatible" | "Inconnu";
+  compatibility_children?: "Compatible" | "Non compatible" | "Inconnu";
 };
