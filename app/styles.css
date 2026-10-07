@@ -219,3 +219,18 @@ input,select,textarea{font:inherit;border:1px solid #d1d7cc;border-radius:14px;p
 /* Angles arrondis des petites photos */
 .detail-photo-thumb,
 .detail-photo-thumb img{border-radius:22px!important}
+
+/* Arrondi visible des vignettes : le conteneur masque réellement les coins */
+.detail-photo-thumb{
+  border-radius:22px!important;
+  overflow:hidden!important;
+  clip-path:inset(0 round 22px)!important;
+}
+.detail-photo-thumb img{
+  border-radius:22px!important;
+  overflow:hidden!important;
+}
+@media(max-width:460px){
+  .detail-photo-thumb{border-radius:18px!important;clip-path:inset(0 round 18px)!important}
+  .detail-photo-thumb img{border-radius:18px!important}
+}
