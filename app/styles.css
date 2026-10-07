@@ -244,3 +244,12 @@ input,select,textarea{font:inherit;border:1px solid #d1d7cc;border-radius:14px;p
   .detail-compatibility span{font-size:10px!important;letter-spacing:.06em!important}
   .detail-compatibility strong{font-size:13px!important;line-height:1.2!important}
 }
+
+/* Angles arrondis de toutes les photos de la fiche */
+.detail-photo-frame,
+.detail-photo-frame .detail-main-photo,
+.detail-photo-thumb,
+.detail-photo-thumb img{
+  border-radius:26px!important;
+  overflow:hidden!important;
+}
