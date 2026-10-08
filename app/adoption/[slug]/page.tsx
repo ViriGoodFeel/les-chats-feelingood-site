@@ -78,7 +78,9 @@ export default async function CatPage({ params }: { params: Promise<{ slug: stri
           </div>
         </section>
 
-        {cat.video_url ? <section className="detail-video"><div><span className="detail-section-label">Une petite vidéo de {cat.name}</span><h2>Faites connaissance autrement</h2></div><div className="detail-video-frame"><iframe src={videoEmbedUrl(cat.video_url)!} title={`Vidéo de ${cat.name}`} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen /></div></section> : null}\n\n        <section className="detail-story-grid">
+        {cat.video_url ? <section className="detail-video"><div><span className="detail-section-label">Une petite vidéo de {cat.name}</span><h2>Faites connaissance autrement</h2></div><div className="detail-video-frame"><iframe src={videoEmbedUrl(cat.video_url)!} title={`Vidéo de ${cat.name}`} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen /></div></section> : null}
+
+        <section className="detail-story-grid">
           <article className="detail-story">
             <span className="detail-section-label">Sa personnalité</span>
             <h2>Un caractère à découvrir</h2>
