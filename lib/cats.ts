@@ -17,26 +17,18 @@ export const catSchema = z.object({
   compatibility_children: z.enum(["Compatible", "Non compatible", "Inconnu"]).default("Inconnu"),
   fiv_status: z.enum(["Négatif", "Positif", "Non testé"]).default("Non testé"),
   felv_status: z.enum(["Négatif", "Positif", "Non testé"]).default("Non testé"),
+  video_url: z.string().trim().url("Le lien vidéo doit être une URL valide.").or(z.literal("")).default(""),
   status: z.enum(["brouillon", "publie", "adopte"]).default("brouillon"),
 });
 
 export type CatFormValues = z.infer<typeof catSchema>;
 
 export function slugify(value: string) {
-  return value
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/(^-|-$)+/g, "") || "chat";
+  return value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)+/g, "") || "chat";
 }
-
 export function statusLabel(status: CatStatus) {
   if (status === "publie") return "Publié";
   if (status === "adopte") return "Adopté";
   return "Brouillon";
 }
-
-export function publicCatPath(slug: string) {
-  return `/adoption/${slug}`;
-}
+export function publicCatPath(slug: string) { return `/adoption/${slug}`; }
