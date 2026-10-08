@@ -84,10 +84,6 @@ export default async function CatPage({ params }: { params: Promise<{ slug: stri
           <div>
             <p>{cat.health_condition}</p>
             <p>{cat.special_needs || "Aucun besoin particulier connu."}</p>
-            <div className="detail-health-tests">
-              <div><span className="detail-health-check">□</span><span>FIV testé</span></div>
-              <div><span className="detail-health-check">□</span><span>FeLV testé</span></div>
-            </div>
           </div>
         </section>
 
