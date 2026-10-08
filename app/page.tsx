@@ -129,7 +129,7 @@ export default async function Home() {
           <div className="numbers-grid">
             <article><strong>{stats.cats_current}</strong><span>chats actuellement à accompagner</span></article>
             <article><strong>{stats.cats_rescued}</strong><span>chats recueillis depuis la création</span></article>
-            <article><strong>{stats.volunteer_statement}</strong><span>notre fonctionnement</span></article>
+            <article className="number-card-volunteer"><strong>100%</strong><span>{stats.volunteer_statement.replace(/^100%\s*[·-]?\s*/,"")}</span></article>
             <article><strong>{stats.vet_costs}</strong><span>de frais vétérinaires</span></article>
           </div>
         </section>
