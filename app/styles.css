@@ -336,3 +336,9 @@ input,select,textarea{font:inherit;border:1px solid #d1d7cc;border-radius:14px;p
 .detail-fact span{font-size:12px}
 .detail-fact strong{font-size:18px}
 @media(max-width:460px){.detail-facts{gap:8px}.detail-fact{min-height:72px;padding:11px 14px}}
+
+
+/* Correction définitive : les deux informations restent côte à côte */
+.detail-facts{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+.detail-facts .detail-fact{grid-column:auto!important;width:100%!important}
+@media(max-width:460px){.detail-facts{grid-template-columns:repeat(2,minmax(0,1fr))!important}.detail-facts .detail-fact{grid-column:auto!important;width:100%!important}}
