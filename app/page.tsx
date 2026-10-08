@@ -1,12 +1,14 @@
 import Link from "next/link";
-import { publicCats } from "@/lib/supabase-rest";
+import { getSiteStats, publicCats } from "@/lib/supabase-rest";
 import type { Cat } from "@/lib/types";
 import { publicCatPath } from "@/lib/cats";
 
 export default async function Home() {
   let cats: Cat[] = [];
+  let stats = { cats_current: 30 };
   try {
     cats = await publicCats();
+    stats = await getSiteStats();
   } catch {
     cats = [];
   }
@@ -125,7 +127,7 @@ export default async function Home() {
             <p>Chaque chiffre représente des vies, des soins, du temps et un engagement quotidien.</p>
           </div>
           <div className="numbers-grid">
-            <article><strong>30</strong><span>chats actuellement à accompagner</span></article>
+            <article><strong>{stats.cats_current}</strong><span>chats actuellement à accompagner</span></article>
             <article><strong>2020</strong><span>année de création de l’association</span></article>
             <article><strong>20+</strong><span>années d’expérience auprès des chats</span></article>
             <article><strong>47</strong><span>Lot-et-Garonne, notre territoire d’action</span></article>
