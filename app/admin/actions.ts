@@ -41,9 +41,12 @@ export async function markAdopted(id: string) { await requireAdmin(); await patc
 
 export async function updateSiteStats(formData: FormData) {
   await requireAdmin();
-  const value = Number(formData.get("cats_current"));
-  if (!Number.isInteger(value) || value < 0) throw new Error("Nombre de chats invalide.");
-  await updateSiteStatsDb(value);
+  const catsCurrent = Number(formData.get("cats_current"));
+  const catsRescued = String(formData.get("cats_rescued") || "").trim();
+  const volunteerStatement = String(formData.get("volunteer_statement") || "").trim();
+  const vetCosts = String(formData.get("vet_costs") || "").trim();
+  if (!Number.isInteger(catsCurrent) || catsCurrent < 0 || !catsRescued || !volunteerStatement || !vetCosts) throw new Error("Chiffres invalides.");
+  await updateSiteStatsDb({ catsCurrent, catsRescued, volunteerStatement, vetCosts });
   revalidatePath("/");
-  redirect("/admin?message=chiffre-modifie");
+  redirect("/admin?message=chiffres-modifies");
 }
