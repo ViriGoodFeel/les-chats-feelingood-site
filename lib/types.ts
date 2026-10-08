@@ -23,4 +23,6 @@ export type Cat = {
   compatibility_cats?: "Compatible" | "Non compatible" | "Inconnu";
   compatibility_dogs?: "Compatible" | "Non compatible" | "Inconnu";
   compatibility_children?: "Compatible" | "Non compatible" | "Inconnu";
+  fiv_status?: "Négatif" | "Positif" | "Non testé";
+  felv_status?: "Négatif" | "Positif" | "Non testé";
 };
