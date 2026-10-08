@@ -3,7 +3,7 @@
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import { catSchema, slugify } from "@/lib/cats";
-import { findSlug, getCatById, insertCat, patchCat, removeCat, uploadPhoto } from "@/lib/supabase-rest";
+import { findSlug, getCatById, insertCat, patchCat, removeCat, uploadPhoto, updateSiteStats as updateSiteStatsDb } from "@/lib/supabase-rest";
 import { requireAdmin } from "@/lib/auth";
 
 function bool(value: FormDataEntryValue | null) { return value === "true"; }
@@ -38,3 +38,12 @@ export async function updateCat(id: string, existingPhotos: string[], formData: 
 }
 export async function deleteCat(id: string) { await requireAdmin(); await removeCat(id); revalidatePath("/"); redirect("/admin?message=chat-supprime"); }
 export async function markAdopted(id: string) { await requireAdmin(); await patchCat(id, { status: "adopte", adopted_at: new Date().toISOString() }); revalidatePath("/"); redirect("/admin?message=chat-adopte"); }
+
+export async function updateSiteStats(formData: FormData) {
+  await requireAdmin();
+  const value = Number(formData.get("cats_current"));
+  if (!Number.isInteger(value) || value < 0) throw new Error("Nombre de chats invalide.");
+  await updateSiteStatsDb(value);
+  revalidatePath("/");
+  redirect("/admin?message=chiffre-modifie");
+}
