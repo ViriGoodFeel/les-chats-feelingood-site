@@ -3,6 +3,23 @@ import { notFound } from "next/navigation";
 import { getCatBySlug } from "@/lib/supabase-rest";
 import type { Cat } from "@/lib/types";
 
+function videoEmbedUrl(value?: string | null) {
+  if (!value) return null;
+  try {
+    const url = new URL(value);
+    if (url.hostname === "youtu.be") return `https://www.youtube.com/embed/${url.pathname.slice(1).split("/")[0]}`;
+    if (url.hostname.endsWith("youtube.com")) {
+      const id = url.searchParams.get("v") || url.pathname.split("/").filter(Boolean).pop();
+      if (id && (url.pathname.startsWith("/shorts/") || url.pathname.startsWith("/embed/") || url.searchParams.has("v"))) return `https://www.youtube.com/embed/${id}`;
+    }
+    if (url.hostname === "vimeo.com") {
+      const id = url.pathname.split("/").filter(Boolean).pop();
+      if (id && /^\d+$/.test(id)) return `https://player.vimeo.com/video/${id}`;
+    }
+  } catch {}
+  return null;
+}
+
 export default async function CatPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const data = await getCatBySlug(slug);
