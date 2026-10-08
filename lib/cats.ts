@@ -15,6 +15,8 @@ export const catSchema = z.object({
   compatibility_cats: z.enum(["Compatible", "Non compatible", "Inconnu"]).default("Inconnu"),
   compatibility_dogs: z.enum(["Compatible", "Non compatible", "Inconnu"]).default("Inconnu"),
   compatibility_children: z.enum(["Compatible", "Non compatible", "Inconnu"]).default("Inconnu"),
+  fiv_status: z.enum(["Négatif", "Positif", "Non testé"]).default("Non testé"),
+  felv_status: z.enum(["Négatif", "Positif", "Non testé"]).default("Non testé"),
   status: z.enum(["brouillon", "publie", "adopte"]).default("brouillon"),
 });
 
