@@ -350,3 +350,15 @@ input,select,textarea{font:inherit;border:1px solid #d1d7cc;border-radius:14px;p
 .photo-lightbox img{display:block;max-width:94vw;max-height:94vh;width:auto;height:auto;object-fit:contain;border-radius:18px;box-shadow:0 20px 70px rgba(0,0,0,.35);cursor:default}
 .photo-lightbox-close{position:absolute;top:18px;right:22px;width:46px;height:46px;border:0;border-radius:50%;background:rgba(255,255,255,.92);color:#4b5049;font-size:32px;line-height:1;cursor:pointer;z-index:2}
 @media(max-width:600px){.photo-lightbox{padding:14px}.photo-lightbox img{max-width:96vw;max-height:90vh;border-radius:12px}.photo-lightbox-close{top:12px;right:12px;width:42px;height:42px;font-size:29px}}
+
+
+/* Bloc Notre différence */
+.knowledge-section{display:grid;grid-template-columns:.9fr 1.1fr;gap:42px;align-items:start;margin:24px 0 72px;padding:38px;border-radius:30px;background:#f7f4ea;box-shadow:0 10px 30px rgba(67,80,68,.05)}
+.knowledge-heading h2{font-size:clamp(30px,4vw,46px);line-height:1.08;letter-spacing:-.025em;margin:0 0 14px}
+.knowledge-heading p{font-size:18px;line-height:1.7;color:var(--muted);margin:0}
+.knowledge-points{display:grid;gap:12px}
+.knowledge-points article{background:var(--card);border-radius:22px;padding:22px 24px;box-shadow:0 6px 20px rgba(67,80,68,.04)}
+.knowledge-number{display:block;color:var(--brand-dark);font-size:12px;font-weight:900;letter-spacing:.12em;margin-bottom:7px}
+.knowledge-points h3{font-size:21px;line-height:1.2;margin:0 0 6px}
+.knowledge-points p{font-size:16px;line-height:1.6;color:var(--muted);margin:0}
+@media(max-width:800px){.knowledge-section{grid-template-columns:1fr;gap:24px;margin:18px 0 52px;padding:26px 22px;border-radius:26px}.knowledge-heading h2{font-size:34px}.knowledge-heading p{font-size:17px}.knowledge-points article{padding:20px}.knowledge-points h3{font-size:20px}}
