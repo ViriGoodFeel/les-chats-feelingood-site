@@ -61,19 +61,25 @@ export default async function Home() {
           </div>
           <div className="knowledge-points">
             <article>
-              <span className="knowledge-number">01</span>
-              <h3>Une connaissance individuelle</h3>
-              <p>Nous prenons le temps d’observer chaque chat et de comprendre sa personnalité, pour vous présenter une réalité fidèle à son quotidien.</p>
+              <span className="knowledge-icon" aria-hidden="true">🐾</span>
+              <div>
+                <h3>Une connaissance individuelle</h3>
+                <p>Nous prenons le temps d’observer chaque chat et de comprendre sa personnalité, pour vous présenter une réalité fidèle à son quotidien.</p>
+              </div>
             </article>
             <article>
-              <span className="knowledge-number">02</span>
-              <h3>Une adoption adaptée</h3>
-              <p>Nous cherchons la famille qui correspond au chat, et pas simplement une famille disponible. L’objectif est de construire une relation durable.</p>
+              <span className="knowledge-icon" aria-hidden="true">♡</span>
+              <div>
+                <h3>Une adoption adaptée</h3>
+                <p>Nous cherchons la famille qui correspond au chat, et pas simplement une famille disponible. L’objectif est de construire une relation durable.</p>
+              </div>
             </article>
             <article>
-              <span className="knowledge-number">03</span>
-              <h3>Un accompagnement dans la durée</h3>
-              <p>Avec plus de 20 ans d’expérience auprès des chats, nous restons disponibles pour conseiller les adoptants avant, pendant et après l’arrivée.</p>
+              <span className="knowledge-icon" aria-hidden="true">✦</span>
+              <div>
+                <h3>Un accompagnement dans la durée</h3>
+                <p>Avec plus de 20 ans d’expérience auprès des chats, nous restons disponibles pour conseiller les adoptants avant, pendant et après l’arrivée.</p>
+              </div>
             </article>
           </div>
         </section>
@@ -110,28 +116,38 @@ export default async function Home() {
           </section>
         )}
 
-        <section className="how-section">
-          <div className="section-heading">
-            <span className="eyebrow">Comment ça marche ?</span>
-            <h2>Adopter, c’est une rencontre. Nous sommes là pour vous accompagner.</h2>
-            <p>Vous n’avez pas besoin d’être expert des chats. Nous prenons le temps de vous écouter, de vous conseiller et de vous accompagner.</p>
+        <section className="numbers-section" aria-labelledby="numbers-title">
+          <div className="numbers-heading">
+            <div>
+              <span className="eyebrow">Les Chats de Feelin’ Good</span>
+              <h2 id="numbers-title">En quelques repères</h2>
+            </div>
+            <p>Chaque chiffre représente des vies, des soins, du temps et un engagement quotidien.</p>
           </div>
-          <div className="steps-grid">
-            <article className="step-card">
-              <span className="step-number">01</span>
-              <h3>Je découvre</h3>
-              <p>Vous découvrez les chats et leur personnalité pour voir lequel pourrait correspondre à votre quotidien.</p>
-            </article>
-            <article className="step-card">
-              <span className="step-number">02</span>
-              <h3>Je présente mon projet</h3>
-              <p>Vous nous racontez simplement votre environnement, vos habitudes et ce que vous recherchez.</p>
-            </article>
-            <article className="step-card">
-              <span className="step-number">03</span>
-              <h3>Nous échangeons</h3>
-              <p>Nous vous accompagnons avant, pendant et après l’adoption pour favoriser une belle rencontre.</p>
-            </article>
+          <div className="numbers-grid">
+            <article><strong>30</strong><span>chats actuellement à accompagner</span></article>
+            <article><strong>2020</strong><span>année de création de l’association</span></article>
+            <article><strong>20+</strong><span>années d’expérience auprès des chats</span></article>
+            <article><strong>47</strong><span>Lot-et-Garonne, notre territoire d’action</span></article>
+          </div>
+        </section>
+
+        <section className="adoption-steps-section" aria-labelledby="adoption-steps-title">
+          <div className="section-heading">
+            <span className="eyebrow">Comment ça se passe ?</span>
+            <h2 id="adoption-steps-title">Les étapes d’une adoption</h2>
+            <p>Un parcours simple et bienveillant, pour le bien du chat et le vôtre.</p>
+          </div>
+          <div className="adoption-steps">
+            <article><span>1</span><strong>Découvrir<br />un chat</strong></article>
+            <i aria-hidden="true">›</i>
+            <article><span>2</span><strong>Échanger<br />avec nous</strong></article>
+            <i aria-hidden="true">›</i>
+            <article><span>3</span><strong>Rencontrer<br />le chat</strong></article>
+            <i aria-hidden="true">›</i>
+            <article><span>4</span><strong>Préparer<br />son arrivée</strong></article>
+            <i aria-hidden="true">›</i>
+            <article><span>5</span><strong>Être accompagné<br />après l’adoption</strong></article>
           </div>
         </section>
 
