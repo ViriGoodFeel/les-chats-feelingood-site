@@ -53,6 +53,31 @@ export default async function Home() {
           <p>Prenez le temps de faire connaissance avec ceux qui attendent aujourd’hui une famille. Nous vous aidons à trouver le compagnon qui correspond vraiment à votre vie.</p>
         </section>
 
+        <section className="knowledge-section" aria-labelledby="knowledge-title">
+          <div className="knowledge-heading">
+            <span className="eyebrow">Notre différence</span>
+            <h2 id="knowledge-title">Nous connaissons chaque chat.</h2>
+            <p>Une adoption réussie commence par une vraie connaissance de l’animal : son caractère, ses habitudes, ses besoins et ce qui lui convient réellement.</p>
+          </div>
+          <div className="knowledge-points">
+            <article>
+              <span className="knowledge-number">01</span>
+              <h3>Une connaissance individuelle</h3>
+              <p>Nous prenons le temps d’observer chaque chat et de comprendre sa personnalité, pour vous présenter une réalité fidèle à son quotidien.</p>
+            </article>
+            <article>
+              <span className="knowledge-number">02</span>
+              <h3>Une adoption adaptée</h3>
+              <p>Nous cherchons la famille qui correspond au chat, et pas simplement une famille disponible. L’objectif est de construire une relation durable.</p>
+            </article>
+            <article>
+              <span className="knowledge-number">03</span>
+              <h3>Un accompagnement dans la durée</h3>
+              <p>Avec plus de 20 ans d’expérience auprès des chats, nous restons disponibles pour conseiller les adoptants avant, pendant et après l’arrivée.</p>
+            </article>
+          </div>
+        </section>
+
         <section id="adoption" className="grid adoption-grid">
           {cats.map((cat) => (
             <article className="card cat-card" key={cat.id}>
