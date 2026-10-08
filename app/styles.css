@@ -253,3 +253,50 @@ input,select,textarea{font:inherit;border:1px solid #d1d7cc;border-radius:14px;p
   border-radius:26px!important;
   overflow:hidden!important;
 }
+
+
+/* Tests FIV / FeLV : présentation claire dans la section santé */
+.detail-health-tests{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:12px;
+  margin-top:24px;
+}
+.detail-health-tests>div{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  min-height:58px;
+  padding:12px 16px;
+  background:rgba(255,255,255,.72);
+  border:1px solid #dfe4da;
+  border-radius:16px;
+}
+.detail-health-tests span{
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--muted);
+}
+.detail-health-tests strong{
+  font-size:15px;
+  font-weight:800;
+  color:var(--brand-dark);
+  background:#e7eee5;
+  border-radius:999px;
+  padding:5px 10px;
+  white-space:nowrap;
+}
+@media(max-width:800px){
+  .detail-health-tests{
+    grid-template-columns:1fr;
+    gap:9px;
+    margin-top:20px;
+  }
+  .detail-health-tests>div{
+    min-height:54px;
+    padding:11px 14px;
+  }
+}
