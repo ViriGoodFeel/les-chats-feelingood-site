@@ -300,3 +300,28 @@ input,select,textarea{font:inherit;border:1px solid #d1d7cc;border-radius:14px;p
     padding:11px 14px;
   }
 }
+
+
+/* Tests FIV / FeLV : petites cases discrètes */
+.detail-health-tests>div{
+  justify-content:flex-start!important;
+  gap:9px!important;
+  min-height:48px!important;
+  padding:10px 14px!important;
+}
+.detail-health-tests>div>span:first-child{
+  font-size:17px!important;
+  font-weight:400!important;
+  letter-spacing:0!important;
+  color:var(--brand-dark)!important;
+  background:transparent!important;
+  border-radius:0!important;
+  padding:0!important;
+}
+.detail-health-tests>div>span:last-child{
+  font-size:14px!important;
+  font-weight:400!important;
+  letter-spacing:0!important;
+  text-transform:none!important;
+  color:var(--ink)!important;
+}
