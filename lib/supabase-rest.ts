@@ -4,7 +4,7 @@ function config() {
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
   const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
   if (!url || !key) throw new Error("Variables Supabase manquantes.");
-  return { url: url.replace(/\/$/, ""), key };
+  return { url: url.replace(/\\/$/, ""), key };
 }
 async function request<T>(path: string, init: RequestInit = {}) {
   const { url, key } = config();
@@ -22,3 +22,40 @@ export async function insertCat(cat: Partial<Cat>) { return request<Cat[]>("/res
 export async function patchCat(id: string, cat: Partial<Cat>) { return request<Cat[]>(`/rest/v1/cats?id=eq.${id}`, { method: "PATCH", body: JSON.stringify(cat) }); }
 export async function removeCat(id: string) { return request<null>(`/rest/v1/cats?id=eq.${id}`, { method: "DELETE" }); }
 export async function uploadPhoto(path: string, file: File) { const { url, key } = config(); const res = await fetch(`${url}/storage/v1/object/cat-photos/${path}`, { method: "POST", headers: { apikey: key, Authorization: `Bearer ${key}`, "Content-Type": file.type || "image/jpeg" }, body: file }); if (!res.ok) throw new Error(await res.text()); return `${url}/storage/v1/object/public/cat-photos/${path}`; }
+
+export type SiteStats = {
+  id: boolean;
+  cats_current: number;
+  cats_rescued: string;
+  volunteer_statement: string;
+  vet_costs: string;
+};
+
+export async function getSiteStats(): Promise<SiteStats> {
+  const rows = await request<SiteStats[]>("/rest/v1/site_stats?select=id,cats_current,cats_rescued,volunteer_statement,vet_costs&id=eq.true");
+  return rows[0] || {
+    id: true,
+    cats_current: 30,
+    cats_rescued: "À renseigner",
+    volunteer_statement: "100% bénévole · aucun salarié · aucun bénéfice",
+    vet_costs: "À renseigner"
+  };
+}
+
+export async function updateSiteStats(values: {
+  catsCurrent: number;
+  catsRescued: string;
+  volunteerStatement: string;
+  vetCosts: string;
+}) {
+  return request<SiteStats[]>("/rest/v1/site_stats?id=eq.true", {
+    method: "PATCH",
+    body: JSON.stringify({
+      cats_current: values.catsCurrent,
+      cats_rescued: values.catsRescued,
+      volunteer_statement: values.volunteerStatement,
+      vet_costs: values.vetCosts,
+      updated_at: new Date().toISOString()
+    })
+  });
+}
