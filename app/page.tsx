@@ -5,7 +5,7 @@ import { publicCatPath } from "@/lib/cats";
 
 export default async function Home() {
   let cats: Cat[] = [];
-  let stats = { cats_current: 30 };
+  let stats = { cats_current: 30, cats_rescued: "À renseigner", volunteer_statement: "100% bénévole · aucun salarié · aucun bénéfice", vet_costs: "À renseigner" };
   try {
     cats = await publicCats();
     stats = await getSiteStats();
@@ -128,9 +128,9 @@ export default async function Home() {
           </div>
           <div className="numbers-grid">
             <article><strong>{stats.cats_current}</strong><span>chats actuellement à accompagner</span></article>
-            <article><strong>2020</strong><span>année de création de l’association</span></article>
-            <article><strong>20+</strong><span>années d’expérience auprès des chats</span></article>
-            <article><strong>47</strong><span>Lot-et-Garonne, notre territoire d’action</span></article>
+            <article><strong>{stats.cats_rescued}</strong><span>chats recueillis depuis la création</span></article>
+            <article><strong>{stats.volunteer_statement}</strong><span>notre fonctionnement</span></article>
+            <article><strong>{stats.vet_costs}</strong><span>de frais vétérinaires</span></article>
           </div>
         </section>
 
