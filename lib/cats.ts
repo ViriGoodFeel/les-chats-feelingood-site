@@ -12,6 +12,9 @@ export const catSchema = z.object({
   rescue_story: z.string().trim().min(1, "L'histoire du sauvetage est obligatoire."),
   adoption_fee: z.string().trim().min(1, "Les frais d'adoption sont obligatoires."),
   special_needs: z.string().trim().default("Aucun besoin particulier connu."),
+  compatibility_cats: z.enum(["Compatible", "Non compatible", "Inconnu"]).default("Inconnu"),
+  compatibility_dogs: z.enum(["Compatible", "Non compatible", "Inconnu"]).default("Inconnu"),
+  compatibility_children: z.enum(["Compatible", "Non compatible", "Inconnu"]).default("Inconnu"),
   status: z.enum(["brouillon", "publie", "adopte"]).default("brouillon"),
 });
 
