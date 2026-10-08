@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getCatBySlug } from "@/lib/supabase-rest";
 import type { Cat } from "@/lib/types";
+import CatGallery from "../cat-gallery";
 
 function videoEmbedUrl(value?: string | null) {
   if (!value) return null;
@@ -37,18 +38,7 @@ export default async function CatPage({ params }: { params: Promise<{ slug: stri
         <div className="detail-back"><Link href="/#adoption">← Retour aux chats à l’adoption</Link></div>
 
         <section className="detail-showcase">
-          <div className="detail-visual">
-            {cat.photos?.[0] ? (
-              <div className="detail-photo-frame"><img className="detail-main-photo" src={cat.photos[0]} alt={`Photo de ${cat.name}`} /></div>
-            ) : (
-              <div className="detail-main-photo cat-photo-empty">Photo à venir</div>
-            )}
-            <div className="detail-photo-strip">
-              {cat.photos?.slice(1).map((photo) => (
-                <div className="detail-photo-thumb"><img key={photo} src={photo} srcSet={`${photo} 1x`} alt={`Photo de ${cat.name}`} /></div>
-              ))}
-            </div>
-          </div>
+          <CatGallery photos={cat.photos || []} name={cat.name} />
 
           <div className="detail-intro">
             <span className={`badge ${cat.status === "adopte" ? "gray" : "green"}`}>
