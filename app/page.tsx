@@ -78,7 +78,8 @@ export default async function Home() {
             <span className="quick-card-copy"><strong>Je veux aider</strong><small>Participer aux soins, aux repas et aux sauvetages.</small><b>Soutenir l’association <span aria-hidden="true">↗</span></b></span>
           </a>
         </section>
-\n        <section className="intro-section">
+
+        <section className="intro-section">
           <span className="eyebrow">Adoption</span>
           <h2>Un regard, une personnalité, une histoire… et peut-être un coup de cœur.</h2>
           <p>Prenez le temps de faire connaissance avec ceux qui attendent aujourd’hui une famille. Nous vous aidons à trouver le compagnon qui correspond vraiment à votre vie.</p>
