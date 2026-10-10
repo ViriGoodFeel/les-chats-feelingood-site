@@ -2138,3 +2138,14 @@ input:focus,select:focus,textarea:focus{outline:3px solid #bdeeff!important;bord
    letter-spacing:.12em!important;
  }
 }
+
+
+/* Harmoniser les couleurs des initiales dans les titres */
+.intro-section h2::first-letter,
+.section-heading h2::first-letter,
+.hero-welcome-only .hero-welcome-copy > .eyebrow::first-letter,
+.hero-welcome-heading span::first-letter,
+.hero-welcome-heading strong::first-letter,
+.hero-welcome-heading em::first-letter{
+  color:inherit!important;
+}
