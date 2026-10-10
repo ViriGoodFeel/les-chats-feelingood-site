@@ -1914,3 +1914,19 @@ input:focus,select:focus,textarea:focus{outline:3px solid #bdeeff!important;bord
 .hero-welcome-only .btn.light{display:inline-flex!important;align-items:center!important;gap:12px!important;padding:15px 24px!important;border:0!important;border-radius:7px 24px 24px 24px!important;background:#193f3a!important;color:#fff!important;box-shadow:5px 5px 0 #f6d66c!important;font-weight:800!important;text-decoration:none!important}
 .hero-welcome-only .hero-welcome-photo{position:relative!important;z-index:1!important;display:block!important;width:100%!important;height:clamp(300px,38vw,490px)!important;object-fit:cover!important;object-position:center!important;border-radius:48% 48% 22px 22px!important;border:8px solid rgba(255,255,255,.58)!important;box-shadow:18px 18px 0 rgba(25,63,58,.12)!important;opacity:1!important;transform:rotate(2deg)!important}
 @media(max-width:760px){.hero-welcome-only{grid-template-columns:1fr!important;gap:24px!important;padding:28px 22px 42px!important;margin:12px!important;min-height:0!important}.hero-welcome-only:before{right:-8%;top:32%;width:180px!important;height:180px!important}.hero-welcome-only:after{display:none!important}.hero-welcome-heading{font-size:clamp(48px,14vw,72px)!important}.hero-welcome-only .hero-welcome-photo{height:300px!important;max-width:90%!important;margin:0 auto!important;transform:rotate(1.5deg)!important}}
+
+
+/* Afficher la photo entière dans le bandeau sans couper les chats */
+.hero-welcome-only .hero-welcome-photo{
+  object-fit:contain!important;
+  object-position:center!important;
+  height:auto!important;
+  max-height:490px!important;
+  aspect-ratio:auto!important;
+  background:rgba(255,255,255,.25)!important;
+  border-radius:28px!important;
+  transform:none!important;
+}
+@media(max-width:760px){
+  .hero-welcome-only .hero-welcome-photo{width:100%!important;max-width:100%!important;max-height:none!important;height:auto!important}
+}
