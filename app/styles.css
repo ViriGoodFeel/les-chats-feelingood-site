@@ -922,3 +922,12 @@ a:hover{color:#c95f43}
 .hero-banner-wide .hero-buttons .btn{background:#fbf4e6!important;color:#40513b!important;border:0!important;}
 .hero-banner-wide::before{background:linear-gradient(90deg,rgba(15,22,13,.28) 0%,rgba(15,22,13,.42) 48%,rgba(15,22,13,.12) 100%)!important;}
 @media(max-width:800px){.hero-banner-wide .hero-overlay{background:rgba(22,31,20,.25)!important;border-radius:18px!important;padding:22px 18px!important;}}
+
+
+/* Supprimer le panneau de chiffres posé sur la photo */
+.hero-banner-wide .hero-stats{display:none!important;}
+.hero-banner-wide .hero-content{grid-template-columns:minmax(0,1fr)!important;grid-template-areas:"welcome"!important;justify-items:center!important;}
+.hero-banner-wide .hero-overlay{grid-column:1!important;grid-row:1!important;width:min(720px,100%)!important;max-width:720px!important;text-align:center!important;}
+.hero-banner-wide .hero-overlay p{margin-left:auto!important;margin-right:auto!important;}
+.hero-banner-wide .hero-buttons{justify-content:center!important;}
+@media(max-width:800px){.hero-banner-wide .hero-content{grid-template-areas:"welcome"!important}.hero-banner-wide .hero-overlay{grid-column:1!important;grid-row:1!important}}
