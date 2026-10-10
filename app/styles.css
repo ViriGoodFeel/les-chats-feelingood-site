@@ -1601,3 +1601,9 @@ input:focus,select:focus,textarea:focus{outline:3px solid #bdeeff!important;bord
 .hero-welcome-heading em{
   color:#168f8b!important;
 }
+
+
+/* Contraste du nom : « de Feelin’ Good » dans une couleur complémentaire */
+.hero-welcome-heading span,
+.hero-welcome-heading strong{color:#168f8b!important}
+.hero-welcome-heading em{color:#d97955!important}
