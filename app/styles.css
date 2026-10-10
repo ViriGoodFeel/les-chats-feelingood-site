@@ -1032,3 +1032,18 @@ a:hover{color:#c95f43}
 
 /* Demande ciblée : masquer uniquement le cadre des chiffres, sans autre changement */
 .hero-banner-wide .hero-stats{display:none!important;}
+
+
+/* Nouvelle composition : bienvenue à gauche, photo entière dans un cadre arrondi à droite */
+.hero-banner-wide{position:relative!important;display:block!important;height:clamp(330px,29vw,440px)!important;min-height:330px!important;max-height:440px!important;overflow:hidden!important;background:#f5f0e5!important;border-radius:0!important;}
+.hero-banner-wide::before{display:none!important;background:none!important;}
+.hero-banner-wide .hero-photo{position:absolute!important;left:auto!important;right:clamp(18px,4vw,64px)!important;top:6%!important;bottom:6%!important;width:48%!important;height:88%!important;min-height:0!important;z-index:1!important;border-radius:28px!important;overflow:hidden!important;background-color:#e9e5d9!important;background-size:contain!important;background-position:center center!important;background-repeat:no-repeat!important;box-shadow:0 10px 28px rgba(45,50,35,.12)!important;}
+.hero-banner-wide .hero-content{position:relative!important;z-index:2!important;display:block!important;width:min(1240px,100%)!important;max-width:1240px!important;height:100%!important;min-height:0!important;margin:0 auto!important;padding:24px 0!important;}
+.hero-banner-wide .hero-overlay{position:absolute!important;left:clamp(24px,4vw,64px)!important;top:50%!important;right:auto!important;bottom:auto!important;transform:translateY(-50%)!important;width:42%!important;max-width:500px!important;margin:0!important;padding:18px 20px!important;text-align:left!important;background:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important;backdrop-filter:none!important;}
+.hero-banner-wide .hero-overlay .eyebrow{color:#647450!important;text-shadow:none!important;}
+.hero-banner-wide .hero-overlay h1{color:#3f493d!important;text-shadow:none!important;font-size:clamp(38px,4.2vw,64px)!important;line-height:1!important;}
+.hero-banner-wide .hero-title-script{color:#947958!important;text-shadow:none!important;}
+.hero-banner-wide .hero-location,.hero-banner-wide .hero-overlay p{color:#596052!important;text-shadow:none!important;}
+.hero-banner-wide .hero-buttons{justify-content:flex-start!important;}
+.hero-banner-wide .hero-stats{display:none!important;}
+@media(max-width:800px){.hero-banner-wide{height:auto!important;min-height:0!important;max-height:none!important;padding:16px 0!important}.hero-banner-wide .hero-photo{position:relative!important;left:auto!important;right:auto!important;top:auto!important;bottom:auto!important;display:block!important;width:calc(100% - 28px)!important;height:clamp(210px,62vw,330px)!important;margin:0 auto!important;border-radius:22px!important;background-size:contain!important}.hero-banner-wide .hero-content{height:auto!important;min-height:0!important;padding:0!important;width:100%!important}.hero-banner-wide .hero-overlay{position:relative!important;left:auto!important;top:auto!important;right:auto!important;bottom:auto!important;transform:none!important;width:calc(100% - 32px)!important;max-width:none!important;margin:0 auto 16px!important;padding:14px 4px!important;text-align:center!important}.hero-banner-wide .hero-overlay h1{font-size:clamp(36px,9vw,50px)!important}.hero-banner-wide .hero-buttons{justify-content:center!important}}
