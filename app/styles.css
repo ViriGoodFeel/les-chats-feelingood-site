@@ -1851,17 +1851,3 @@ input:focus,select:focus,textarea:focus{outline:3px solid #bdeeff!important;bord
   .hero-welcome-heading,.hero-welcome-heading span,.hero-welcome-heading strong,.hero-welcome-heading em{letter-spacing:-.04em!important}
   .hero-welcome-only .hero-welcome-copy > .eyebrow{font-size:clamp(18px,5vw,23px)!important}
 }
-
-
-/* Photo des trois chats en arrière-plan, très pâle derrière le texte */
-.hero-welcome-only{
-  background-image:
-    linear-gradient(115deg,rgba(220,248,240,.91) 0%,rgba(220,244,246,.88) 48%,rgba(250,231,240,.86) 100%),
-    url('/C5C1574B-22FA-4A3D-A016-541A645A6209.png')!important;
-  background-size:cover!important;
-  background-position:center 45%!important;
-  background-repeat:no-repeat!important;
-}
-.hero-welcome-only .hero-welcome-photo{
-  opacity:0!important;
-}
