@@ -1274,3 +1274,8 @@ a:hover{color:#c95f43}
   object-position:center!important;
   image-rendering:auto!important;
 }
+
+.hero-welcome-title{display:flex;flex-direction:column;align-items:flex-start;gap:0;margin:22px 0 18px;color:#27372f;line-height:1.02;letter-spacing:-.045em}
+.hero-welcome-title span:first-child{font-family:'DM Sans',sans-serif;font-size:clamp(18px,2vw,25px);font-weight:600;letter-spacing:-.02em;margin-bottom:12px}
+.hero-welcome-title strong{font-family:'Playfair Display',Georgia,serif;font-size:clamp(46px,5vw,70px);font-weight:700;line-height:.98}
+.hero-welcome-title span:not(:first-child){font-family:'Caveat',cursive;font-size:clamp(31px,3vw,42px);font-weight:600;color:#d45e40;margin:4px 0}
