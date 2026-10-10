@@ -35,16 +35,23 @@ export default async function Home() {
         </div>
       </header>
 
-      <section className="hero-banner" aria-label="Les Chats de Feelin’ Good">
+      <section className="hero-banner hero-banner-wide" aria-label="Les Chats de Feelin’ Good">
         <div className="hero-photo" role="img" aria-label="Un chat de l’association" />
-        <div className="hero-overlay">
-          <span className="eyebrow">Bienvenue chez Les Chats de Feelin’ Good</span>
-          <span className="hero-location">Association de protection féline · Lot-et-Garonne</span>
-          <h1><span className="hero-title-main">Et si votre prochain compagnon</span><span className="hero-title-script">vous attendait ici ?</span></h1>
-          <p>Chaque chat mérite une famille, de la douceur et une vraie seconde chance. Nous les sauvons, les soignons et les accompagnons jusqu’à leur nouvelle vie.</p>
-          <div className="hero-buttons">
-            <a href="#adoption" className="btn">Découvrir les chats</a>
-            <a href="#famille" className="btn secondary">Devenir famille d’accueil</a>
+        <div className="hero-content">
+          <div className="hero-overlay">
+            <span className="eyebrow">Bienvenue chez</span>
+            <h1><span className="hero-title-main">Les Chats</span><span className="hero-title-script">de Feelin’ Good</span></h1>
+            <span className="hero-location">Association de protection féline · Lot-et-Garonne</span>
+            <p>Chaque chat mérite une famille, de la douceur et une vraie seconde chance.</p>
+            <div className="hero-buttons">
+              <a href="#adoption" className="btn light">Découvrir nos chats à l’adoption →</a>
+            </div>
+          </div>
+          <div className="hero-stats" aria-label="Les chiffres de l’association">
+            <article><span className="hero-stat-icon">✿</span><strong>{stats.cats_current}</strong><span>chats actuellement à accompagner</span></article>
+            <article><span className="hero-stat-icon">♡</span><strong>{stats.cats_rescued}</strong><span>chats recueillis depuis la création</span></article>
+            <article><span className="hero-stat-icon">♧</span><strong>{stats.volunteer_statement.startsWith("100%") ? "100% bénévole" : stats.volunteer_statement}</strong><span>{stats.volunteer_statement.startsWith("100%") ? stats.volunteer_statement.replace(/^100%\s*[·-]?\s*/,"") : "Un engagement au service des chats"}</span></article>
+            <article><span className="hero-stat-icon">＋</span><strong>{stats.vet_costs}</strong><span>de frais vétérinaires</span></article>
           </div>
         </div>
       </section>
