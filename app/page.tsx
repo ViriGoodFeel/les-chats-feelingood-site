@@ -59,9 +59,24 @@ export default async function Home() {
       <main className="container">
 
         <section className="quick-actions" aria-label="Comment aider les chats ?">
-          <a className="quick-action quick-adopt" href="/adoption"><span aria-hidden="true">🐾</span><strong>Je veux adopter</strong><small>Rencontrer les chats qui attendent une famille</small><b>Voir les chats →</b></a>
-          <a className="quick-action quick-foster" href="#famille"><span aria-hidden="true">🏡</span><strong>Je peux accueillir</strong><small>Offrir temporairement un foyer à un chat</small><b>Devenir famille d’accueil →</b></a>
-          <a className="quick-action quick-help" href="#soutien"><span aria-hidden="true">💚</span><strong>Je veux aider</strong><small>Contribuer aux soins, à la nourriture et aux sauvetages</small><b>Découvrir comment aider →</b></a>
+          <a className="quick-action quick-adopt" href="/adoption">
+            <span className="quick-icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64" fill="none"><path d="M12 31.5 32 14l20 17.5V51a3 3 0 0 1-3 3H15a3 3 0 0 1-3-3V31.5Z" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"/><path d="M25 54V38a7 7 0 0 1 14 0v16" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round"/><path d="M27 28c-3.5-5.2-10-2.8-9 2.2.7 3.8 7.8 7.8 9 8.5 1.2-.7 8.3-4.7 9-8.5 1-5-5.5-7.4-9-2.2Z" fill="currentColor" opacity=".8" transform="translate(8 -2) scale(.75)"/></svg>
+            </span>
+            <span className="quick-card-copy"><strong>Je veux adopter</strong><small>Rencontrer les chats qui attendent leur famille pour la vie.</small><b>Découvrir les chats <span aria-hidden="true">↗</span></b></span>
+          </a>
+          <a className="quick-action quick-foster" href="#famille">
+            <span className="quick-icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64" fill="none"><path d="m8 29 24-19 24 19" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round"/><path d="M14 27v26h36V27" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round"/><path d="M24 53V39a8 8 0 0 1 16 0v14" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round"/><path d="M32 25c-2.8-4-8-2.2-7.2 1.7.5 2.8 5.7 5.7 7.2 6.5 1.5-.8 6.7-3.7 7.2-6.5.8-3.9-4.4-5.7-7.2-1.7Z" fill="currentColor"/></svg>
+            </span>
+            <span className="quick-card-copy"><strong>Je peux accueillir</strong><small>Offrir à un chat un foyer temporaire, calme et rassurant.</small><b>Devenir famille d’accueil <span aria-hidden="true">↗</span></b></span>
+          </a>
+          <a className="quick-action quick-help" href="#soutien">
+            <span className="quick-icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64" fill="none"><path d="M32 53S10 40 10 24.5C10 13 24 9 32 20c8-11 22-7 22 4.5C54 40 32 53 32 53Z" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round"/><path d="M32 28v13M25.5 34.5h13" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round"/><path d="M13 9v8M9 13h8M49 8v7M45.5 11.5h7" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/></svg>
+            </span>
+            <span className="quick-card-copy"><strong>Je veux aider</strong><small>Participer aux soins, aux repas et aux sauvetages.</small><b>Soutenir l’association <span aria-hidden="true">↗</span></b></span>
+          </a>
         </section>
 \n        <section className="intro-section">
           <span className="eyebrow">Adoption</span>
