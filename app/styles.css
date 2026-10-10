@@ -924,7 +924,7 @@ a:hover{color:#c95f43}
 @media(max-width:800px){.hero-banner-wide .hero-overlay{background:rgba(22,31,20,.25)!important;border-radius:18px!important;padding:22px 18px!important;}}
 
 
-/* Supprimer le panneau de chiffres posé sur la photo */
+/* Panneau de chiffres retiré de la photo : version de déploiement */
 .hero-banner-wide .hero-stats{display:none!important;}
 .hero-banner-wide .hero-content{grid-template-columns:minmax(0,1fr)!important;grid-template-areas:"welcome"!important;justify-items:center!important;}
 .hero-banner-wide .hero-overlay{grid-column:1!important;grid-row:1!important;width:min(720px,100%)!important;max-width:720px!important;text-align:center!important;}
