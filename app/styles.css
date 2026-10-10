@@ -761,3 +761,34 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
  .support-section,.about-section,.contact-section{border-radius:20px}
 }
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+
+/* Renforcer la personnalité visuelle : couleurs plus franches, contraste et énergie */
+:root{--cream:#fff5e8;--ink:#29372f;--muted:#656c63;--brand:#285646;--brand-dark:#173d30;--green:#dbe8cf;--red:#d56e50;--card:#fffdf8;--line:#ead8c4;--soft:#f8e1cb}
+body{background:linear-gradient(180deg,#fff5e8 0%,#f7eadb 48%,#f2e8d8 100%);color:#29372f}
+.top-banner{background:#fffaf2;border:1px solid #ead8c4;box-shadow:0 10px 30px rgba(77,48,26,.1)}
+.main-nav .don-btn,.don-btn{background:#d56e50!important;color:#fffaf2!important}
+.btn{background:#285646;color:#fffaf2}
+.btn.secondary{background:#f3d9c1;color:#49372c;border:1px solid #e7c5a7}
+.btn.light{background:#fffaf2;color:#285646;border:1px solid #d8e1d2}
+.hero-banner{border:1px solid #e8d2b9;box-shadow:0 22px 52px rgba(77,48,26,.16)}
+.hero-banner::before{background:linear-gradient(90deg,rgba(255,245,232,.98) 0%,rgba(255,245,232,.91) 32%,rgba(255,245,232,.3) 66%,rgba(255,245,232,0) 100%)}
+.hero-overlay h1{color:#513629}
+.hero-title-script{color:#c95f43;text-shadow:0 1px 0 rgba(255,255,255,.4)}
+.hero-overlay .eyebrow,.eyebrow{color:#b65b40}
+.intro-section h2,.knowledge-heading h2,.section-heading h2,.numbers-heading h2,.support-section h2,.about-section h2,.contact-section h2{color:#285646}
+.knowledge-section{background:#e8efdf;border-color:#d3dfc8}
+.knowledge-points article{background:#fffdf8;border-color:#d9e2d0}
+.cat-card{border-color:#e9d4bd;box-shadow:0 9px 25px rgba(77,48,26,.09)}
+.badge.green{background:#dbe8cf;color:#285646}
+.cat-card .btn,.full-btn{background:#285646}
+.numbers-section{background:linear-gradient(130deg,#285646,#173d30);color:#fffaf2}
+.numbers-section .number{color:#f2b28f}
+.support-section{background:#f8dfca;border-color:#edc5a8}
+.support-section .btn,.support-section .button{background:#c95f43;color:white}
+.about-section{background:#fffaf2;border-color:#ead8c4}
+.contact-section{background:#e2ead9;border:1px solid #ccd9c2}
+a:hover{color:#c95f43}
+@media(max-width:700px){
+ .hero-banner::before{background:linear-gradient(0deg,rgba(255,245,232,.99) 0%,rgba(255,245,232,.92) 45%,rgba(255,245,232,.2) 100%)}
+ .hero-overlay .eyebrow,.eyebrow{letter-spacing:.1em}
+}
