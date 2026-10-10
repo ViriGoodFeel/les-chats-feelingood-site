@@ -203,6 +203,7 @@ export default async function Home() {
 
 
 
+        <div className="about-numbers-frame">
         <section className="numbers-section" aria-labelledby="numbers-title">
           <div className="numbers-heading">
             <div>
@@ -230,6 +231,8 @@ export default async function Home() {
             <p>Notre rôle ne s’arrête pas à l’adoption : nous restons disponibles pour conseiller et accompagner les adoptants dans la durée.</p>
           </div>
         </div></section>
+
+        </div>
 
         <section id="contact" className="contact-section">
           <div>
