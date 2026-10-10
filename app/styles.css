@@ -1930,3 +1930,22 @@ input:focus,select:focus,textarea:focus{outline:3px solid #bdeeff!important;bord
 @media(max-width:760px){
   .hero-welcome-only .hero-welcome-photo{width:100%!important;max-width:100%!important;max-height:none!important;height:auto!important}
 }
+
+
+/* Refonte du bandeau : palette éditoriale contemporaine, sans tons enfantins */
+.hero-welcome-only{
+  background:linear-gradient(120deg,#f0eee7 0%,#e5e8df 52%,#d8e1d9 100%)!important;
+  border-radius:24px!important;
+  box-shadow:none!important;
+  border:1px solid rgba(49,70,60,.12)!important;
+}
+.hero-welcome-only:before{background:#c4cec1!important;opacity:.5!important}
+.hero-welcome-only:after{color:#53685a!important}
+.hero-welcome-heading{color:#263c32!important}
+.hero-welcome-heading span{color:#536b58!important}
+.hero-welcome-heading strong{color:#263c32!important}
+.hero-welcome-heading em{color:#8c765e!important}
+.hero-welcome-only .hero-welcome-copy > .eyebrow{color:#536b58!important}
+.hero-welcome-only p{color:#46554b!important}
+.hero-welcome-only .btn.light{background:#344b3d!important;color:#fff!important;box-shadow:4px 4px 0 #b9c2b4!important;border-radius:6px 18px 18px 18px!important}
+.hero-welcome-only .hero-welcome-photo{border-color:rgba(255,255,255,.75)!important;box-shadow:12px 12px 0 rgba(52,75,61,.12)!important;border-radius:24px!important}
