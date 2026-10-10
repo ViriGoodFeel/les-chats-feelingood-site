@@ -1522,3 +1522,13 @@ input:focus,select:focus,textarea:focus{outline:3px solid #bdeeff!important;bord
     line-height:1.12!important;
   }
 }
+
+
+/* Remplace les accents vert foncé par des tons plus joyeux */
+:root{--ink:#49334f!important;--brand-dark:#6337b8!important}
+.numbers-section{background:linear-gradient(120deg,#6337b8,#e4488c)!important}
+.quick-adopt{color:#6337b8!important}
+.hero-welcome-only .hero-title-main{color:#6337b8!important}
+.hero-welcome-only .hero-location{color:#704c72!important}
+.hero-welcome-only p{color:#604c62!important}
+.hero-welcome-heading{color:#6337b8!important}
