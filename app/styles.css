@@ -1515,7 +1515,7 @@ input:focus,select:focus,textarea:focus{outline:3px solid #bdeeff!important;bord
   text-shadow:2px 2px 0 #fff0a8,4px 4px 0 rgba(141,93,232,.16)!important;
   transform:rotate(-1.2deg);
 }
-.hero-welcome-only .hero-welcome-copy > .eyebrow::first-letter{color:#8d5de8!important}
+.hero-welcome-only .hero-welcome-copy > .eyebrow::first-letter{color:#e44868!important}
 @media(max-width:760px){
   .hero-welcome-only .hero-welcome-copy > .eyebrow{
     font-size:clamp(32px,8.5vw,42px)!important;
