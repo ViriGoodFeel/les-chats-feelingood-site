@@ -792,3 +792,19 @@ a:hover{color:#c95f43}
  .hero-banner::before{background:linear-gradient(0deg,rgba(255,245,232,.99) 0%,rgba(255,245,232,.92) 45%,rgba(255,245,232,.2) 100%)}
  .hero-overlay .eyebrow,.eyebrow{letter-spacing:.1em}
 }
+
+/* Correctif de contraste : texte clair sur fond pêche = illisible */
+.support-section{background:#f8dfca!important;color:#3d382f!important}
+.support-section p,.support-section li,.support-section .description{color:#51473d!important;opacity:1!important}
+.support-section .eyebrow,.support-section .section-label{color:#a84f35!important;opacity:1!important}
+.support-section h2,.support-section h3{color:#285646!important}
+.support-section a:not(.btn),.support-section strong{color:#285646}
+.support-section .btn,.support-section .button{background:#b94f35!important;color:#fff!important;border:2px solid #b94f35!important}
+.support-section .btn:hover,.support-section .button:hover{background:#963d29!important}
+.about-section{color:#373d35}
+.about-section p,.about-section li{color:#555b52!important;opacity:1!important}
+.about-section .eyebrow,.about-section .section-label{color:#a84f35!important}
+@media(max-width:700px){
+ .support-section p{font-size:16px;line-height:1.65}
+ .support-section .eyebrow,.support-section .section-label{font-size:12px;letter-spacing:.08em}
+}
