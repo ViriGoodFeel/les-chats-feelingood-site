@@ -1587,3 +1587,8 @@ input:focus,select:focus,textarea:focus{outline:3px solid #bdeeff!important;bord
  .numbers-grid article{min-height:78px!important;padding:12px 8px!important}
  .numbers-grid strong{font-size:23px!important}
 }
+
+
+/* Rapprocher le titre d’adoption de la section « Nous connaissons chaque chat » */
+.knowledge-section{margin-bottom:18px!important;padding-bottom:24px!important}
+.intro-section{margin-top:0!important;padding-top:22px!important}
