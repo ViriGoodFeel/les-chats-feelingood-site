@@ -1201,3 +1201,37 @@ a:hover{color:#c95f43}
     background-color:transparent!important;
   }
 }
+
+
+/* Bandeau d’accueil sans photo ni cadre : texte centré et épuré */
+.hero-welcome-only{
+  box-sizing:border-box!important;
+  width:100%!important;
+  max-width:none!important;
+  min-height:0!important;
+  margin:0!important;
+  padding:58px 24px 54px!important;
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:center!important;
+  justify-content:center!important;
+  gap:16px!important;
+  text-align:center!important;
+  background:#f5efe2!important;
+  border:0!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+}
+.hero-welcome-only .eyebrow{color:#657653!important;font-size:clamp(25px,3vw,38px)!important}
+.hero-welcome-only h1{display:flex!important;flex-direction:column!important;align-items:center!important;gap:0!important;margin:0!important;line-height:1.02!important}
+.hero-welcome-only .hero-title-main{color:#354437!important}
+.hero-welcome-only .hero-title-script{color:#947958!important}
+.hero-welcome-only .hero-location{color:#596052!important}
+.hero-welcome-only p{max-width:680px!important;margin:0!important;color:#596052!important;font-size:clamp(16px,2vw,21px)!important;line-height:1.55!important}
+.hero-welcome-only .hero-buttons{margin-top:8px!important}
+@media(max-width:760px){
+ .hero-welcome-only{padding:42px 22px 38px!important;gap:14px!important}
+ .hero-welcome-only h1{font-size:clamp(36px,10vw,52px)!important}
+ .hero-welcome-only .hero-location{font-size:14px!important}
+ .hero-welcome-only p{font-size:16px!important}
+}
