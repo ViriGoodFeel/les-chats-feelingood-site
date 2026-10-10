@@ -125,6 +125,8 @@ export default async function Home() {
           <p>Prenez le temps de faire connaissance avec ceux qui attendent aujourd’hui une famille. Nous vous aidons à trouver le compagnon qui correspond vraiment à votre vie.</p>
         </section>
 
+
+
         <section id="adoption" className="grid adoption-grid">
           {cats.map((cat) => (
             <article className="card cat-card" key={cat.id}>
