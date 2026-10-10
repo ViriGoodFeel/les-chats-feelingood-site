@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
 :root {
   --cream:#fbf8f0;
   --ink:#4b5049;
@@ -626,7 +628,7 @@ input:focus,select:focus,textarea:focus{outline:3px solid rgba(191,111,84,.18);b
 
 
 /* Typographie éditoriale : lecture douce, claire et confortable */
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
 body{
   font-family:'DM Sans',system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
   font-size:16px;
