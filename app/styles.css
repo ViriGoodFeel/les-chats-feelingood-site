@@ -1000,3 +1000,8 @@ a:hover{color:#c95f43}
 .hero-banner-wide .hero-stats strong{font-size:clamp(16px,1.4vw,21px)!important;line-height:1.1!important;}
 .hero-banner-wide .hero-stats article>span:last-child{font-size:11px!important;line-height:1.25!important;}
 @media(max-width:800px){.hero-banner-wide .hero-content{position:relative!important}.hero-banner-wide .hero-stats{position:relative!important;top:auto!important;right:auto!important;left:auto!important;width:100%!important;max-width:none!important;margin:0!important;padding:12px 15px!important;transform:none!important}.hero-banner-wide .hero-stats article>span:last-child{font-size:12px!important}}
+
+
+/* Panneau placé dans l'angle supérieur droit du bandeau */
+.hero-banner-wide .hero-stats{top:4px!important;right:4px!important;margin:0!important;}
+@media(max-width:800px){.hero-banner-wide .hero-stats{top:auto!important;right:auto!important;}}
