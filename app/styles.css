@@ -1302,3 +1302,41 @@ a:hover{color:#c95f43}
 .section-heading h2,.intro-section h2{ text-decoration-color:#f7c84a; }
 .hero-welcome-heading em{color:#f04f68}
 .card,.step-card,.empty-state{border:1px solid rgba(240,79,104,.10)}
+
+/* Harmonisation de la palette sur toutes les pages publiques */
+:root{
+ --cream:#fff0c2;--ink:#303843;--muted:#596874;--brand:#f04f68;
+ --brand-dark:#4e36a5;--green:#00a9b7;--red:#f04f68;
+ --card:#ffffff;--line:#f6c7d2;--soft:#d8f7ef;
+}
+.adoption-page,.cat-detail,.cat-detail-page,.site-page{
+ background:linear-gradient(135deg,#fff0c2 0%,#ffe2e9 35%,#e6ddff 68%,#d8f7ef 100%)!important;
+ color:var(--ink)!important;
+}
+.adoption-header,.adoption-filter-card,.adoption-page .cat-card,
+.cat-detail,.panel,.hero,.contact-section,.empty-state,.step-card,.card{
+ background:rgba(255,255,255,.94)!important;
+}
+.adoption-header{border-bottom:2px solid #f6c7d2!important}
+.adoption-logo span,.adoption-menu{color:#4e36a5!important}
+.adoption-title-shape{background:linear-gradient(135deg,#f04f68,#8b5bd6,#00a9b7)!important}
+.adoption-hero>p,.adoption-count{color:#596874!important}
+.adoption-filter-field label{color:#303843!important}
+.adoption-filter-field select,input,select,textarea{border-color:#f1b6c4!important}
+.adoption-page .badge.green,.badge.green{background:#d8f7ef!important;color:#126f67!important}
+.adoption-page .cat-card .btn,.cat-detail .btn,.btn,.button,.don-btn{
+ background:linear-gradient(135deg,#f04f68,#ff7c59)!important;color:white!important;
+}
+.adoption-page .cat-card .btn:hover,.btn:hover,.button:hover,.don-btn:hover{
+ background:linear-gradient(135deg,#d93651,#ed603e)!important;
+}
+.btn.secondary{background:linear-gradient(135deg,#00a9b7,#26bd91)!important}
+.feature-section{background:linear-gradient(135deg,#ffe2e9,#fff0c2)!important}
+.feature-note,.welcome-note,.notice{background:#e6ddff!important;color:#4e36a5!important}
+.support-section{background:linear-gradient(120deg,#4e36a5,#00a9b7)!important;color:#fff!important}
+.support-section p{color:#fff!important}
+.success{background:#d8f7ef!important;color:#126f67!important}
+.danger{background:#ffe2e9!important;color:#873044!important}
+.sidebar{background:linear-gradient(180deg,#4e36a5,#00a9b7)!important}
+.admin-layout{background:#fff0c2}
+.cat-detail,.cat-detail-page .panel{border-color:#f6c7d2!important}
