@@ -1168,3 +1168,19 @@ a:hover{color:#c95f43}
  .quick-action small{font-size:14px!important;line-height:1.5!important}
  .quick-action b{font-size:13px!important;margin-top:4px!important}
 }
+
+
+/* Fond vert sauge pour le cadre photo du bandeau d’accueil */
+.hero-banner-wide .hero-photo{
+  background-color:#aab995!important;
+  background-blend-mode:multiply!important;
+  border-radius:28px!important;
+  box-shadow:0 12px 30px rgba(47,65,39,.18)!important;
+}
+@media(max-width:800px){
+  .hero-banner-wide .hero-photo{
+    background-color:#aab995!important;
+    background-blend-mode:multiply!important;
+    border-radius:22px!important;
+  }
+}
