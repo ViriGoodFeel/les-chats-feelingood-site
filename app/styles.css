@@ -989,3 +989,14 @@ a:hover{color:#c95f43}
 
 /* Panneau très transparent : opacité du fond à 10 % */
 .hero-banner-wide .hero-stats{background:rgba(250,248,239,.10)!important;background-color:rgba(250,248,239,.10)!important;backdrop-filter:blur(3px) saturate(110%)!important;-webkit-backdrop-filter:blur(3px) saturate(110%)!important;border:1px solid rgba(255,255,255,.35)!important;box-shadow:0 8px 24px rgba(20,35,20,.05)!important;}
+
+
+/* Cadre des chiffres compact dans l'angle supérieur droit du bandeau */
+.hero-banner-wide .hero-content{position:relative!important;}
+.hero-banner-wide .hero-stats{position:absolute!important;top:18px!important;right:0!important;bottom:auto!important;left:auto!important;transform:none!important;width:clamp(270px,25vw,350px)!important;max-width:350px!important;margin:0!important;padding:12px 15px!important;grid-template-columns:1fr 1fr!important;gap:0 12px!important;border-radius:20px!important;background:rgba(250,248,239,.10)!important;background-color:rgba(250,248,239,.10)!important;backdrop-filter:blur(2px) saturate(108%)!important;-webkit-backdrop-filter:blur(2px) saturate(108%)!important;border:1px solid rgba(255,255,255,.35)!important;box-shadow:0 6px 20px rgba(20,35,20,.04)!important;}
+.hero-banner-wide .hero-stats article{padding:8px 0 10px!important;gap:3px!important;}
+.hero-banner-wide .hero-stats article:nth-child(odd){padding-right:8px!important;}
+.hero-banner-wide .hero-stats .hero-stat-icon{width:30px!important;height:30px!important;font-size:18px!important;margin-bottom:2px!important;}
+.hero-banner-wide .hero-stats strong{font-size:clamp(16px,1.4vw,21px)!important;line-height:1.1!important;}
+.hero-banner-wide .hero-stats article>span:last-child{font-size:11px!important;line-height:1.25!important;}
+@media(max-width:800px){.hero-banner-wide .hero-content{position:relative!important}.hero-banner-wide .hero-stats{position:relative!important;top:auto!important;right:auto!important;left:auto!important;width:100%!important;max-width:none!important;margin:0!important;padding:12px 15px!important;transform:none!important}.hero-banner-wide .hero-stats article>span:last-child{font-size:12px!important}}
