@@ -52,7 +52,6 @@ export default function AdoptionFilters({ cats }: { cats: Cat[] }) {
     <>
       <div className="adoption-page-nav">
         <Link className="btn secondary" href="/">← Retour à l’accueil</Link>
-        <Link className="adoption-home-link" href="/">Les Chats de Feelin’ Good</Link>
       </div>
       <section className="adoption-filter-card" aria-label="Filtres des chats">
         <div className="adoption-filter-field"><label htmlFor="sex-filter">Sexe</label><select id="sex-filter" value={sex} onChange={(e) => setSex(e.target.value as SexFilter)}><option>Tous</option><option>Mâle</option><option>Femelle</option></select></div>
