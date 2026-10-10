@@ -1022,3 +1022,9 @@ a:hover{color:#c95f43}
 .hero-banner-wide .hero-content{padding-top:0!important;}
 .hero-banner-wide .hero-stats{top:-14px!important;right:0!important;margin-top:0!important;transform:none!important;}
 @media(max-width:800px){.hero-banner-wide .hero-content{padding-top:26px!important}.hero-banner-wide .hero-stats{top:auto!important;}}
+
+
+/* Bandeau d'accueil moins haut, photo conservée en pleine largeur */
+.hero-banner-wide{height:clamp(390px,30vw,520px)!important;min-height:390px!important;max-height:520px!important;}
+.hero-banner-wide .hero-content{min-height:390px!important;height:100%!important;}
+@media(max-width:800px){.hero-banner-wide{height:auto!important;min-height:0!important;max-height:none!important}.hero-banner-wide .hero-content{min-height:0!important;height:auto!important}}
