@@ -1449,3 +1449,19 @@ input:focus,select:focus,textarea:focus{outline:3px solid #bdeeff!important;bord
  .about-section>div,.about-section>article{padding:22px}
  .support-section{display:grid!important;grid-template-columns:1fr!important}
 }
+
+/* Cadre d'accueil : fond violet lumineux pour faire ressortir les chats */
+.hero-welcome-only{
+ background:linear-gradient(125deg,#e6cfff 0%,#f5d7ff 42%,#d9e7ff 100%)!important;
+ border:0!important;
+ box-shadow:inset 0 5px 0 #ff7197,inset 0 -5px 0 #41c7c0!important;
+}
+.hero-welcome-only .eyebrow{color:#6535a8!important}
+.hero-welcome-only .hero-title-main{color:#38205f!important}
+.hero-welcome-only .hero-title-script{color:#e34c78!important}
+.hero-welcome-only .hero-location{color:#4d3a76!important}
+.hero-welcome-only p{color:#45345f!important}
+.hero-welcome-photo{
+ border:5px solid rgba(255,255,255,.92)!important;
+ box-shadow:0 16px 36px rgba(101,53,168,.22)!important;
+}
