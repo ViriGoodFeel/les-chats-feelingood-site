@@ -1005,3 +1005,14 @@ a:hover{color:#c95f43}
 /* Panneau placé dans l'angle supérieur droit du bandeau */
 .hero-banner-wide .hero-stats{top:4px!important;right:4px!important;margin:0!important;}
 @media(max-width:800px){.hero-banner-wide .hero-stats{top:auto!important;right:auto!important;}}
+
+
+/* Ajustement précis : panneau compact, au ras des bords supérieurs et droits du bandeau */
+.hero-banner-wide .hero-content{width:100%!important;max-width:none!important;padding-left:0!important;padding-right:0!important;}
+.hero-banner-wide .hero-stats{top:0!important;right:0!important;left:auto!important;bottom:auto!important;transform:none!important;width:clamp(235px,19vw,300px)!important;min-width:0!important;max-width:300px!important;padding:9px 11px!important;border-radius:0 0 0 16px!important;gap:0 9px!important;}
+.hero-banner-wide .hero-stats article{padding:6px 0 8px!important;gap:2px!important;}
+.hero-banner-wide .hero-stats article:nth-child(odd){padding-right:7px!important;}
+.hero-banner-wide .hero-stats .hero-stat-icon{width:26px!important;height:26px!important;font-size:15px!important;}
+.hero-banner-wide .hero-stats strong{font-size:clamp(14px,1.15vw,18px)!important;}
+.hero-banner-wide .hero-stats article>span:last-child{font-size:10px!important;line-height:1.2!important;}
+@media(max-width:800px){.hero-banner-wide .hero-content{width:calc(100% - 24px)!important;padding:26px 0!important}.hero-banner-wide .hero-stats{top:auto!important;right:auto!important;width:100%!important;max-width:none!important;padding:10px 12px!important;border-radius:16px!important}.hero-banner-wide .hero-stats strong{font-size:17px!important}.hero-banner-wide .hero-stats article>span:last-child{font-size:11px!important}}
