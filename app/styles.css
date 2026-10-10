@@ -623,3 +623,46 @@ input:focus,select:focus,textarea:focus{outline:3px solid rgba(191,111,84,.18);b
  .adoption-title-shape h1{font-size:clamp(38px,10vw,53px)}
  .adoption-hero>p{font-size:18px}
 }
+
+
+/* Typographie éditoriale : lecture douce, claire et confortable */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+body{
+  font-family:'DM Sans',system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  font-size:16px;
+  line-height:1.75;
+  letter-spacing:.005em;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+h1,h2,h3,.detail-intro h1,.detail-content h1,.adoption-title-shape h1{
+  font-family:'Playfair Display',Georgia,serif;
+  font-weight:600;
+  letter-spacing:-.025em;
+  line-height:1.13;
+}
+.hero-overlay h1{line-height:1.08;letter-spacing:-.035em}
+.hero-overlay p,.intro-section p,.section-heading p,
+.knowledge-heading p,.knowledge-points p,.feature-section p,
+.support-section p,.about-section p,.contact-section p,
+.detail-story p,.detail-health p,.detail-bottom-cta p{
+  line-height:1.8;
+}
+.main-nav,.btn,.button,.don-btn,.badge,.adoption-filter-field label,
+.adoption-filter-field select,.cat-meta,.detail-section-label,
+.detail-fact span,.detail-compatibility span,.detail-health-tests span{
+  font-family:'DM Sans',system-ui,sans-serif;
+}
+.card-body h2{line-height:1.2}
+.card-body p{line-height:1.7}
+.detail-intro h1{line-height:1.02}
+.detail-story h2,.detail-health h2,.detail-bottom-cta h2{line-height:1.15}
+input,select,textarea{line-height:1.55}
+@media(max-width:700px){
+  body{font-size:16px;line-height:1.72}
+  .hero-overlay h1{font-size:clamp(30px,8vw,38px);line-height:1.1}
+  .intro-section h2,.section-heading h2,.knowledge-heading h2{line-height:1.15}
+  .card-body{padding:18px}
+  .card-body h2{font-size:25px}
+  .detail-story p,.detail-health p,.detail-bottom-cta p{line-height:1.75}
+}
