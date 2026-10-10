@@ -38,7 +38,7 @@ export default async function Home() {
       <section className="hero-banner" aria-label="Les Chats de Feelin’ Good">
         <div className="hero-overlay">
           <span className="eyebrow">Bienvenue chez Les Chats de Feelin’ Good · Lot-et-Garonne</span>
-          <h1>Et si votre prochain compagnon vous attendait ici ?</h1>
+          <h1><span className="hero-title-main">Et si votre prochain compagnon</span><span className="hero-title-script">vous attendait ici ?</span></h1>
           <p>Chaque chat mérite une famille, de la douceur et une vraie seconde chance. Nous les sauvons, les soignons et les accompagnons jusqu’à leur nouvelle vie.</p>
           <div className="hero-buttons">
             <a href="#adoption" className="btn">Découvrir les chats</a>
