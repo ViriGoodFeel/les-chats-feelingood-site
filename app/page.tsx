@@ -37,9 +37,8 @@ export default async function Home() {
 
       <section className="hero-welcome-only" aria-label="Bienvenue chez Les Chats de Feelin’ Good">
         <div className="hero-welcome-copy">
-          <span className="eyebrow">Et si votre compagnon vous attendait ici ?</span>
           <h1 className="hero-welcome-heading"><span>Bienvenue chez</span><strong>Les Chats</strong><em>de Feelin’ Good</em></h1>
-          <span className="hero-location">Association de protection féline · Lot-et-Garonne</span>
+          <span className="eyebrow hero-tagline">Et si votre compagnon vous attendait ici ?</span>
           <p>Chaque chat mérite une famille, de la douceur et une vraie seconde chance.</p>
           <a href="#adoption" className="btn light">Découvrir nos chats à l’adoption →</a>
         </div>
