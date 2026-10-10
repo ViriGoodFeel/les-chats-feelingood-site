@@ -1028,3 +1028,7 @@ a:hover{color:#c95f43}
 .hero-banner-wide{height:clamp(390px,30vw,520px)!important;min-height:390px!important;max-height:520px!important;}
 .hero-banner-wide .hero-content{min-height:390px!important;height:100%!important;}
 @media(max-width:800px){.hero-banner-wide{height:auto!important;min-height:0!important;max-height:none!important}.hero-banner-wide .hero-content{min-height:0!important;height:auto!important}}
+
+
+/* Demande ciblée : masquer uniquement le cadre des chiffres, sans autre changement */
+.hero-banner-wide .hero-stats{display:none!important;}
