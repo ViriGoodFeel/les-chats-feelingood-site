@@ -985,3 +985,7 @@ a:hover{color:#c95f43}
 /* Transparence renforcée : la photo doit être clairement visible derrière le panneau */
 .hero-banner-wide .hero-stats{background:rgba(250,248,239,.22)!important;background-color:rgba(250,248,239,.22)!important;backdrop-filter:blur(5px) saturate(115%)!important;-webkit-backdrop-filter:blur(5px) saturate(115%)!important;border:1px solid rgba(255,255,255,.42)!important;box-shadow:0 10px 30px rgba(20,35,20,.08)!important;}
 .hero-banner-wide .hero-stats article{background:transparent!important;}
+
+
+/* Panneau très transparent : opacité du fond à 10 % */
+.hero-banner-wide .hero-stats{background:rgba(250,248,239,.10)!important;background-color:rgba(250,248,239,.10)!important;backdrop-filter:blur(3px) saturate(110%)!important;-webkit-backdrop-filter:blur(3px) saturate(110%)!important;border:1px solid rgba(255,255,255,.35)!important;box-shadow:0 8px 24px rgba(20,35,20,.05)!important;}
