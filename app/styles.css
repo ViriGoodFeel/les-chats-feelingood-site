@@ -980,3 +980,8 @@ a:hover{color:#c95f43}
 
 /* Cadre des chiffres translucide, avec effet verre */
 .hero-banner-wide .hero-stats{background:rgba(250,248,239,.48)!important;border:1px solid rgba(255,255,255,.58)!important;backdrop-filter:blur(14px) saturate(125%)!important;-webkit-backdrop-filter:blur(14px) saturate(125%)!important;box-shadow:0 16px 40px rgba(20,35,20,.12)!important;}
+
+
+/* Transparence renforcée : la photo doit être clairement visible derrière le panneau */
+.hero-banner-wide .hero-stats{background:rgba(250,248,239,.22)!important;background-color:rgba(250,248,239,.22)!important;backdrop-filter:blur(5px) saturate(115%)!important;-webkit-backdrop-filter:blur(5px) saturate(115%)!important;border:1px solid rgba(255,255,255,.42)!important;box-shadow:0 10px 30px rgba(20,35,20,.08)!important;}
+.hero-banner-wide .hero-stats article{background:transparent!important;}
