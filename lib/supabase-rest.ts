@@ -4,7 +4,7 @@ function config() {
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
   const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
   if (!url || !key) throw new Error("Variables Supabase manquantes.");
-  return { url: url.replace(/\\/$/, ""), key };
+  return { url: url.replace(/\/$/, ""), key };
 }
 async function request<T>(path: string, init: RequestInit = {}) {
   const { url, key } = config();
