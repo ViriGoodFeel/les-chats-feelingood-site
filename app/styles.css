@@ -1263,3 +1263,14 @@ a:hover{color:#c95f43}
  .hero-welcome-photo{grid-row:1!important;border-radius:22px!important;width:100%!important}
  .hero-welcome-copy{grid-row:2!important}
 }
+
+
+/* Afficher la photo sans l’étirer ni la recadrer excessivement */
+.hero-welcome-photo{
+  width:100%!important;
+  height:auto!important;
+  aspect-ratio:auto!important;
+  object-fit:contain!important;
+  object-position:center!important;
+  image-rendering:auto!important;
+}
