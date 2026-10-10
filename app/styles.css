@@ -931,3 +931,16 @@ a:hover{color:#c95f43}
 .hero-banner-wide .hero-overlay p{margin-left:auto!important;margin-right:auto!important;}
 .hero-banner-wide .hero-buttons{justify-content:center!important;}
 @media(max-width:800px){.hero-banner-wide .hero-content{grid-template-areas:"welcome"!important}.hero-banner-wide .hero-overlay{grid-column:1!important;grid-row:1!important}}
+
+
+/* Ajustements demandés : bandeau moins haut et titre dans l'espace entre les chats */
+.hero-banner-wide{height:clamp(360px,36vw,500px)!important;min-height:360px!important;max-height:500px!important;}
+.hero-banner-wide .hero-photo{background-size:cover!important;background-position:center 48%!important;}
+.hero-banner-wide .hero-content{min-height:360px!important;height:100%!important;padding:20px 0!important;width:min(1180px,calc(100% - 48px))!important;}
+.hero-banner-wide .hero-overlay{max-width:650px!important;width:60%!important;margin-left:18%!important;margin-right:auto!important;text-align:center!important;padding:12px 16px!important;transform:translateX(-2%)!important;}
+.hero-banner-wide .hero-overlay .eyebrow{font-size:clamp(13px,1.4vw,17px)!important;}
+.hero-banner-wide .hero-overlay h1{font-size:clamp(38px,4vw,60px)!important;margin:5px 0 9px!important;line-height:.98!important;}
+.hero-banner-wide .hero-location{font-size:13px!important;margin:8px 0!important;}
+.hero-banner-wide .hero-overlay p{font-size:14px!important;line-height:1.45!important;margin-bottom:12px!important;}
+.hero-banner-wide .hero-buttons .btn{padding:10px 16px!important;font-size:13px!important;}
+@media(max-width:800px){.hero-banner-wide{height:380px!important;min-height:380px!important;max-height:420px!important}.hero-banner-wide .hero-content{min-height:380px!important;width:calc(100% - 24px)!important;padding:14px 0!important}.hero-banner-wide .hero-overlay{width:72%!important;max-width:460px!important;margin-left:10%!important;padding:8px!important;transform:none!important}.hero-banner-wide .hero-overlay h1{font-size:clamp(32px,8vw,44px)!important}.hero-banner-wide .hero-overlay p{font-size:12px!important}.hero-banner-wide .hero-location{font-size:11px!important}.hero-banner-wide .hero-buttons .btn{width:auto!important;padding:9px 12px!important}}
