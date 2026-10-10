@@ -1016,3 +1016,9 @@ a:hover{color:#c95f43}
 .hero-banner-wide .hero-stats strong{font-size:clamp(14px,1.15vw,18px)!important;}
 .hero-banner-wide .hero-stats article>span:last-child{font-size:10px!important;line-height:1.2!important;}
 @media(max-width:800px){.hero-banner-wide .hero-content{width:calc(100% - 24px)!important;padding:26px 0!important}.hero-banner-wide .hero-stats{top:auto!important;right:auto!important;width:100%!important;max-width:none!important;padding:10px 12px!important;border-radius:16px!important}.hero-banner-wide .hero-stats strong{font-size:17px!important}.hero-banner-wide .hero-stats article>span:last-child{font-size:11px!important}}
+
+
+/* Cadre remonté au maximum dans l'angle supérieur droit */
+.hero-banner-wide .hero-content{padding-top:0!important;}
+.hero-banner-wide .hero-stats{top:-14px!important;right:0!important;margin-top:0!important;transform:none!important;}
+@media(max-width:800px){.hero-banner-wide .hero-content{padding-top:26px!important}.hero-banner-wide .hero-stats{top:auto!important;}}
