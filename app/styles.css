@@ -703,3 +703,61 @@ input,select,textarea{line-height:1.55}
   .hero-title-script{font-size:1.08em;padding-left:4px}
   .hero-overlay p{font-size:16px;line-height:1.6}
 }
+
+/* Modernisation visuelle — palette, relief et lecture mobile */
+:root{--cream:#fbf5eb;--ink:#263b35;--muted:#6b746d;--brand:#24483d;--brand-dark:#18372f;--green:#dce8dc;--red:#c86f55;--card:#fffdf9;--line:#e9dfd2;--soft:#f4e9dc}
+body{background:#fbf5eb;color:#263b35;font-family:'DM Sans',system-ui,sans-serif}
+.top-banner{background:rgba(255,253,249,.95);border:1px solid #eee3d6;box-shadow:0 8px 28px rgba(55,43,31,.07);backdrop-filter:blur(16px)}
+.logo-zone h2,.brand{font-family:'Playfair Display',Georgia,serif}
+.main-nav a{font-weight:600;transition:color .2s ease}
+.main-nav a:hover{color:#b95f47}
+.btn,.button,.don-btn{border-radius:999px;font-weight:700;transition:transform .2s ease,box-shadow .2s ease}
+.btn:hover,.button:hover,.don-btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(36,72,61,.16)}
+.hero-banner{overflow:hidden;border-radius:28px;box-shadow:0 18px 46px rgba(63,47,31,.12);background-position:center}
+.hero-banner::before{background:linear-gradient(90deg,rgba(251,245,235,.97) 0%,rgba(251,245,235,.87) 34%,rgba(251,245,235,.18) 70%,rgba(251,245,235,0) 100%)}
+.hero-overlay{max-width:650px}
+.hero-overlay .eyebrow,.eyebrow{font-size:12px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:#8d654e}
+.hero-overlay h1{font-size:clamp(42px,5.1vw,66px);max-width:590px}
+.hero-overlay p{max-width:460px}
+.hero-buttons{gap:12px}
+.intro-section,.knowledge-section,.numbers-section,.support-section,.about-section,.contact-section,.empty-state{border-radius:24px}
+.intro-section{max-width:860px;margin-inline:auto;text-align:center;padding:54px 20px 36px}
+.intro-section h2,.knowledge-heading h2,.section-heading h2,.numbers-heading h2,.support-section h2,.about-section h2,.contact-section h2{color:#293f36;font-family:'Playfair Display',Georgia,serif;letter-spacing:-.025em}
+.knowledge-section{background:#f3eadc;padding:clamp(24px,4vw,44px);border:1px solid #eadccc}
+.knowledge-points article{background:rgba(255,253,249,.85);border:1px solid #e9dfd2;border-radius:18px;padding:20px;transition:transform .2s ease,box-shadow .2s ease}
+.knowledge-points article:hover{transform:translateY(-3px);box-shadow:0 12px 26px rgba(53,45,34,.07)}
+.adoption-grid{gap:22px}
+.cat-card{overflow:hidden;border:1px solid #eee3d6;border-radius:22px;background:#fffdf9;box-shadow:0 7px 24px rgba(59,45,31,.055);transition:transform .22s ease,box-shadow .22s ease}
+.cat-card:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(59,45,31,.12)}
+.cat-photo{aspect-ratio:4/3;object-fit:cover}
+.card-body{padding:22px}
+.card-body h2{font-family:'Playfair Display',Georgia,serif;font-size:27px;color:#293f36}
+.cat-meta{color:#7a7b70;font-size:14px}
+.cat-teaser{color:#58655c}
+.badge.green{background:#e3ece1;color:#355848;border-radius:999px;padding:7px 11px}
+.full-btn{width:100%;text-align:center}
+.numbers-section{background:#24483d;color:#fffaf2;padding:clamp(24px,4vw,42px)}
+.numbers-section h2,.numbers-section h3,.numbers-section p{color:inherit}
+.support-section{background:#f2e4d6;border:1px solid #ead5c4;padding:clamp(24px,4vw,40px)}
+.about-section{background:#fffdf9;border:1px solid #eee3d6;padding:clamp(24px,4vw,40px)}
+.contact-section{background:#e5ece2;padding:clamp(24px,4vw,40px)}
+input,select,textarea{border-radius:13px;border:1px solid #dfd4c6;background:#fffdf9}
+input:focus,select:focus,textarea:focus{outline:3px solid rgba(200,111,85,.2);border-color:#c86f55}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #c86f55;outline-offset:3px}
+@media(max-width:700px){
+ .top-banner{top:6px;border-radius:18px}
+ .hero-banner{border-radius:20px;min-height:540px;background-position:62% center}
+ .hero-banner::before{background:linear-gradient(0deg,rgba(251,245,235,.98) 0%,rgba(251,245,235,.9) 43%,rgba(251,245,235,.18) 100%)}
+ .hero-overlay{padding:24px 20px}
+ .hero-overlay h1{font-size:clamp(37px,10vw,47px)}
+ .hero-buttons{display:flex;flex-wrap:wrap}
+ .hero-buttons .btn{width:100%;text-align:center;justify-content:center}
+ .intro-section{padding:38px 8px 26px}
+ .knowledge-section{padding:22px 16px;border-radius:20px}
+ .adoption-grid{gap:16px}
+ .cat-card{border-radius:18px}
+ .card-body{padding:16px}
+ .card-body h2{font-size:24px}
+ .support-section,.about-section,.contact-section{border-radius:20px}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
