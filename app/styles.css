@@ -1500,3 +1500,25 @@ input:focus,select:focus,textarea:focus{outline:3px solid #bdeeff!important;bord
     line-height:1.2!important;
   }
 }
+
+
+/* Signature d'accueil : écriture fun et colorée */
+.hero-welcome-only .hero-welcome-copy > .eyebrow{
+  font-family:'Caveat',cursive!important;
+  font-size:clamp(34px,3.8vw,50px)!important;
+  font-weight:700!important;
+  font-style:normal!important;
+  letter-spacing:0!important;
+  line-height:1.12!important;
+  text-transform:none!important;
+  color:#e44868!important;
+  text-shadow:2px 2px 0 #fff0a8,4px 4px 0 rgba(141,93,232,.16)!important;
+  transform:rotate(-1.2deg);
+}
+.hero-welcome-only .hero-welcome-copy > .eyebrow::first-letter{color:#8d5de8!important}
+@media(max-width:760px){
+  .hero-welcome-only .hero-welcome-copy > .eyebrow{
+    font-size:clamp(32px,8.5vw,42px)!important;
+    line-height:1.12!important;
+  }
+}
