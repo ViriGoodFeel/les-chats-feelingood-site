@@ -1340,3 +1340,51 @@ a:hover{color:#c95f43}
 .sidebar{background:linear-gradient(180deg,#4e36a5,#00a9b7)!important}
 .admin-layout{background:#fff0c2}
 .cat-detail,.cat-detail-page .panel{border-color:#f6c7d2!important}
+
+/* Renfort visuel : davantage de couleurs sur toute l'interface */
+body{
+ background:linear-gradient(135deg,#fff0a8 0%,#ffd0df 24%,#e3caff 48%,#bdeeff 72%,#baf3d8 100%)!important;
+ background-attachment:fixed!important;
+}
+.top-banner{background:linear-gradient(100deg,rgba(255,240,168,.97),rgba(255,208,223,.97),rgba(189,243,216,.97))!important;border:2px solid #ff9eb5!important}
+.logo-zone h2{color:#7136a8!important}
+.main-nav a:not(.don-btn):nth-child(3n+1){color:#e44868}
+.main-nav a:not(.don-btn):nth-child(3n+2){color:#6337b8}
+.main-nav a:not(.don-btn):nth-child(3n){color:#078b9a}
+.intro-section h2,.section-heading h2,.about-section h2,.contact-section h2{color:#6337b8}
+.intro-section h2::first-letter,.section-heading h2::first-letter{color:#f04f68}
+.card,.step-card,.contact-section,.empty-state,.panel,.cat-detail{
+ background:linear-gradient(145deg,#ffffff 0%,#fff7fb 55%,#f0fffb 100%)!important;
+ border:2px solid rgba(255,116,151,.26)!important;
+ box-shadow:0 12px 28px rgba(112,55,157,.12)!important;
+}
+.card:nth-child(4n+1),.step-card:nth-child(3n+1){border-top:6px solid #ff6482!important}
+.card:nth-child(4n+2),.step-card:nth-child(3n+2){border-top:6px solid #8d5de8!important}
+.card:nth-child(4n+3),.step-card:nth-child(3n+3){border-top:6px solid #00b7c7!important}
+.card:nth-child(4n),.cat-card:nth-child(4n){border-top:6px solid #ffbf36!important}
+.btn,.button,.don-btn{background:linear-gradient(120deg,#ff416c,#ff8a3d)!important;box-shadow:0 6px 18px rgba(255,65,108,.25)!important}
+.btn.secondary{background:linear-gradient(120deg,#00a6c7,#00bd8b)!important}
+.btn.red{background:linear-gradient(120deg,#ff416c,#ff8a3d)!important}
+.badge.green{background:#baf3d8!important;color:#075e55!important}
+.badge.gray{background:#e3caff!important;color:#6337b8!important}
+.feature-section{background:linear-gradient(120deg,#ffd0df,#fff0a8,#bdeeff)!important;border:2px solid #ffb4c8}
+.feature-note,.welcome-note{background:linear-gradient(135deg,#e3caff,#bdeeff)!important;color:#493080!important}
+.support-section{background:linear-gradient(115deg,#6337b8 0%,#e4488c 48%,#078b9a 100%)!important}
+.adoption-page,.cat-detail-page,.site-page{
+ background:linear-gradient(135deg,#fff0a8 0%,#ffd0df 24%,#e3caff 48%,#bdeeff 72%,#baf3d8 100%)!important;
+ background-attachment:fixed!important;
+}
+.adoption-header{background:linear-gradient(100deg,#fff0a8,#ffd0df,#baf3d8)!important;border-bottom:2px solid #ff9eb5!important}
+.adoption-title-shape{background:linear-gradient(135deg,#ff416c,#8d5de8,#00b7c7,#00bd8b)!important;box-shadow:0 14px 35px rgba(99,55,184,.2)!important}
+.adoption-filter-card,.adoption-page .cat-card{background:linear-gradient(145deg,#fff,#fff5fa,#f0fffb)!important;border:2px solid #ffc0d0!important}
+.adoption-page .cat-card:nth-child(4n+1){border-top:7px solid #ff6482!important}
+.adoption-page .cat-card:nth-child(4n+2){border-top:7px solid #8d5de8!important}
+.adoption-page .cat-card:nth-child(4n+3){border-top:7px solid #00b7c7!important}
+.adoption-page .cat-card:nth-child(4n){border-top:7px solid #ffbf36!important}
+.adoption-page .cat-card .btn{background:linear-gradient(120deg,#ff416c,#ff8a3d)!important}
+input,select,textarea{border:2px solid #d8b8ff!important;background:#fff!important}
+input:focus,select:focus,textarea:focus{outline:3px solid #bdeeff!important;border-color:#00a6c7!important}
+.success{background:#baf3d8!important;color:#075e55!important}
+.danger{background:#ffd0df!important;color:#8b2343!important}
+.notice{background:#fff0a8!important;color:#6a4a00!important}
+.sidebar{background:linear-gradient(180deg,#6337b8,#e4488c,#078b9a)!important}
