@@ -43,7 +43,7 @@ export default async function Home() {
           <p>Chaque chat mérite une famille, de la douceur et une vraie seconde chance.</p>
           <a href="#adoption" className="btn light">Découvrir nos chats à l’adoption →</a>
         </div>
-        <img className="hero-welcome-photo" src="/chats-bandeau.webp" alt="Trois chats sur un fond vert sauge" />
+        <img className="hero-welcome-photo" src="/C5C1574B-22FA-4A3D-A016-541A645A6209.png" alt="Trois chats sur un fond vert sauge" />
       </section>
 
       <main className="container">
