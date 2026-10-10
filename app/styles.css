@@ -2046,3 +2046,38 @@ input:focus,select:focus,textarea:focus{outline:3px solid #bdeeff!important;bord
   .hero-welcome-only .btn.light{font-size:.68rem!important;padding:7px 9px!important;line-height:1.25!important}
 }
 .hero-welcome-only{background:#f0eee7!important}
+
+
+/* Correctif final du bandeau sur grand écran : photo et texte côte à côte */
+@media(min-width:761px){
+  .hero-welcome-only{
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;
+    grid-template-areas:"copy photo"!important;
+    align-items:center!important;
+    gap:28px!important;
+    padding:24px 30px!important;
+    min-height:0!important;
+    height:auto!important;
+    text-align:left!important;
+    background:#f0eee7!important;
+  }
+  .hero-welcome-only .hero-welcome-copy{
+    grid-area:copy!important;
+    display:flex!important;
+    flex-direction:column!important;
+    align-items:flex-start!important;
+    min-width:0!important;
+    gap:10px!important;
+  }
+  .hero-welcome-only .hero-welcome-photo{
+    grid-area:photo!important;
+    display:block!important;
+    width:100%!important;
+    max-width:100%!important;
+    height:auto!important;
+    max-height:none!important;
+    object-fit:contain!important;
+    object-position:center!important;
+  }
+}
