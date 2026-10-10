@@ -1184,3 +1184,20 @@ a:hover{color:#c95f43}
     border-radius:22px!important;
   }
 }
+
+
+/* Correctif immédiat : préserver les couleurs naturelles des chats */
+.hero-banner-wide .hero-photo{
+  background-blend-mode:normal!important;
+  filter:none!important;
+  -webkit-filter:none!important;
+  background-color:transparent!important;
+}
+@media(max-width:800px){
+  .hero-banner-wide .hero-photo{
+    background-blend-mode:normal!important;
+    filter:none!important;
+    -webkit-filter:none!important;
+    background-color:transparent!important;
+  }
+}
