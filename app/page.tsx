@@ -26,9 +26,9 @@ export default async function Home() {
           </Link>
 
           <nav className="main-nav" aria-label="Navigation principale">
-            <a href="/adoption">Adopter</a>
-            <a href="#famille">Famille d’accueil</a>
-            <a href="#soutien">Nous soutenir</a>
+            <a href="/adoption">Les chats à adopter</a>
+            <a href="#famille">Accueillir un chat</a>
+            <a href="#soutien">Aider les chats</a>
             <a href="#contact">Contact</a>
             <a className="don-btn" href="https://www.helloasso.com/associations/les-chats-de-feelin-good/formulaires/1" target="_blank" rel="noopener noreferrer">Faire un don</a>
           </nav>
@@ -41,15 +41,20 @@ export default async function Home() {
           <h1><span className="hero-title-main">Et si votre prochain compagnon</span><span className="hero-title-script">vous attendait ici ?</span></h1>
           <p>Chaque chat mérite une famille, de la douceur et une vraie seconde chance. Nous les sauvons, les soignons et les accompagnons jusqu’à leur nouvelle vie.</p>
           <div className="hero-buttons">
-            <a href="#adoption" className="btn">Découvrir les chats</a>
+            <a href="#adoption" className="btn">Voir les chats à adopter</a>
             <a href="#famille" className="btn secondary">Devenir famille d’accueil</a>
-            <a href="https://www.helloasso.com/associations/les-chats-de-feelin-good/formulaires/1" className="btn light" target="_blank" rel="noopener noreferrer">Soutenir les sauvetages</a>
           </div>
         </div>
       </section>
 
       <main className="container">
-        <section className="intro-section">
+
+        <section className="quick-actions" aria-label="Comment aider les chats ?">
+          <a className="quick-action quick-adopt" href="/adoption"><span aria-hidden="true">🐾</span><strong>Je veux adopter</strong><small>Rencontrer les chats qui attendent une famille</small><b>Voir les chats →</b></a>
+          <a className="quick-action quick-foster" href="#famille"><span aria-hidden="true">🏡</span><strong>Je peux accueillir</strong><small>Offrir temporairement un foyer à un chat</small><b>Devenir famille d’accueil →</b></a>
+          <a className="quick-action quick-help" href="#soutien"><span aria-hidden="true">💚</span><strong>Je veux aider</strong><small>Contribuer aux soins, à la nourriture et aux sauvetages</small><b>Découvrir comment aider →</b></a>
+        </section>
+\n        <section className="intro-section">
           <span className="eyebrow">Adoption</span>
           <h2>Un regard, une personnalité, une histoire… et peut-être un coup de cœur.</h2>
           <p>Prenez le temps de faire connaissance avec ceux qui attendent aujourd’hui une famille. Nous vous aidons à trouver le compagnon qui correspond vraiment à votre vie.</p>
