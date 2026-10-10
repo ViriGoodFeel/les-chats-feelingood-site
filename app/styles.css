@@ -1,25 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
 
 :root {
-  --cream:#fbf8f0;
+  --cream:#e4eadf;
   --ink:#4b5049;
   --muted:#70766d;
   --brand:#718b73;
   --brand-dark:#526b57;
   --green:#8fa58f;
   --red:#718b73;
-  --card:#fffdf9;
+  --card:#f4f6f0;
   --line:#dfe2d7;
-  --soft:#edf1e9;
+  --soft:#dce5d8;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:linear-gradient(to bottom,#fbf8f0,#edf1e9);color:var(--ink);line-height:1.6;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+body{margin:0;background:linear-gradient(to bottom,#e4eadf,#d8e2d4);color:var(--ink);line-height:1.6;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
 a{color:inherit} img{max-width:100%;height:auto}
 .container{width:min(1120px,calc(100% - 32px));margin:0 auto}
 .topbar{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
 .brand{font-weight:800;font-size:24px;text-decoration:none}
-.top-banner{position:sticky;top:14px;z-index:1000;width:calc(100% - 32px);margin:14px auto;background:rgba(250,248,240,.92);backdrop-filter:blur(18px);border-radius:22px;box-shadow:0 8px 30px rgba(72,88,72,.09);padding:12px 20px}
+.top-banner{position:sticky;top:14px;z-index:1000;width:calc(100% - 32px);margin:14px auto;background:rgba(228,234,223,.94);backdrop-filter:blur(18px);border-radius:22px;box-shadow:0 8px 30px rgba(72,88,72,.09);padding:12px 20px}
 .nav-premium{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap}
 .logo-zone{display:flex;align-items:center;gap:12px;text-decoration:none}
 .logo-small{width:58px;height:58px;object-fit:cover;border-radius:16px}
