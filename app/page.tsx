@@ -69,10 +69,23 @@ export default async function Home() {
           </a>
         </section>
 
-        <section className="intro-section">
-          <span className="eyebrow">Adoption</span>
-          <h2>Un regard, une personnalité, une histoire… et peut-être un coup de cœur.</h2>
-          <p>Prenez le temps de faire connaissance avec ceux qui attendent aujourd’hui une famille. Nous vous aidons à trouver le compagnon qui correspond vraiment à votre vie.</p>
+        <section className="adoption-steps-section" aria-labelledby="adoption-steps-title">
+          <div className="section-heading">
+            <span className="eyebrow">Comment ça se passe ?</span>
+            <h2 id="adoption-steps-title">Les étapes d’une adoption</h2>
+            <p>Un parcours simple et bienveillant, pour le bien du chat et le vôtre.</p>
+          </div>
+          <div className="adoption-steps">
+            <article><span>1</span><strong>Découvrir<br />un chat</strong></article>
+            <i aria-hidden="true">›</i>
+            <article><span>2</span><strong>Échanger<br />avec nous</strong></article>
+            <i aria-hidden="true">›</i>
+            <article><span>3</span><strong>Rencontrer<br />le chat</strong></article>
+            <i aria-hidden="true">›</i>
+            <article><span>4</span><strong>Préparer<br />son arrivée</strong></article>
+            <i aria-hidden="true">›</i>
+            <article><span>5</span><strong>Être accompagné<br />après l’adoption</strong></article>
+          </div>
         </section>
 
         <section className="knowledge-section" aria-labelledby="knowledge-title">
@@ -104,6 +117,35 @@ export default async function Home() {
               </div>
             </article>
           </div>
+        </section>
+
+        <section id="famille" className="feature-section">
+          <div>
+            <span className="eyebrow">Aider autrement</span>
+            <h2>Devenir famille d’accueil</h2>
+            <p>Certains chats ont besoin d’un environnement calme, d’une présence quotidienne ou d’une attention particulière avant de pouvoir trouver leur famille définitive.</p>
+            <p>En accueillant temporairement un chat, vous nous permettez de lui offrir un cadre adapté et de prendre en charge d’autres animaux en détresse.</p>
+            <a className="btn" href="mailto:leschatsdefeelingood@outlook.fr?subject=Je souhaite devenir famille d’accueil">Je souhaite être famille d’accueil</a>
+          </div>
+          <div className="feature-note">
+            <strong>Vous hésitez ?</strong>
+            <p>Écrivez-nous. Nous vous expliquerons simplement ce que cela implique et verrons ensemble si l’accueil est adapté à votre situation.</p>
+          </div>
+        </section>
+
+        <section id="soutien" className="support-section">
+          <div>
+            <span className="eyebrow">Un petit geste, une grande aide</span>
+            <h2>Vous pouvez aussi aider sans adopter.</h2>
+            <p>Les soins vétérinaires, l’alimentation et les traitements représentent une part importante de notre quotidien. Votre soutien nous permet de continuer à prendre en charge les chats qui en ont besoin.</p>
+          </div>
+          <a className="btn red" href="https://www.helloasso.com/associations/les-chats-de-feelin-good/formulaires/1" target="_blank" rel="noopener noreferrer">Soutenir l’association</a>
+        </section>
+
+        <section className="intro-section">
+          <span className="eyebrow">Adoption</span>
+          <h2>Un regard, une personnalité, une histoire… et peut-être un coup de cœur.</h2>
+          <p>Prenez le temps de faire connaissance avec ceux qui attendent aujourd’hui une famille. Nous vous aidons à trouver le compagnon qui correspond vraiment à votre vie.</p>
         </section>
 
         <section id="adoption" className="grid adoption-grid">
@@ -154,49 +196,7 @@ export default async function Home() {
           </div>
         </section>
 
-        <section className="adoption-steps-section" aria-labelledby="adoption-steps-title">
-          <div className="section-heading">
-            <span className="eyebrow">Comment ça se passe ?</span>
-            <h2 id="adoption-steps-title">Les étapes d’une adoption</h2>
-            <p>Un parcours simple et bienveillant, pour le bien du chat et le vôtre.</p>
-          </div>
-          <div className="adoption-steps">
-            <article><span>1</span><strong>Découvrir<br />un chat</strong></article>
-            <i aria-hidden="true">›</i>
-            <article><span>2</span><strong>Échanger<br />avec nous</strong></article>
-            <i aria-hidden="true">›</i>
-            <article><span>3</span><strong>Rencontrer<br />le chat</strong></article>
-            <i aria-hidden="true">›</i>
-            <article><span>4</span><strong>Préparer<br />son arrivée</strong></article>
-            <i aria-hidden="true">›</i>
-            <article><span>5</span><strong>Être accompagné<br />après l’adoption</strong></article>
-          </div>
-        </section>
-
-        <section id="famille" className="feature-section">
-          <div>
-            <span className="eyebrow">Aider autrement</span>
-            <h2>Devenir famille d’accueil</h2>
-            <p>Certains chats ont besoin d’un environnement calme, d’une présence quotidienne ou d’une attention particulière avant de pouvoir trouver leur famille définitive.</p>
-            <p>En accueillant temporairement un chat, vous nous permettez de lui offrir un cadre adapté et de prendre en charge d’autres animaux en détresse.</p>
-            <a className="btn" href="mailto:leschatsdefeelingood@outlook.fr?subject=Je souhaite devenir famille d’accueil">Je souhaite être famille d’accueil</a>
-          </div>
-          <div className="feature-note">
-            <strong>Vous hésitez ?</strong>
-            <p>Écrivez-nous. Nous vous expliquerons simplement ce que cela implique et verrons ensemble si l’accueil est adapté à votre situation.</p>
-          </div>
-        </section>
-
-        <section id="soutien" className="support-section">
-          <div>
-            <span className="eyebrow">Un petit geste, une grande aide</span>
-            <h2>Vous pouvez aussi aider sans adopter.</h2>
-            <p>Les soins vétérinaires, l’alimentation et les traitements représentent une part importante de notre quotidien. Votre soutien nous permet de continuer à prendre en charge les chats qui en ont besoin.</p>
-          </div>
-          <a className="btn red" href="https://www.helloasso.com/associations/les-chats-de-feelin-good/formulaires/1" target="_blank" rel="noopener noreferrer">Soutenir l’association</a>
-        </section>
-
-        <section className="about-section">
+        <section className="about-section"><div className="about-card">
           <div>
             <span className="eyebrow">Qui sommes-nous ?</span>
             <h2>Une association à taille humaine, avec plus de 20 ans d’expérience auprès des chats.</h2>
@@ -206,7 +206,7 @@ export default async function Home() {
             <p>Nous prenons en charge des chats abandonnés, malades, blessés ou victimes de maltraitance et les accompagnons vers une vie plus sûre.</p>
             <p>Notre rôle ne s’arrête pas à l’adoption : nous restons disponibles pour conseiller et accompagner les adoptants dans la durée.</p>
           </div>
-        </section>
+        </div></section>
 
         <section id="contact" className="contact-section">
           <div>
