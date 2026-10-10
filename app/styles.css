@@ -944,3 +944,10 @@ a:hover{color:#c95f43}
 .hero-banner-wide .hero-overlay p{font-size:14px!important;line-height:1.45!important;margin-bottom:12px!important;}
 .hero-banner-wide .hero-buttons .btn{padding:10px 16px!important;font-size:13px!important;}
 @media(max-width:800px){.hero-banner-wide{height:380px!important;min-height:380px!important;max-height:420px!important}.hero-banner-wide .hero-content{min-height:380px!important;width:calc(100% - 24px)!important;padding:14px 0!important}.hero-banner-wide .hero-overlay{width:72%!important;max-width:460px!important;margin-left:10%!important;padding:8px!important;transform:none!important}.hero-banner-wide .hero-overlay h1{font-size:clamp(32px,8vw,44px)!important}.hero-banner-wide .hero-overlay p{font-size:12px!important}.hero-banner-wide .hero-location{font-size:11px!important}.hero-banner-wide .hero-buttons .btn{width:auto!important;padding:9px 12px!important}}
+
+
+/* Déplacer le bloc de bienvenue vers la zone libre entre les chats */
+.hero-banner-wide .hero-content{justify-items:stretch!important;}
+.hero-banner-wide .hero-overlay{position:relative!important;left:clamp(60px,10vw,150px)!important;margin-left:0!important;margin-right:0!important;width:min(560px,58%)!important;max-width:560px!important;text-align:center!important;transform:none!important;}
+@media(min-width:801px){.hero-banner-wide .hero-photo{background-position:center 48%!important}.hero-banner-wide .hero-overlay{left:clamp(80px,12vw,180px)!important;width:52%!important;}}
+@media(max-width:800px){.hero-banner-wide .hero-overlay{left:clamp(24px,8vw,56px)!important;width:78%!important;margin:0!important;}}
