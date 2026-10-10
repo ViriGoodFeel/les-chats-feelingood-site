@@ -841,3 +841,24 @@ a:hover{color:#c95f43}
  .hero-banner{min-height:680px!important;background-position:62% top!important}
  .hero-banner::before{background:linear-gradient(0deg,rgba(255,247,237,.99) 0%,rgba(255,247,237,.94) 44%,rgba(255,247,237,.45) 64%,rgba(255,247,237,.03) 100%)!important}
 }
+
+/* Bandeau d'accueil en deux colonnes : photo visible, bienvenue compact */
+.hero-banner{display:grid!important;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr)!important;align-items:stretch!important;gap:0!important;min-height:570px!important;height:auto!important;background:none!important;overflow:hidden;border-radius:30px!important;background-color:#f7eadb!important}
+.hero-banner::before{display:none!important}
+.hero-photo{display:block;min-height:570px;background-image:url("/C5C1574B-22FA-4A3D-A016-541A645A6209.png");background-size:cover;background-position:center!important;border-radius:0 26px 26px 0;order:2}
+.hero-overlay{order:1;align-self:center;max-width:none!important;padding:clamp(28px,4vw,58px)!important}
+.hero-overlay .eyebrow{font-size:10px!important;letter-spacing:.1em;padding:8px 12px!important;line-height:1.4;max-width:100%}
+.hero-location{display:block;margin-top:12px;color:#657064;font-size:13px;letter-spacing:.025em}
+.hero-overlay h1{font-size:clamp(38px,4.2vw,62px)!important;line-height:1.01!important;margin:22px 0 18px!important;letter-spacing:-.055em}
+.hero-overlay p{font-size:16px!important;line-height:1.7!important}
+.hero-buttons{gap:10px!important}
+.hero-buttons .btn{padding:13px 17px!important;font-size:14px}
+@media(max-width:760px){
+ .hero-banner{grid-template-columns:1fr!important;min-height:0!important;border-radius:23px!important}
+ .hero-photo{order:1;min-height:300px;height:38vh;max-height:390px;border-radius:0!important;background-position:center 38%!important}
+ .hero-overlay{order:2;padding:25px 22px 28px!important}
+ .hero-overlay .eyebrow{font-size:10px!important}
+ .hero-overlay h1{font-size:clamp(37px,10vw,49px)!important;margin:16px 0!important}
+ .hero-overlay p{font-size:15px!important}
+ .hero-buttons .btn{width:100%}
+}
