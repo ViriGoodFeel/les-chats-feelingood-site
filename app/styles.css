@@ -1481,3 +1481,22 @@ input:focus,select:focus,textarea:focus{outline:3px solid #bdeeff!important;bord
  border:5px solid rgba(255,255,255,.96)!important;
  box-shadow:0 16px 36px rgba(169,76,45,.20)!important;
 }
+
+
+/* Signature d'accueil : typographie élégante, fluide et chaleureuse */
+.hero-welcome-only .hero-welcome-copy > .eyebrow{
+  font-family:'Playfair Display',Georgia,serif!important;
+  font-size:clamp(27px,3vw,40px)!important;
+  font-weight:500!important;
+  font-style:italic!important;
+  letter-spacing:-.025em!important;
+  line-height:1.2!important;
+  text-transform:none!important;
+  color:#a44332!important;
+}
+@media(max-width:760px){
+  .hero-welcome-only .hero-welcome-copy > .eyebrow{
+    font-size:clamp(27px,7.2vw,35px)!important;
+    line-height:1.2!important;
+  }
+}
