@@ -1274,3 +1274,9 @@ a:hover{color:#c95f43}
   object-position:center!important;
   image-rendering:auto!important;
 }
+
+.hero-welcome-heading{display:flex;flex-direction:column;align-items:flex-start;gap:2px;margin:20px 0 18px;line-height:1.02;letter-spacing:-.045em;color:#244c3a}
+.hero-welcome-heading span{font-family:'DM Sans',sans-serif;font-size:clamp(20px,2.2vw,28px);font-weight:600;letter-spacing:-.025em;margin-bottom:8px}
+.hero-welcome-heading strong{font-family:'Playfair Display',Georgia,serif;font-size:clamp(47px,5vw,70px);font-weight:700}
+.hero-welcome-heading em{font-family:'Caveat',cursive;font-style:normal;font-size:clamp(42px,4.4vw,61px);font-weight:700;color:#d45e40;margin-top:2px}
+@media(max-width:760px){.hero-welcome-heading strong{font-size:clamp(44px,11vw,58px)}.hero-welcome-heading em{font-size:clamp(39px,10vw,53px)}}
