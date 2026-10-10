@@ -832,3 +832,12 @@ a:hover{color:#c95f43}
  .quick-action small{min-height:0}
  .quick-action b{margin-top:3px}
 }
+
+/* Garder la photo fournie bien visible dans le bandeau d'accueil */
+.hero-banner{background-image:url("/C5C1574B-22FA-4A3D-A016-541A645A6209.png")!important;background-size:cover!important;background-position:center center!important;min-height:clamp(600px,76vh,800px)!important;align-items:flex-end!important}
+.hero-banner::before{background:linear-gradient(90deg,rgba(255,247,237,.94) 0%,rgba(255,247,237,.78) 32%,rgba(255,247,237,.24) 55%,rgba(255,247,237,0) 75%)!important}
+.hero-overlay{position:relative;z-index:1;max-width:760px}
+@media(max-width:760px){
+ .hero-banner{min-height:680px!important;background-position:62% top!important}
+ .hero-banner::before{background:linear-gradient(0deg,rgba(255,247,237,.99) 0%,rgba(255,247,237,.94) 44%,rgba(255,247,237,.45) 64%,rgba(255,247,237,.03) 100%)!important}
+}
