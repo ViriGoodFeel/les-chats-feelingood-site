@@ -1388,3 +1388,64 @@ input:focus,select:focus,textarea:focus{outline:3px solid #bdeeff!important;bord
 .danger{background:#ffd0df!important;color:#8b2343!important}
 .notice{background:#fff0a8!important;color:#6a4a00!important}
 .sidebar{background:linear-gradient(180deg,#6337b8,#e4488c,#078b9a)!important}
+
+/* Mise en page en cartes côte à côte pour les sections éditoriales */
+.steps-grid{
+ display:grid!important;
+ grid-template-columns:repeat(3,minmax(0,1fr))!important;
+ gap:22px!important;
+ align-items:stretch;
+}
+.step-card{
+ min-width:0;
+ height:100%;
+ padding:28px!important;
+ border-radius:26px!important;
+}
+.feature-section{
+ display:grid!important;
+ grid-template-columns:minmax(0,1.4fr) minmax(240px,.6fr)!important;
+ gap:24px!important;
+ align-items:center;
+}
+.feature-note{height:100%;display:flex;flex-direction:column;justify-content:center}
+.about-section{
+ display:grid!important;
+ grid-template-columns:repeat(2,minmax(0,1fr))!important;
+ gap:24px!important;
+ align-items:stretch;
+}
+.about-section>div,.about-section>article{
+ background:linear-gradient(145deg,#fff 0%,#fff5fa 55%,#f0fffb 100%);
+ border:2px solid #ffc0d0;
+ border-radius:26px;
+ padding:28px;
+ box-shadow:0 12px 28px rgba(112,55,157,.10);
+ min-width:0;
+}
+.contact-section{
+ display:grid!important;
+ grid-template-columns:minmax(0,1.2fr) minmax(240px,.8fr)!important;
+ gap:24px!important;
+ align-items:stretch;
+}
+.contact-section>div{min-width:0}
+.support-section{
+ display:flex!important;
+ flex-direction:row!important;
+ justify-content:space-between!important;
+ align-items:center!important;
+ gap:28px!important;
+}
+@media(max-width:800px){
+ .steps-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:16px!important}
+ .feature-section{grid-template-columns:1fr!important}
+ .about-section{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:16px!important}
+ .contact-section{grid-template-columns:1fr!important}
+}
+@media(max-width:540px){
+ .steps-grid,.about-section{grid-template-columns:1fr!important}
+ .step-card{padding:22px!important}
+ .about-section>div,.about-section>article{padding:22px}
+ .support-section{display:grid!important;grid-template-columns:1fr!important}
+}
