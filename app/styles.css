@@ -1762,3 +1762,43 @@ input:focus,select:focus,textarea:focus{outline:3px solid #bdeeff!important;bord
   border:1px solid rgba(112,171,183,.35)!important;
   box-shadow:0 14px 34px rgba(102,153,168,.16)!important;
 }
+
+
+/* Typographie du bandeau : ronde, expressive et conviviale */
+.hero-welcome-heading,
+.hero-welcome-heading span,
+.hero-welcome-heading strong,
+.hero-welcome-heading em{
+  font-family:'Trebuchet MS','Arial Rounded MT Bold',sans-serif!important;
+  font-weight:900!important;
+  letter-spacing:-.035em!important;
+  line-height:1.06!important;
+  text-transform:none!important;
+}
+.hero-welcome-heading span{
+  color:#087f79!important;
+  font-size:.82em!important;
+  font-weight:800!important;
+}
+.hero-welcome-heading strong{
+  color:#087f79!important;
+  text-shadow:1px 2px 0 rgba(255,255,255,.9)!important;
+}
+.hero-welcome-heading em{
+  color:#e84e78!important;
+  font-family:'Trebuchet MS','Arial Rounded MT Bold',sans-serif!important;
+  font-style:normal!important;
+  font-weight:900!important;
+  letter-spacing:-.04em!important;
+  text-shadow:1px 2px 0 rgba(255,255,255,.9)!important;
+}
+.hero-welcome-only .hero-welcome-copy > .eyebrow{
+  font-family:'Trebuchet MS','Arial Rounded MT Bold',sans-serif!important;
+  font-size:clamp(24px,3.2vw,36px)!important;
+  font-weight:800!important;
+  font-style:italic!important;
+  letter-spacing:-.025em!important;
+  color:#bd426b!important;
+  text-shadow:1px 1px 0 rgba(255,255,255,.85)!important;
+  transform:rotate(-1deg)!important;
+}
