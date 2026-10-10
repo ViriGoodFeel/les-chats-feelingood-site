@@ -36,11 +36,14 @@ export default async function Home() {
       </header>
 
       <section className="hero-welcome-only" aria-label="Bienvenue chez Les Chats de Feelin’ Good">
-        <span className="eyebrow">Bienvenue chez</span>
-        <h1><span className="hero-title-main">Les Chats</span><span className="hero-title-script">de Feelin’ Good</span></h1>
-        <span className="hero-location">Association de protection féline · Lot-et-Garonne</span>
-        <p>Chaque chat mérite une famille, de la douceur et une vraie seconde chance.</p>
-        <a href="#adoption" className="btn light">Découvrir nos chats à l’adoption →</a>
+        <div className="hero-welcome-copy">
+          <span className="eyebrow">Bienvenue chez</span>
+          <h1><span className="hero-title-main">Les Chats</span><span className="hero-title-script">de Feelin’ Good</span></h1>
+          <span className="hero-location">Association de protection féline · Lot-et-Garonne</span>
+          <p>Chaque chat mérite une famille, de la douceur et une vraie seconde chance.</p>
+          <a href="#adoption" className="btn light">Découvrir nos chats à l’adoption →</a>
+        </div>
+        <img className="hero-welcome-photo" src="/chats-bandeau.webp" alt="Trois chats sur un fond vert sauge" />
       </section>
 
       <main className="container">
