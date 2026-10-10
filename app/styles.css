@@ -911,3 +911,14 @@ a:hover{color:#c95f43}
 .hero-banner-wide .hero-overlay .eyebrow{font-size:15px!important;letter-spacing:.02em!important;text-transform:none!important;}
 .hero-banner-wide .hero-overlay h1{font-size:clamp(44px,4.4vw,68px)!important;line-height:1!important;margin:10px 0 16px!important;}
 @media(max-width:800px){.hero-banner-wide{height:auto!important;min-height:0!important;padding:0!important}.hero-banner-wide .hero-photo{background-position:58% center!important}.hero-banner-wide .hero-content{grid-template-columns:minmax(0,1fr)!important;grid-template-areas:"welcome" "stats"!important;grid-template-rows:auto auto!important;width:calc(100% - 28px)!important;height:auto!important;min-height:0!important;padding:28px 0!important;gap:16px!important}.hero-banner-wide .hero-overlay{grid-column:1!important;grid-row:1!important;max-width:none!important;padding:23px 20px!important}.hero-banner-wide .hero-stats{grid-column:1!important;grid-row:2!important;max-width:none!important}}
+
+
+/* Texte directement posé sur la photo, sans carte derrière le titre */
+.hero-banner-wide .hero-overlay{background:transparent!important;border:0!important;box-shadow:none!important;backdrop-filter:none!important;padding:24px 12px!important;border-radius:0!important;color:#fff!important;}
+.hero-banner-wide .hero-overlay .eyebrow{color:#fff!important;text-shadow:0 2px 10px rgba(0,0,0,.75)!important;}
+.hero-banner-wide .hero-overlay h1{color:#fff!important;text-shadow:0 3px 18px rgba(0,0,0,.78)!important;}
+.hero-banner-wide .hero-title-script{color:#f5d9a5!important;text-shadow:0 3px 16px rgba(0,0,0,.8)!important;}
+.hero-banner-wide .hero-location,.hero-banner-wide .hero-overlay p{color:#fff!important;text-shadow:0 2px 10px rgba(0,0,0,.85)!important;}
+.hero-banner-wide .hero-buttons .btn{background:#fbf4e6!important;color:#40513b!important;border:0!important;}
+.hero-banner-wide::before{background:linear-gradient(90deg,rgba(15,22,13,.28) 0%,rgba(15,22,13,.42) 48%,rgba(15,22,13,.12) 100%)!important;}
+@media(max-width:800px){.hero-banner-wide .hero-overlay{background:rgba(22,31,20,.25)!important;border-radius:18px!important;padding:22px 18px!important;}}
