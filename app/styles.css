@@ -1851,3 +1851,50 @@ input:focus,select:focus,textarea:focus{outline:3px solid #bdeeff!important;bord
   .hero-welcome-heading,.hero-welcome-heading span,.hero-welcome-heading strong,.hero-welcome-heading em{letter-spacing:-.04em!important}
   .hero-welcome-only .hero-welcome-copy > .eyebrow{font-size:clamp(18px,5vw,23px)!important}
 }
+
+
+/* Typographie inspirée de la maquette fournie : signature manuscrite et titre raffiné */
+.hero-welcome-heading{
+  font-family:Georgia,'Times New Roman',serif!important;
+  font-weight:400!important;
+  letter-spacing:-.045em!important;
+  line-height:.98!important;
+  text-shadow:none!important;
+}
+.hero-welcome-heading span{
+  display:block!important;
+  font-family:'Segoe Script','Brush Script MT',cursive!important;
+  font-size:.74em!important;
+  font-weight:400!important;
+  font-style:italic!important;
+  letter-spacing:-.025em!important;
+  color:#fff!important;
+}
+.hero-welcome-heading strong{
+  display:block!important;
+  font-family:Georgia,'Times New Roman',serif!important;
+  font-size:1.08em!important;
+  font-weight:400!important;
+  letter-spacing:-.045em!important;
+  color:#fff!important;
+}
+.hero-welcome-heading em{
+  display:inline-block!important;
+  font-family:'Segoe Script','Brush Script MT',cursive!important;
+  font-size:1.02em!important;
+  font-weight:400!important;
+  font-style:italic!important;
+  letter-spacing:-.035em!important;
+  color:#d9c4a4!important;
+  text-shadow:none!important;
+}
+.hero-welcome-only .hero-welcome-copy > .eyebrow{
+  font-family:'Segoe Script','Brush Script MT',cursive!important;
+  font-size:clamp(25px,3.4vw,39px)!important;
+  font-weight:400!important;
+  font-style:italic!important;
+  letter-spacing:0!important;
+  color:#fff!important;
+  text-shadow:none!important;
+  transform:none!important;
+}
