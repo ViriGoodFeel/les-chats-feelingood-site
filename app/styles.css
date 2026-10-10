@@ -2081,3 +2081,12 @@ input:focus,select:focus,textarea:focus{outline:3px solid #bdeeff!important;bord
     object-position:center!important;
   }
 }
+
+
+/* Supprimer les mots décoratifs verticaux superposés à la photo du bandeau */
+.hero-welcome-only:after,
+.hero-welcome-only:before{
+  content:none!important;
+  display:none!important;
+}
+.hero-welcome-photo:after{display:none!important;content:none!important}
