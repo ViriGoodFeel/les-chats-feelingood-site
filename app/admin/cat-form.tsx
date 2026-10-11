@@ -7,7 +7,14 @@ import type { Cat } from "@/lib/types";
 async function compressPhoto(file: File): Promise<File> {
   if (!file.type.startsWith("image/") || file.type === "image/gif" || file.size < 900_000) return file;
 
-  const bitmap = await createImageBitmap(file);
+  let bitmap: ImageBitmap;
+  try {
+    bitmap = await createImageBitmap(file);
+  } catch {
+    // Some mobile formats, including certain HEIC files, cannot be decoded by every browser.
+    return file;
+  }
+
   try {
     const maxSide = 1600;
     const scale = Math.min(1, maxSide / Math.max(bitmap.width, bitmap.height));
@@ -44,8 +51,8 @@ export function CatForm({ cat, action, submitLabel }: { cat?: Cat; action: (form
       const data = new FormData(form);
       const photos = data.getAll("photos").filter((entry): entry is File => entry instanceof File && entry.size > 0);
       data.delete("photos");
-      for (let i = 0; i < photos.length; i++) {
-        const photo = await compressPhoto(photos[i]);
+      for (const originalPhoto of photos) {
+        const photo = await compressPhoto(originalPhoto);
         data.append("photos", photo, photo.name);
       }
       await action(data);
