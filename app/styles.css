@@ -2254,3 +2254,101 @@ input:focus,select:focus,textarea:focus{outline:3px solid #bdeeff!important;bord
   }
   .about-numbers-frame .numbers-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;}
 }
+
+
+/* Refaire l'équilibre du bloc « Qui sommes-nous ? » et des chiffres */
+.about-numbers-frame{
+  display:grid!important;
+  grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr)!important;
+  grid-template-areas:"about numbers"!important;
+  align-items:center!important;
+  gap:clamp(28px,4vw,56px)!important;
+  max-width:1280px!important;
+  width:calc(100% - 48px)!important;
+  margin:34px auto!important;
+  padding:clamp(28px,4vw,52px)!important;
+  box-sizing:border-box!important;
+}
+.about-numbers-frame .about-section,
+.about-numbers-frame .numbers-section{
+  width:100%!important;
+  min-width:0!important;
+  margin:0!important;
+  padding:0!important;
+  border:0!important;
+}
+.about-numbers-frame .about-section{grid-area:about!important;}
+.about-numbers-frame .about-card{
+  display:flex!important;
+  flex-direction:column!important;
+  gap:18px!important;
+}
+.about-numbers-frame .about-card h2{
+  max-width:100%!important;
+  font-size:clamp(30px,3.1vw,46px)!important;
+  line-height:1.12!important;
+  letter-spacing:-.025em!important;
+  overflow-wrap:normal!important;
+  word-break:normal!important;
+  margin:10px 0 0!important;
+}
+.about-numbers-frame .about-card p{
+  font-size:clamp(15px,1.15vw,17px)!important;
+  line-height:1.7!important;
+  margin:0 0 14px!important;
+}
+.about-numbers-frame .numbers-section{grid-area:numbers!important;}
+.about-numbers-frame .numbers-heading{margin:0 0 20px!important;}
+.about-numbers-frame .numbers-heading h2{
+  font-size:clamp(26px,2.4vw,36px)!important;
+  line-height:1.15!important;
+  margin:8px 0 0!important;
+}
+.about-numbers-frame .numbers-heading .eyebrow{font-size:12px!important;letter-spacing:.12em!important;}
+.about-numbers-frame .numbers-heading p{font-size:15px!important;line-height:1.55!important;margin:12px 0 0!important;}
+.about-numbers-frame .numbers-grid{
+  display:grid!important;
+  grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  gap:14px!important;
+  width:100%!important;
+}
+.about-numbers-frame .numbers-grid article{
+  min-width:0!important;
+  min-height:116px!important;
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:center!important;
+  justify-content:center!important;
+  padding:18px 12px!important;
+  box-sizing:border-box!important;
+  text-align:center!important;
+  border-radius:18px!important;
+}
+.about-numbers-frame .numbers-grid article strong{
+  font-size:clamp(26px,2.7vw,38px)!important;
+  line-height:1.1!important;
+  margin-bottom:8px!important;
+}
+.about-numbers-frame .numbers-grid article span{
+  font-size:13px!important;
+  line-height:1.4!important;
+  max-width:22ch!important;
+}
+@media(max-width:900px){
+  .about-numbers-frame{
+    grid-template-columns:minmax(0,1fr)!important;
+    grid-template-areas:"about" "numbers"!important;
+    width:calc(100% - 28px)!important;
+    gap:28px!important;
+    padding:24px!important;
+  }
+  .about-numbers-frame .about-card h2{font-size:clamp(30px,6vw,42px)!important;}
+  .about-numbers-frame .numbers-grid article{min-height:105px!important;}
+}
+@media(max-width:480px){
+  .about-numbers-frame{padding:20px 16px!important;width:calc(100% - 20px)!important;}
+  .about-numbers-frame .numbers-grid{gap:10px!important;}
+  .about-numbers-frame .numbers-grid article{padding:14px 8px!important;}
+  .about-numbers-frame .numbers-grid article strong{font-size:26px!important;}
+  .about-numbers-frame .numbers-grid article span{font-size:12px!important;}
+}
