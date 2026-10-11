@@ -2206,3 +2206,21 @@ input:focus,select:focus,textarea:focus{outline:3px solid #bdeeff!important;bord
 .adoption-grid .cat-card .cat-teaser{
   min-height:0!important;
 }
+
+
+/* Rendre le surtitre lisible dans le bloc de soutien */
+.support-section .eyebrow{
+  display:block!important;
+  color:#fff!important;
+  opacity:1!important;
+  visibility:visible!important;
+  position:relative!important;
+  z-index:2!important;
+  font-size:clamp(14px,1.2vw,17px)!important;
+  font-weight:800!important;
+  letter-spacing:.14em!important;
+  line-height:1.5!important;
+  text-transform:uppercase!important;
+  margin:0 0 14px!important;
+  text-shadow:0 1px 3px rgba(0,0,0,.25)!important;
+}
