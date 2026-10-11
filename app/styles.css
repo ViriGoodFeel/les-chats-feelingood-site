@@ -2187,3 +2187,22 @@ input:focus,select:focus,textarea:focus{outline:3px solid #bdeeff!important;bord
 }
 
 /* Déclenchement du déploiement des dernières corrections du site public */
+
+
+/* Aligner les boutons « Faire connaissance » au bas de toutes les fiches */
+.adoption-grid .cat-card{
+  display:flex!important;
+  flex-direction:column!important;
+  height:100%!important;
+}
+.adoption-grid .cat-card .card-body{
+  display:flex!important;
+  flex-direction:column!important;
+  flex:1 1 auto!important;
+}
+.adoption-grid .cat-card .card-body > .full-btn{
+  margin-top:auto!important;
+}
+.adoption-grid .cat-card .cat-teaser{
+  min-height:0!important;
+}
