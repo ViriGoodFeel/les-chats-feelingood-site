@@ -2352,3 +2352,70 @@ input:focus,select:focus,textarea:focus{outline:3px solid #bdeeff!important;bord
   .about-numbers-frame .numbers-grid article strong{font-size:26px!important;}
   .about-numbers-frame .numbers-grid article span{font-size:12px!important;}
 }
+
+
+/* Mise en page bureau soignée : deux colonnes réellement équilibrées */
+@media(min-width:901px){
+  .about-numbers-frame{
+    display:grid!important;
+    grid-template-columns:minmax(0,1.08fr) minmax(390px,.92fr)!important;
+    grid-template-areas:"about numbers"!important;
+    align-items:center!important;
+    gap:clamp(36px,4vw,64px)!important;
+    width:min(1320px,calc(100% - 80px))!important;
+    margin:44px auto!important;
+    padding:clamp(38px,4vw,60px)!important;
+    border-radius:28px!important;
+    overflow:visible!important;
+  }
+  .about-numbers-frame .about-section,
+  .about-numbers-frame .numbers-section{
+    width:100%!important;
+    min-width:0!important;
+    margin:0!important;
+    padding:0!important;
+    border:0!important;
+  }
+  .about-numbers-frame .about-card{
+    display:block!important;
+    max-width:100%!important;
+  }
+  .about-numbers-frame .about-card > div:first-child{margin-bottom:22px!important;}
+  .about-numbers-frame .about-card h2{
+    max-width:12ch!important;
+    font-size:clamp(38px,3.3vw,52px)!important;
+    line-height:1.08!important;
+    letter-spacing:-.035em!important;
+    overflow-wrap:normal!important;
+    word-break:normal!important;
+    hyphens:none!important;
+  }
+  .about-numbers-frame .about-card p{
+    max-width:54ch!important;
+    font-size:16px!important;
+    line-height:1.75!important;
+    margin:0 0 16px!important;
+  }
+  .about-numbers-frame .numbers-heading{margin:0 0 24px!important;}
+  .about-numbers-frame .numbers-heading h2{
+    font-size:clamp(30px,2.5vw,38px)!important;
+    line-height:1.15!important;
+  }
+  .about-numbers-frame .numbers-heading p{max-width:38ch!important;font-size:15px!important;}
+  .about-numbers-frame .numbers-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:16px!important;
+  }
+  .about-numbers-frame .numbers-grid article{
+    min-height:140px!important;
+    padding:22px 16px!important;
+    border-radius:20px!important;
+  }
+  .about-numbers-frame .numbers-grid article strong{font-size:clamp(30px,2.5vw,40px)!important;}
+  .about-numbers-frame .numbers-grid article span{font-size:14px!important;max-width:21ch!important;}
+}
+@media(min-width:901px) and (max-width:1100px){
+  .about-numbers-frame{grid-template-columns:minmax(0,1fr) minmax(340px,.95fr)!important;width:calc(100% - 48px)!important;gap:28px!important;padding:32px!important;}
+  .about-numbers-frame .about-card h2{font-size:36px!important;}
+  .about-numbers-frame .numbers-grid article{min-height:125px!important;}
+}
