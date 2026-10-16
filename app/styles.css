@@ -2625,3 +2625,83 @@ body{background:linear-gradient(135deg,#fff5d6 0%,#ffe3d7 38%,#e9e2fb 68%,#d8f5e
 .logo-zone h2,.adoption-logo span{color:var(--ink)!important;}
 a:focus-visible,button:focus-visible,select:focus-visible{outline:3px solid #f36f68!important;outline-offset:3px!important;}
 @media(max-width:760px){.top-banner,.adoption-header,.detail-topbar{border-radius:18px!important;}.section-heading,.adoption-title-shape{border-radius:22px!important;}.btn,.button,.don-btn{max-width:100%;}}
+
+
+/* Cohérence finale de l'identité visuelle — accueil, adoption, fiches et contact */
+:root{
+  --cream:#fff7df;
+  --ink:#30483b;
+  --muted:#68756b;
+  --brand:#f0786d;
+  --brand-dark:#d95d59;
+  --green:#55bdb1;
+  --red:#f0786d;
+  --card:#fffdf8;
+  --line:#f1c9b8;
+  --soft:#e0f5ef;
+}
+body{
+  background:linear-gradient(145deg,#fff7df 0%,#ffe7dc 42%,#eee7fa 72%,#dff5ef 100%)!important;
+  color:#30483b!important;
+}
+.top-banner,.adoption-header,.detail-topbar{
+  background:rgba(255,253,248,.96)!important;
+  border:1px solid rgba(240,120,109,.3)!important;
+  box-shadow:0 8px 24px rgba(48,72,59,.08)!important;
+}
+.logo-zone h2,.adoption-logo span{color:#30483b!important}
+.logo-zone span{color:#68756b!important}
+.main-nav a:not(.don-btn),.adoption-menu a{color:#405b4d!important}
+.main-nav a:not(.don-btn):hover,.adoption-menu a:hover{background:#fff0bf!important;color:#30483b!important}
+.don-btn,.btn,.button,.adoption-page .cat-card .btn,.premium-cta .btn,.detail-bottom-cta .btn{
+  background:#f0786d!important;
+  color:#fff!important;
+  border:2px solid #ffe27b!important;
+  box-shadow:0 4px 0 rgba(217,93,89,.18)!important;
+}
+.don-btn:hover,.btn:hover,.button:hover,.adoption-page .cat-card .btn:hover,.premium-cta .btn:hover,.detail-bottom-cta .btn:hover{background:#d95d59!important}
+.btn.secondary{background:#dff5ef!important;color:#30483b!important;border-color:#a7dfd4!important}
+.btn.red,.support-section .btn.red{background:#f0786d!important;color:#fff!important}
+.hero-welcome-only{
+  background:linear-gradient(120deg,#fff0bd 0%,#ffd4ca 48%,#b9eee4 100%)!important;
+  border-color:#f0786d!important;
+  box-shadow:inset 0 0 0 4px #ffe27b,0 10px 0 rgba(240,120,109,.15)!important;
+}
+.hero-welcome-heading strong{color:#30483b!important}
+.hero-welcome-heading em{color:#c9685e!important}
+.hero-welcome-only .btn.light{
+  background:#f0786d!important;color:#fff!important;border:2px solid #ffe27b!important;
+  box-shadow:8px 8px 0 #ffe27b!important;
+}
+.quick-actions .quick-action{
+  border-radius:24px!important;
+  box-shadow:0 8px 22px rgba(48,72,59,.07)!important;
+  overflow:hidden;
+}
+.quick-actions .quick-adopt{background:#f8d7cc!important;border:1px solid #efb8a9!important}
+.quick-actions .quick-foster{background:#c9f0e8!important;border:1px solid #79d4c7!important}
+.quick-actions .quick-help{background:#ffec9b!important;border:1px solid #f1d15c!important}
+.quick-actions .quick-adopt .quick-card-copy b{color:#b94e4c!important}
+.quick-actions .quick-foster .quick-card-copy b{color:#9b6048!important}
+.quick-actions .quick-help .quick-card-copy b{color:#347c7a!important}
+.quick-actions .quick-icon{background:rgba(255,253,248,.76)!important}
+.card,.cat-card,.adoption-filter-card,.detail-facts,.detail-fact,.detail-compatibility,.detail-photo-frame,.gallery-premium .gallery-main,.detail-story,.detail-health,.contact-section,.about-section,.support-section,.feature-section,.how-section,.empty-state{
+  background:rgba(255,253,248,.92)!important;
+  border-color:rgba(85,189,177,.38)!important;
+  box-shadow:0 8px 24px rgba(48,72,59,.065)!important;
+}
+.badge,.adoption-page .badge.green{background:#e0f5ef!important;color:#386d5d!important;border:1px solid #b3e4d9!important}
+.premium-cta,.detail-bottom-cta,.adoption-title-shape{
+  background:linear-gradient(120deg,#ffec9b 0%,#f8d7cc 50%,#c9f0e8 100%)!important;
+  border-color:rgba(240,120,109,.35)!important;
+}
+.section-heading .eyebrow,.eyebrow,.detail-kicker,.detail-section-label{color:#b65d51!important}
+input,textarea,select{border-color:#c9e6dc!important;background:#fffdf8!important;color:#30483b!important}
+input:focus,textarea:focus,select:focus{outline:3px solid rgba(85,189,177,.35)!important;border-color:#55bdb1!important}
+a:focus-visible,button:focus-visible,select:focus-visible{outline:3px solid #f0786d!important;outline-offset:3px!important}
+.legal-mini,footer{color:#68756b!important}
+@media(max-width:760px){
+  .top-banner,.adoption-header,.detail-topbar{border-radius:18px!important}
+  .quick-actions .quick-action{border-radius:20px!important}
+  .hero-welcome-only{box-shadow:inset 0 0 0 3px #ffe27b,0 7px 0 rgba(240,120,109,.15)!important}
+}
