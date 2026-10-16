@@ -2598,3 +2598,30 @@ body{
     border-radius:20px!important;
   }
 }
+
+
+/* Identité visuelle harmonisée sur toutes les pages */
+:root{
+  --cream:#fff5d6;--ink:#2d443a;--muted:#65746b;--brand:#f36f68;
+  --brand-dark:#dc5957;--green:#53c9bd;--red:#f36f68;--card:#fffdf8;
+  --line:#f4c9b9;--soft:#dff6ef;--site-coral:#f78376;
+  --site-turquoise:#a9e9df;--site-yellow:#ffe37b;--site-lilac:#e5dcfa;
+}
+body{background:linear-gradient(135deg,#fff5d6 0%,#ffe3d7 38%,#e9e2fb 68%,#d8f5ed 100%)!important;color:var(--ink)!important;}
+.top-banner,.adoption-header,.detail-topbar{background:rgba(255,253,248,.94)!important;border-color:rgba(243,111,104,.35)!important;box-shadow:0 8px 26px rgba(65,73,55,.08)!important;}
+.main-nav a:not(.don-btn):hover,.adoption-menu a:hover{background:#fff0b8!important;color:#2d665b!important;}
+.don-btn,.btn,.button,.adoption-page .cat-card .btn,.premium-cta .btn,.detail-bottom-cta .btn{
+  background:#f36f68!important;color:#fffdf8!important;border:2px solid #ffe37b!important;box-shadow:0 5px 0 rgba(220,89,87,.2)!important;
+}
+.don-btn:hover,.btn:hover,.button:hover,.adoption-page .cat-card .btn:hover,.premium-cta .btn:hover,.detail-bottom-cta .btn:hover{background:#dc5957!important;}
+.card,.cat-card,.adoption-filter-card,.detail-facts,.detail-fact,.detail-compatibility,.detail-photo-frame,.gallery-premium .gallery-main,.detail-story,.detail-health,.contact-section,.about-section,.support-section,.feature-section,.how-section,.empty-state{
+  border-color:rgba(83,201,189,.32)!important;box-shadow:0 10px 28px rgba(45,68,58,.07)!important;
+}
+.section-heading .eyebrow,.eyebrow,.detail-kicker,.detail-section-label{color:#b95d50!important;}
+.adoption-title-shape{background:linear-gradient(125deg,#ffe37b 0%,#ffc9bd 52%,#a9e9df 100%)!important;}
+.adoption-filter-card,.adoption-filter-field select{background:#fffdf8!important;}
+.badge,.adoption-page .badge.green{background:#dff6ef!important;color:#2d665b!important;border:1px solid #a9e9df!important;}
+.premium-cta,.detail-bottom-cta{background:linear-gradient(120deg,#ffe37b 0%,#ffc9bd 48%,#a9e9df 100%)!important;border:2px solid rgba(243,111,104,.35)!important;}
+.logo-zone h2,.adoption-logo span{color:var(--ink)!important;}
+a:focus-visible,button:focus-visible,select:focus-visible{outline:3px solid #f36f68!important;outline-offset:3px!important;}
+@media(max-width:760px){.top-banner,.adoption-header,.detail-topbar{border-radius:18px!important;}.section-heading,.adoption-title-shape{border-radius:22px!important;}.btn,.button,.don-btn{max-width:100%;}}
