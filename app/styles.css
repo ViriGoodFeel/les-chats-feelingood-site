@@ -2826,7 +2826,7 @@ a:focus-visible,button:focus-visible,select:focus-visible{outline:3px solid #f07
 
 
 /* Refonte accueil : maquette joyeuse, organique et lisible */
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap');
+600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap');
 :root{
   --ink:#174e47;--muted:#354d47;--brand:#ff555c;--brand-dark:#d93f4b;
   --green:#17a99f;--cream:#fff8e9;--card:#fffdf7;--line:#f4c9b7;--soft:#d5f1e9;
@@ -3403,7 +3403,7 @@ body:has(section.home-hero) .home-outline-cta {
 
 
 /* Strong display type: no thin, generic lettering on the homepage */
-@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Fredoka:wght@600;700&family=Nunito+Sans:wght@700;800;900&display=swap');
+700&family=Nunito+Sans:wght@700;800;900&display=swap');
 body:has(section.home-hero) .home-hero h1,
 body:has(section.home-hero) .home-hero h1 em,
 body:has(section.home-hero) .home-section-heading h2,
@@ -3449,7 +3449,7 @@ body:has(section.home-hero) .home-mission-copy>p {
 
 
 /* Identité visuelle harmonisée — joyeuse, lisible et professionnelle */
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Baloo+2:wght@700;800&family=Nunito+Sans:wght@600;700;800;900&display=swap');
+600;700&family=Baloo+2:wght@700;800&family=Nunito+Sans:wght@600;700;800;900&display=swap');
 :root {
   --cream:#fff8e8;
   --ink:#174c43;
