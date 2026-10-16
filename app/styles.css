@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito+Sans:wght@400;500;600;700;800;900&family=Caveat:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito+Sans:wght@500;600;700;800;900&family=Chewy&family=Fredoka:wght@500;600;700&family=Kalam:wght@400;700&family=Caveat:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap');
 
 :root {
   --cream:#fff0c2;
@@ -3303,4 +3303,100 @@ body:has(section.home-hero) .home-cat-card .cat-teaser,
 body:has(section.home-hero) .home-mission-copy>p {
   font-family:'Nunito Sans',sans-serif!important;
   font-weight:500!important;
+}
+
+
+/* FINAL TYPOGRAPHY + COLOR ENERGY — expressive, bold, joyful */
+body:has(section.home-hero) {
+  font-family:'Nunito Sans',sans-serif!important;
+  font-weight:600!important;
+  color:#173f38!important;
+}
+body:has(section.home-hero) .home-hero h1,
+body:has(section.home-hero) .home-section-heading h2,
+body:has(section.home-hero) .quick-card-copy strong,
+body:has(section.home-hero) .home-cat-card h3,
+body:has(section.home-hero) .home-mission-copy .eyebrow {
+  font-family:'Chewy','Baloo 2',sans-serif!important;
+  font-weight:400!important;
+  letter-spacing:.005em!important;
+  -webkit-text-stroke:.35px currentColor!important;
+}
+body:has(section.home-hero) .home-hero h1 {
+  font-size:clamp(48px,5.4vw,74px)!important;
+  line-height:.98!important;
+  text-shadow:1px 2px 0 rgba(255,255,255,.6)!important;
+  color:#075b52!important;
+}
+body:has(section.home-hero) .home-hero h1 em {
+  color:#ff515b!important;
+  font-family:'Chewy','Baloo 2',sans-serif!important;
+  font-style:normal!important;
+  -webkit-text-stroke:.4px #ff515b!important;
+}
+body:has(section.home-hero) .home-section-heading h2 {
+  font-size:clamp(31px,3.1vw,42px)!important;
+  line-height:1.08!important;
+  color:#075b52!important;
+}
+body:has(section.home-hero) .quick-card-copy strong {
+  font-size:29px!important;
+  line-height:1.08!important;
+  color:#075b52!important;
+}
+body:has(section.home-hero) .home-cat-card h3 {
+  font-size:24px!important;line-height:1.05!important;color:#123f38!important;
+}
+body:has(section.home-hero) .home-mission-copy .eyebrow {
+  font-size:31px!important;color:#075b52!important;
+}
+body:has(section.home-hero) .hero-sticker,
+body:has(section.home-hero) .home-mission-photo>span {
+  font-family:'Kalam','Caveat',cursive!important;
+  font-weight:700!important;
+  font-size:22px!important;
+  letter-spacing:0!important;
+}
+body:has(section.home-hero) .home-hero-copy h2 {
+  font-family:'Fredoka','Nunito Sans',sans-serif!important;
+  font-weight:600!important;font-size:clamp(20px,2vw,25px)!important;color:#075b52!important;
+}
+body:has(section.home-hero) .home-hero-copy p,
+body:has(section.home-hero) .quick-card-copy small,
+body:has(section.home-hero) .home-cat-card .cat-teaser,
+body:has(section.home-hero) .home-mission-copy>p {
+  font-family:'Nunito Sans',sans-serif!important;font-weight:600!important;color:#263d37!important;
+}
+body:has(section.home-hero) .home-main-cta,
+body:has(section.home-hero) .quick-card-copy b,
+body:has(section.home-hero) .home-cat-card .btn,
+body:has(section.home-hero) .don-btn {
+  font-family:'Fredoka','Nunito Sans',sans-serif!important;font-weight:700!important;
+  letter-spacing:.005em!important;
+}
+body:has(section.home-hero) .home-main-cta,
+body:has(section.home-hero) .home-cat-card .btn,
+body:has(section.home-hero) .don-btn {
+  background:linear-gradient(115deg,#ff4e5c,#ff6865)!important;
+  box-shadow:0 4px 0 #e83e50!important;border-radius:999px!important;
+}
+body:has(section.home-hero) .quick-actions .quick-adopt {background:#ffdad4!important}
+body:has(section.home-hero) .quick-actions .quick-foster {background:#c9eee7!important}
+body:has(section.home-hero) .quick-actions .quick-help {background:#ffe7a0!important}
+body:has(section.home-hero) .quick-actions .quick-action {
+  border-radius:34px 42px 32px 40px!important;
+  border:2px solid rgba(255,255,255,.8)!important;
+  box-shadow:0 7px 0 rgba(16,95,82,.07)!important;
+}
+body:has(section.home-hero) .home-stats {
+  background:linear-gradient(105deg,#39b7ad,#5bc8b8)!important;
+  border-radius:45% 28px 42% 26px / 18% 22% 18% 22%!important;
+}
+body:has(section.home-hero) .home-outline-cta {
+  font-family:'Fredoka','Nunito Sans',sans-serif!important;font-weight:700!important;
+  border-width:2px!important;border-radius:999px!important;
+}
+@media(max-width:800px){
+ body:has(section.home-hero) .home-hero h1{font-size:clamp(43px,11vw,58px)!important}
+ body:has(section.home-hero) .quick-card-copy strong{font-size:27px!important}
 }
