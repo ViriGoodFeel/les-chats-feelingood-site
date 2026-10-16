@@ -2705,3 +2705,73 @@ a:focus-visible,button:focus-visible,select:focus-visible{outline:3px solid #f07
   .quick-actions .quick-action{border-radius:20px!important}
   .hero-welcome-only{box-shadow:inset 0 0 0 3px #ffe27b,0 7px 0 rgba(240,120,109,.15)!important}
 }
+
+
+/* Cartes d'action : supprimer le panneau clair intérieur qui double le cadre */
+.quick-actions .quick-action{
+  position:relative!important;
+  display:grid!important;
+  grid-template-columns:112px minmax(0,1fr)!important;
+  align-items:start!important;
+  column-gap:28px!important;
+  background-clip:padding-box!important;
+}
+.quick-actions .quick-card-copy{
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:flex-start!important;
+  gap:14px!important;
+  min-width:0!important;
+  padding:0!important;
+  margin:0!important;
+  background:transparent!important;
+  border:0!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+}
+.quick-actions .quick-card-copy::before,
+.quick-actions .quick-card-copy::after{
+  content:none!important;
+  display:none!important;
+}
+.quick-actions .quick-card-copy strong,
+.quick-actions .quick-card-copy small,
+.quick-actions .quick-card-copy b{
+  background:transparent!important;
+  box-shadow:none!important;
+}
+.quick-actions .quick-card-copy strong{
+  color:#30483b!important;
+  line-height:1.15!important;
+}
+.quick-actions .quick-card-copy small{
+  color:#59695f!important;
+  line-height:1.5!important;
+}
+.quick-actions .quick-icon{
+  width:100px!important;
+  height:100px!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  border-radius:26px!important;
+  background:rgba(255,253,248,.72)!important;
+  border:1px solid rgba(255,255,255,.65)!important;
+}
+.quick-actions .quick-adopt .quick-card-copy b{color:#a94e49!important}
+.quick-actions .quick-foster .quick-card-copy b{color:#8e5d45!important}
+.quick-actions .quick-help .quick-card-copy b{color:#397e7c!important}
+@media(max-width:760px){
+  .quick-actions .quick-action{
+    grid-template-columns:58px minmax(0,1fr)!important;
+    column-gap:14px!important;
+    align-items:start!important;
+  }
+  .quick-actions .quick-icon{
+    width:56px!important;
+    height:56px!important;
+    border-radius:17px!important;
+  }
+  .quick-actions .quick-icon svg{width:38px!important;height:38px!important}
+  .quick-actions .quick-card-copy{gap:9px!important}
+}
