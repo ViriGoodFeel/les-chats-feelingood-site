@@ -3058,3 +3058,63 @@ body:has(.home-hero) .home-cat-card .cat-photo{aspect-ratio:1.35!important}
  .home-main{width:calc(100% - 24px)!important}
  .home-stats{margin-left:0!important;margin-right:0!important;border-radius:28px!important;padding:26px 18px!important}
 }
+
+
+/* Direction artistique calquée sur la référence fournie */
+body:has(.home-hero){
+  --ref-cream:#fff8e9;--ref-coral:#ff555e;--ref-teal:#43b8ad;--ref-dark:#075b52;--ref-yellow:#ffdc67;--ref-lilac:#e8d5fa;
+  background:var(--ref-cream)!important;
+  background-image:
+    radial-gradient(ellipse at -4% 8%,#55c5ba 0 4.5%,transparent 4.7%),
+    radial-gradient(ellipse at -2% 31%,#ffe2a0 0 5.4%,transparent 5.6%),
+    radial-gradient(ellipse at 102% 62%,#9bded2 0 4.5%,transparent 4.7%),
+    radial-gradient(ellipse at 2% 91%,#b9e8dc 0 6%,transparent 6.2%)!important;
+}
+body:has(.home-hero) .top-banner{border-radius:0 0 30px 30px!important;background:#fffdf7!important;box-shadow:0 4px 16px #315d5010!important}
+.home-hero{position:relative!important;isolation:isolate!important}
+.home-hero:before{content:"";position:absolute;z-index:-1;left:-3.5vw;top:12%;width:100px;height:130px;background:#55c5ba;border-radius:0 70% 65% 0;transform:rotate(10deg)}
+.home-hero:after{content:"♡";position:absolute;z-index:2;left:-2px;bottom:20%;font-family:'Baloo 2',sans-serif;font-size:48px;font-weight:800;color:#ff626a;transform:rotate(-16deg);pointer-events:none}
+.home-hero-visual:before{content:"♡";position:absolute;z-index:2;top:2%;left:-10%;font-size:58px;font-family:'Baloo 2',sans-serif;color:#ffdc45;transform:rotate(-12deg);pointer-events:none}
+.home-hero-visual:after{content:"🐾";position:absolute;z-index:2;left:-9%;bottom:14%;font-size:34px;filter:saturate(.8);pointer-events:none}
+.hero-sticker{border:0!important}
+.sticker-yellow{background:#ffdf75!important;border-radius:48% 52% 43% 57% / 50% 38% 62% 50%!important}
+.sticker-teal{background:#45b8ad!important;border-radius:50% 50% 42% 58% / 44% 55% 45% 56%!important}
+body:has(.home-hero) .quick-actions .quick-action{border-radius:34px 40px 30px 36px!important;position:relative!important;overflow:visible!important}
+body:has(.home-hero) .quick-actions .quick-action:after{position:absolute;right:24px;top:19px;font-size:30px;font-family:'Baloo 2',sans-serif;line-height:1;pointer-events:none}
+body:has(.home-hero) .quick-actions .quick-adopt:after{content:"🐾";color:#ff626a}
+body:has(.home-hero) .quick-actions .quick-foster:after{content:"♡";color:#18a99f}
+body:has(.home-hero) .quick-actions .quick-help:after{content:"♡";color:#ff626a}
+body:has(.home-hero) .quick-actions .quick-icon{border-radius:50%!important;position:relative!important}
+body:has(.home-hero) .quick-actions .quick-adopt .quick-icon:before,
+body:has(.home-hero) .quick-actions .quick-foster .quick-icon:before{content:"⌂";position:absolute;inset:0;display:grid;place-items:center;font-size:48px;color:#174e47;background:#fffdf0;border:2px solid #174e47;border-radius:18px 18px 12px 12px;transform:scale(.7)}
+body:has(.home-hero) .quick-actions .quick-icon{font-size:0!important}
+body:has(.home-hero) .quick-actions .quick-adopt .quick-icon:after,
+body:has(.home-hero) .quick-actions .quick-foster .quick-icon:after{content:"♥";position:absolute;left:25px;top:20px;font-size:25px;color:#ff555e}
+body:has(.home-hero) .quick-actions .quick-help .quick-icon:before{content:"♥";display:grid;place-items:center;width:54px;height:48px;border-radius:50% 50% 45% 45%;background:#ff6c72;color:white;font-size:35px;box-shadow:12px 12px 0 -7px #fffdf7}
+.home-section-heading{position:relative!important}
+.home-section-heading:after{content:"✳";font-size:30px;color:#ffb82e;position:absolute;left:42%;top:-8px;transform:rotate(15deg)}
+.home-cat-card{position:relative!important}
+body:has(.home-hero) .home-cat-card:nth-child(1):after,
+body:has(.home-hero) .home-cat-card:nth-child(2):after,
+body:has(.home-hero) .home-cat-card:nth-child(3):after,
+body:has(.home-hero) .home-cat-card:nth-child(4):after{position:absolute;right:10px;top:7px;content:"♡";font-size:42px;line-height:1;color:#ffdc45;text-shadow:0 1px 1px #ffffffaa;pointer-events:none}
+body:has(.home-hero) .home-cat-card:nth-child(2):after{color:#ff626a}
+body:has(.home-hero) .home-cat-card:nth-child(3):after{color:#ffdc45}
+body:has(.home-hero) .home-cat-card:nth-child(4):after{color:#ffdc45}
+.home-stats{background:#45b8ad!important;border-radius:42% 28px 42% 28px / 20% 24px 20% 24px!important;position:relative!important}
+.home-stats:before{content:"✿";position:absolute;left:18px;bottom:-17px;color:#168f86;font-size:54px;transform:rotate(-20deg)}
+.home-mission-photo{position:relative!important}
+.home-mission-photo:after{content:"♡";position:absolute;right:10%;top:-12px;color:#ffdc45;font-size:56px;transform:rotate(12deg);pointer-events:none}
+.home-mission-photo>span{border-radius:47% 53% 49% 51% / 46% 42% 58% 54%!important;background:#ff6b72!important}
+.home-outline-cta{border-radius:999px!important}
+.home-extra-teal{background:#c9f0e8!important}
+.home-extra-yellow{background:#ffecad!important}
+@media(max-width:700px){
+ .home-hero:before{left:-12px;width:46px;height:72px}
+ .home-hero:after{left:0;font-size:35px}
+ .home-hero-visual:before{left:0;font-size:42px}
+ .home-hero-visual:after{left:0;font-size:26px}
+ .home-section-heading:after{display:none}
+ body:has(.home-hero) .quick-actions .quick-action:after{right:14px;top:12px;font-size:24px}
+ .home-stats:before{font-size:38px}
+}
