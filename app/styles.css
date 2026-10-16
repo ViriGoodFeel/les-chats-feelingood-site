@@ -2553,3 +2553,48 @@ body{
 .hero-welcome-only .btn.light:hover{
   background:#e94758!important;
 }
+
+
+/* Revenir aux trois cartes pastel d'origine, plus légères et moins massives */
+.quick-actions{
+  gap:18px!important;
+}
+.quick-actions .quick-action{
+  background:var(--quick-original-bg,#dce9cf)!important;
+  border:1px solid var(--quick-original-border,#c6d9b6)!important;
+  border-radius:24px!important;
+  box-shadow:0 8px 22px rgba(60,44,28,.07)!important;
+  padding:24px!important;
+}
+.quick-actions .quick-adopt{
+  --quick-original-bg:#dce9cf;
+  --quick-original-border:#c6d9b6;
+  color:#244c3c!important;
+}
+.quick-actions .quick-foster{
+  --quick-original-bg:#f8d9c4;
+  --quick-original-border:#efc1a3;
+  color:#613d2d!important;
+}
+.quick-actions .quick-help{
+  --quick-original-bg:#d8e8ee;
+  --quick-original-border:#bfd8e0;
+  color:#254b5a!important;
+}
+.quick-actions .quick-adopt b{color:#285646!important;}
+.quick-actions .quick-foster b{color:#a94e32!important;}
+.quick-actions .quick-help b{color:#245c70!important;}
+.quick-actions .quick-action .quick-icon{
+  background:rgba(255,255,255,.68)!important;
+}
+@media(max-width:760px){
+  .quick-actions{gap:12px!important;}
+  .quick-actions .quick-action{
+    display:grid!important;
+    grid-template-columns:54px minmax(0,1fr)!important;
+    column-gap:14px!important;
+    row-gap:5px!important;
+    padding:17px!important;
+    border-radius:20px!important;
+  }
+}
