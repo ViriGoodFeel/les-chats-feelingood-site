@@ -2775,3 +2775,51 @@ a:focus-visible,button:focus-visible,select:focus-visible{outline:3px solid #f07
   .quick-actions .quick-icon svg{width:38px!important;height:38px!important}
   .quick-actions .quick-card-copy{gap:9px!important}
 }
+
+
+/* Contraste de lecture : corriger les textes blancs sur fond clair */
+.support-section,
+.support-section p,
+.support-section li,
+.support-section small,
+.support-section .support-copy,
+.support-section .support-content{
+  color:#405348!important;
+  opacity:1!important;
+}
+.support-section h2,.support-section h3{color:#285646!important}
+.support-section .eyebrow,.support-section .section-label{
+  color:#a84f35!important;
+  text-shadow:none!important;
+  opacity:1!important;
+}
+.support-section p,.support-section li,.support-section small{
+  text-shadow:none!important;
+}
+.about-section,.about-section p,.about-section li,.about-section small{
+  color:#505d53!important;
+  opacity:1!important;
+}
+.about-section h2,.about-section h3{color:#5a3f91!important}
+.about-section .eyebrow,.about-section .section-label{
+  color:#a84f35!important;
+  text-shadow:none!important;
+}
+.support-section .btn,.support-section .button{
+  background:#f0786d!important;
+  color:#fff!important;
+  border:2px solid #c85b50!important;
+}
+@media(max-width:760px){
+  .support-section p,.about-section p,.support-section li,.about-section li{
+    color:#46564c!important;
+    font-size:16px!important;
+    line-height:1.65!important;
+    opacity:1!important;
+  }
+  .support-section .eyebrow,.support-section .section-label,
+  .about-section .eyebrow,.about-section .section-label{
+    color:#9b4d3d!important;
+    text-shadow:none!important;
+  }
+}
