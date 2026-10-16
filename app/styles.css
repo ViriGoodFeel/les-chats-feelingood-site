@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito+Sans:wght@400;500;600;700;800;900&family=Caveat:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap');
 
 :root {
   --cream:#fff0c2;
@@ -3272,4 +3272,35 @@ body:has(section.home-hero) .home-outline-cta {background:transparent!important;
  body:has(section.home-hero) .adoption-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
  body:has(section.home-hero) .home-stats{grid-template-columns:repeat(2,minmax(0,1fr))!important;margin:32px 0!important;border-radius:28px!important}
  body:has(section.home-hero) .home-mission{grid-template-columns:1fr!important}
+}
+
+
+/* Typographies inspirées directement de la maquette fournie */
+body:has(section.home-hero) {font-family:'Nunito Sans',sans-serif!important}
+body:has(section.home-hero) .home-hero h1,
+body:has(section.home-hero) .home-section-heading h2,
+body:has(section.home-hero) .quick-card-copy strong,
+body:has(section.home-hero) .home-cat-card h3,
+body:has(section.home-hero) .home-mission-copy .eyebrow,
+body:has(section.home-hero) .hero-sticker,
+body:has(section.home-hero) .home-mission-photo>span {
+  font-family:'Baloo 2',sans-serif!important;
+  font-weight:800!important;
+  letter-spacing:-.025em!important;
+}
+body:has(section.home-hero) .home-hero-copy h2,
+body:has(section.home-hero) .quick-card-copy b,
+body:has(section.home-hero) .home-cat-card .btn,
+body:has(section.home-hero) .home-outline-cta,
+body:has(section.home-hero) .main-nav,
+body:has(section.home-hero) .don-btn {
+  font-family:'Nunito Sans',sans-serif!important;
+  font-weight:800!important;
+}
+body:has(section.home-hero) .home-hero-copy p,
+body:has(section.home-hero) .quick-card-copy small,
+body:has(section.home-hero) .home-cat-card .cat-teaser,
+body:has(section.home-hero) .home-mission-copy>p {
+  font-family:'Nunito Sans',sans-serif!important;
+  font-weight:500!important;
 }
