@@ -3446,3 +3446,116 @@ body:has(section.home-hero) .home-mission-copy>p {
   font-weight:700!important;
   color:#213a34!important;
 }
+
+
+/* MOBILE REPAIR: preserve all content and restore spacing/layout */
+body:has(section.home-hero) .mission-pillars {
+  display:grid!important;
+  grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  gap:16px!important;
+  margin:22px 0 26px!important;
+}
+body:has(section.home-hero) .mission-pillars>div {
+  display:grid!important;
+  grid-template-columns:44px minmax(0,1fr)!important;
+  grid-template-rows:auto auto!important;
+  column-gap:10px!important;
+  row-gap:3px!important;
+  align-items:center!important;
+  min-width:0!important;
+}
+body:has(section.home-hero) .mission-pillars>div>span {
+  grid-column:1!important;grid-row:1 / span 2!important;
+  width:44px!important;height:44px!important;display:flex!important;
+  align-items:center!important;justify-content:center!important;
+  border-radius:50%!important;background:#43b8ad!important;color:#fff!important;
+  font-size:25px!important;line-height:1!important;
+}
+body:has(section.home-hero) .mission-pillars>div>strong {
+  grid-column:2!important;grid-row:1!important;display:block!important;
+  font-family:'Fredoka',sans-serif!important;font-weight:700!important;
+  font-size:15px!important;line-height:1.25!important;color:#173f38!important;
+}
+body:has(section.home-hero) .mission-pillars>div>small {
+  grid-column:2!important;grid-row:2!important;display:block!important;
+  font-family:'Nunito Sans',sans-serif!important;font-size:12px!important;
+  font-weight:600!important;line-height:1.35!important;color:#293e38!important;
+}
+body:has(section.home-hero) .home-stats {
+  position:relative!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;
+  padding:30px 24px!important;gap:14px!important;
+}
+body:has(section.home-hero) .home-stats>div:not(.home-stats-sticker) {
+  display:grid!important;grid-template-columns:38px minmax(0,1fr)!important;
+  grid-template-rows:auto auto!important;align-items:center!important;column-gap:8px!important;
+  min-width:0!important;
+}
+body:has(section.home-hero) .home-stats>div:not(.home-stats-sticker)>span {
+  grid-column:1!important;grid-row:1 / span 2!important;font-size:32px!important;line-height:1!important;
+}
+body:has(section.home-hero) .home-stats>div:not(.home-stats-sticker)>strong {
+  grid-column:2!important;grid-row:1!important;font-size:28px!important;line-height:1.05!important;
+}
+body:has(section.home-hero) .home-stats>div:not(.home-stats-sticker)>small {
+  grid-column:2!important;grid-row:2!important;font-size:12px!important;line-height:1.25!important;
+}
+body:has(section.home-hero) .home-stats .home-stats-sticker {
+  position:absolute!important;right:-5px!important;top:-18px!important;
+  width:120px!important;padding:12px!important;z-index:2!important;
+}
+body:has(section.home-hero) .home-extra-grid {
+  display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:22px!important;
+  margin:42px 0!important;
+}
+body:has(section.home-hero) .home-extra-card {
+  padding:28px!important;border-radius:30px!important;min-width:0!important;
+}
+body:has(section.home-hero) .home-extra-teal {background:#d0f0e9!important}
+body:has(section.home-hero) .home-extra-yellow {background:#ffedb2!important}
+body:has(section.home-hero) .home-extra-card .eyebrow {
+  display:block!important;margin-bottom:12px!important;color:#b34e50!important;
+  font-family:'Fredoka',sans-serif!important;font-weight:700!important;letter-spacing:.06em!important;
+}
+body:has(section.home-hero) .home-extra-card h2,
+body:has(section.home-hero) .home-contact h2,
+body:has(section.home-hero) .home-mission-copy h2 {
+  font-family:'Lilita One','Fredoka',sans-serif!important;font-weight:400!important;
+  font-size:clamp(25px,2.5vw,34px)!important;line-height:1.12!important;
+  color:#174e47!important;letter-spacing:0!important;
+}
+body:has(section.home-hero) .home-extra-card p,
+body:has(section.home-hero) .home-contact p {
+  font-family:'Nunito Sans',sans-serif!important;font-weight:600!important;
+  font-size:16px!important;line-height:1.6!important;color:#293e38!important;
+}
+body:has(section.home-hero) .home-extra-card .btn {
+  display:inline-flex!important;align-items:center!important;justify-content:center!important;
+  white-space:normal!important;text-align:center!important;line-height:1.3!important;
+  padding:14px 20px!important;margin-top:8px!important;
+  color:#fff!important;background:#ff5963!important;border-radius:999px!important;
+  border:0!important;box-shadow:0 4px 0 #e83e50!important;
+}
+body:has(section.home-hero) .home-mission-copy h2 {margin:12px 0 18px!important}
+body:has(section.home-hero) .home-mission-copy .eyebrow {
+  display:block!important;font-size:26px!important;line-height:1.2!important;
+  font-family:'Fredoka',sans-serif!important;font-weight:700!important;color:#b34e50!important;
+}
+body:has(section.home-hero) .home-outline-cta {
+  color:#e84953!important;background:#fff8e9!important;opacity:1!important;
+  padding:13px 20px!important;box-shadow:none!important;
+}
+@media(max-width:800px){
+ body:has(section.home-hero) .mission-pillars{grid-template-columns:1fr!important;gap:14px!important}
+ body:has(section.home-hero) .mission-pillars>div{grid-template-columns:44px minmax(0,1fr)!important}
+ body:has(section.home-hero) .home-stats{grid-template-columns:repeat(2,minmax(0,1fr))!important;padding:28px 16px!important;gap:18px 10px!important}
+ body:has(section.home-hero) .home-stats>div:not(.home-stats-sticker){grid-template-columns:30px minmax(0,1fr)!important;column-gap:5px!important}
+ body:has(section.home-hero) .home-stats>div:not(.home-stats-sticker)>span{font-size:25px!important}
+ body:has(section.home-hero) .home-stats>div:not(.home-stats-sticker)>strong{font-size:23px!important}
+ body:has(section.home-hero) .home-stats>div:not(.home-stats-sticker)>small{font-size:11px!important}
+ body:has(section.home-hero) .home-stats .home-stats-sticker{width:96px!important;font-size:16px!important;right:-2px!important;top:-16px!important}
+ body:has(section.home-hero) .home-extra-grid{grid-template-columns:1fr!important;gap:18px!important;margin:30px 0!important}
+ body:has(section.home-hero) .home-extra-card{padding:22px!important}
+ body:has(section.home-hero) .home-extra-card h2,body:has(section.home-hero) .home-contact h2,body:has(section.home-hero) .home-mission-copy h2{font-size:28px!important}
+ body:has(section.home-hero) .home-mission-photo img{height:250px!important}
+ body:has(section.home-hero) .home-outline-cta{background:#fff8e9!important;color:#e84953!important}
+}
