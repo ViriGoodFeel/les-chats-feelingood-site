@@ -3400,3 +3400,49 @@ body:has(section.home-hero) .home-outline-cta {
  body:has(section.home-hero) .home-hero h1{font-size:clamp(43px,11vw,58px)!important}
  body:has(section.home-hero) .quick-card-copy strong{font-size:27px!important}
 }
+
+
+/* Strong display type: no thin, generic lettering on the homepage */
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Fredoka:wght@600;700&family=Nunito+Sans:wght@700;800;900&display=swap');
+body:has(section.home-hero) .home-hero h1,
+body:has(section.home-hero) .home-hero h1 em,
+body:has(section.home-hero) .home-section-heading h2,
+body:has(section.home-hero) .quick-card-copy strong,
+body:has(section.home-hero) .home-cat-card h3,
+body:has(section.home-hero) .home-mission-copy .eyebrow {
+  font-family:'Lilita One','Fredoka',sans-serif!important;
+  font-weight:400!important;
+  letter-spacing:.01em!important;
+  -webkit-text-stroke:.7px currentColor!important;
+}
+body:has(section.home-hero) .home-hero h1 {
+  font-size:clamp(50px,5.6vw,76px)!important;
+  line-height:.97!important;
+  letter-spacing:-.015em!important;
+}
+body:has(section.home-hero) .home-hero h1 em {
+  font-style:normal!important;
+  color:#ff4f5b!important;
+  -webkit-text-stroke:.7px #ff4f5b!important;
+}
+body:has(section.home-hero) .home-section-heading h2 {font-size:clamp(33px,3.2vw,44px)!important}
+body:has(section.home-hero) .quick-card-copy strong {font-size:30px!important;line-height:1.05!important}
+body:has(section.home-hero) .home-cat-card h3 {font-size:25px!important}
+body:has(section.home-hero) .home-mission-copy .eyebrow {font-size:32px!important}
+body:has(section.home-hero) .home-hero-copy h2,
+body:has(section.home-hero) .home-main-cta,
+body:has(section.home-hero) .quick-card-copy b,
+body:has(section.home-hero) .home-cat-card .btn,
+body:has(section.home-hero) .home-outline-cta,
+body:has(section.home-hero) .don-btn {
+  font-family:'Fredoka',sans-serif!important;
+  font-weight:700!important;
+}
+body:has(section.home-hero) .home-hero-copy p,
+body:has(section.home-hero) .quick-card-copy small,
+body:has(section.home-hero) .home-cat-card .cat-teaser,
+body:has(section.home-hero) .home-mission-copy>p {
+  font-family:'Nunito Sans',sans-serif!important;
+  font-weight:700!important;
+  color:#213a34!important;
+}
